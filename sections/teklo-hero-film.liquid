@@ -1,5 +1,5 @@
 {{ 'section-teklo-hero-film.css' | asset_url | stylesheet_tag }}
-{%- if section.settings.video != blank or section.settings.mobile_video != blank -%}<script src="{{ 'teklo-media.js' | asset_url }}" defer="defer"></script>{%- endif -%}
+<script src="{{ 'teklo-media.js' | asset_url }}" defer="defer"></script>
 {%- liquid
   assign desktop_poster = section.settings.poster | default: section.settings.video.preview_image
   assign mobile_poster = section.settings.mobile_poster | default: desktop_poster
@@ -35,7 +35,13 @@
       {%- if desktop_poster != blank -%}{{ desktop_poster | image_url: width: 2400 | image_tag: widths: '750, 1100, 1500, 2000, 2400', sizes: '100vw', loading: 'eager', fetchpriority: 'high', alt: '' }}{%- else -%}<img src="{{ 'placeholder-hero-desktop.png' | asset_url }}" alt="" width="1672" height="941" loading="eager" fetchpriority="high">{%- endif -%}
     </picture>
     {%- if section.settings.mobile_video != blank -%}{{ section.settings.mobile_video | video_tag: autoplay: false, loop: true, muted: true, playsinline: true, controls: false, preload: 'none', class: 'teklo-hero-film__video teklo-hero-film__video--mobile' }}{%- endif -%}
-    {%- if section.settings.video != blank -%}{{ section.settings.video | video_tag: autoplay: false, loop: true, muted: true, playsinline: true, controls: false, preload: 'none', class: 'teklo-hero-film__video teklo-hero-film__video--desktop' }}{%- endif -%}
+    {%- if section.settings.video != blank -%}
+      {{ section.settings.video | video_tag: autoplay: false, loop: true, muted: true, playsinline: true, controls: false, preload: 'none', class: 'teklo-hero-film__video teklo-hero-film__video--desktop' }}
+    {%- else -%}
+      <video class="teklo-hero-film__video teklo-hero-film__video--desktop" muted loop playsinline preload="none">
+        <source src="{{ 'placeholder-hero-3d-print.mp4' | asset_url }}" type="video/mp4">
+      </video>
+    {%- endif -%}
     <div class="teklo-hero-film__shade"></div>
   </div>
   <div class="teklo-hero-film__content page-width">
