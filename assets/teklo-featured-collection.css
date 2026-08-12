@@ -1,0 +1,173 @@
+.teklo-featured-collection .collection__title {
+  align-items: end;
+  border-top: 0.1rem solid rgba(var(--color-foreground), 0.18);
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(20rem, 0.42fr);
+  margin-bottom: clamp(4.8rem, 6vw, 8.8rem);
+  padding-top: 1.6rem;
+}
+
+.teklo-featured-collection .collection,
+.teklo-featured-collection .collection__title,
+.teklo-featured-collection slider-component,
+.teklo-featured-collection .collection__view-all {
+  box-sizing: border-box;
+  margin-inline: auto;
+  max-width: var(--page-width);
+  padding-inline: 5rem;
+  width: 100%;
+}
+
+.teklo-featured-collection .collection {
+  max-width: none;
+  padding-inline: 0;
+}
+
+.teklo-featured-collection .collection__title .title {
+  font-size: clamp(3rem, 3.9vw, 5.6rem);
+  line-height: 0.98;
+  margin: 0;
+  max-width: 12ch;
+}
+
+.teklo-featured-collection .collection__description {
+  font-size: 1.3rem;
+  justify-self: end;
+  line-height: 1.5;
+  max-width: 34rem;
+}
+
+.teklo-featured-collection .product-grid {
+  display: grid;
+  gap: clamp(3.2rem, 4vw, 6.4rem) clamp(2rem, 2.5vw, 4rem);
+  grid-template-columns: repeat(14, minmax(0, 1fr));
+  margin-inline: 0;
+  max-width: 100%;
+  padding: 0;
+  width: 100%;
+}
+
+.teklo-featured-collection .product-grid > .grid__item {
+  max-width: none;
+  min-width: 0;
+  width: auto;
+}
+
+.teklo-featured-collection slider-component,
+.teklo-featured-collection .card,
+.teklo-featured-collection .card__content,
+.teklo-featured-collection .card__information {
+  max-width: 100%;
+  min-width: 0;
+}
+
+.teklo-featured-collection .product-grid > .grid__item:nth-child(4n + 1) { grid-column: span 4; }
+.teklo-featured-collection .product-grid > .grid__item:nth-child(4n + 2),
+.teklo-featured-collection .product-grid > .grid__item:nth-child(4n + 3) { grid-column: span 3; }
+.teklo-featured-collection .product-grid > .grid__item:nth-child(4n + 2) { padding-top: clamp(2.4rem, 4vw, 5.6rem); }
+.teklo-featured-collection .product-grid > .grid__item:nth-child(4n) {
+  grid-column: span 4;
+  padding-top: clamp(1.2rem, 2vw, 3.2rem);
+}
+
+.teklo-featured-collection .card,
+.teklo-featured-collection .card__inner,
+.teklo-featured-collection .card__media { border-radius: 0; }
+
+.teklo-featured-collection .card--card,
+.teklo-featured-collection .card--card.gradient {
+  background: transparent;
+  border: 0;
+  box-shadow: none;
+}
+.teklo-featured-collection .card--card::after {
+  border: 0;
+  box-shadow: none;
+}
+
+.teklo-featured-collection .card__inner {
+  background: rgba(var(--color-foreground), 0.04);
+  border: 0;
+}
+.teklo-featured-collection .card__inner::before,
+.teklo-featured-collection .card__inner::after {
+  border: 0;
+  box-shadow: none;
+}
+.teklo-featured-collection .card__content,
+.teklo-featured-collection .card__information { padding: 0; }
+
+.teklo-featured-collection .card__information {
+  display: grid;
+  gap: 0.4rem 1.2rem;
+  grid-template-columns: minmax(0, 1fr) auto;
+  padding-top: 1.4rem;
+  min-height: 5.8rem;
+}
+
+.teklo-featured-collection .card__heading {
+  color: #24231f;
+  font-size: clamp(1.35rem, 1.05vw, 1.55rem);
+  font-weight: 400;
+  line-height: 1.35;
+  margin: 0;
+}
+
+.teklo-featured-collection .card__heading a {
+  text-decoration-thickness: 0.1rem;
+  text-underline-offset: 0.35rem;
+}
+
+.teklo-featured-collection .card-information { text-align: right; }
+.teklo-featured-collection .price {
+  color: #24231f;
+  font-size: 1.2rem;
+  letter-spacing: 0.02em;
+  line-height: 1.5;
+  margin-top: 0;
+  white-space: nowrap;
+}
+
+.teklo-featured-collection .card__badge,
+.teklo-featured-collection .quick-add { display: none; }
+
+.teklo-featured-collection .collection__view-all {
+  margin-top: clamp(4.8rem, 6vw, 8rem);
+  text-align: left;
+}
+
+.teklo-featured-collection .collection__view-all .link {
+  font-size: 1.2rem;
+  letter-spacing: 0.08em;
+  text-decoration-thickness: 0.1rem;
+  text-transform: uppercase;
+  text-underline-offset: 0.5rem;
+}
+
+@media screen and (max-width: 989px) {
+  .teklo-featured-collection .product-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .teklo-featured-collection .product-grid > .grid__item:nth-child(n) { grid-column: auto; padding-top: 0; }
+  .teklo-featured-collection .product-grid > .grid__item:nth-child(even) { padding-top: 3.2rem; }
+}
+
+@media screen and (max-width: 749px) {
+  .teklo-featured-collection .collection__title,
+  .teklo-featured-collection slider-component,
+  .teklo-featured-collection .collection__view-all { padding-inline: 1.5rem; }
+  .teklo-featured-collection .collection,
+  .teklo-featured-collection slider-component {
+    min-width: 0;
+    width: 100%;
+  }
+  .teklo-featured-collection .collection__title { display: block; margin-bottom: 3.6rem; padding-top: 1.2rem; }
+  .teklo-featured-collection .collection__title .title { font-size: clamp(2.8rem, 9vw, 3.6rem); max-width: 11ch; }
+  .teklo-featured-collection .collection__description { margin-top: 1.6rem; }
+  .teklo-featured-collection .product-grid { gap: 3.2rem 1.4rem; }
+  .teklo-featured-collection .product-grid > .grid__item:nth-child(even) { padding-top: 2.4rem; }
+  .teklo-featured-collection .card__information { display: flex; flex-direction: column; min-height: 7.2rem; padding-top: 1rem; }
+  .teklo-featured-collection .card__heading { font-size: 1.35rem; }
+  .teklo-featured-collection .card__heading a { hyphens: auto; overflow-wrap: anywhere; }
+  .teklo-featured-collection .card-information { margin-top: auto; padding-top: 0.6rem; text-align: left; }
+  .teklo-featured-collection .price { font-size: 1.15rem; }
+  .teklo-featured-collection .collection__view-all { margin-top: 4.4rem; }
+}

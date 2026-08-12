@@ -14,8 +14,11 @@
     "footer": {
       "type": "footer",
       "settings": {
+        "presentation_style": "teklo",
+        "homepage_wordmark": "Teklo Studio",
         "color_scheme": "scheme-4",
         "newsletter_enable": true,
+        "suppress_newsletter_homepage": true,
         "newsletter_heading": "Join our email list",
         "enable_follow_on_shop": true,
         "show_social": true,

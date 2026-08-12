@@ -1,0 +1,55 @@
+{{ 'section-teklo-hero-film.css' | asset_url | stylesheet_tag }}
+{%- if section.settings.video != blank or section.settings.mobile_video != blank -%}<script src="{{ 'teklo-media.js' | asset_url }}" defer="defer"></script>{%- endif -%}
+{%- liquid
+  assign desktop_poster = section.settings.poster | default: section.settings.video.preview_image
+  assign mobile_poster = section.settings.mobile_poster | default: desktop_poster
+  case section.settings.height
+    when 'medium'
+      assign hero_height = '70svh'
+    when 'large'
+      assign hero_height = '85svh'
+    else
+      assign hero_height = '100svh'
+  endcase
+  case section.settings.vertical_position
+    when 'top'
+      assign content_y = 'flex-start'
+    when 'center'
+      assign content_y = 'center'
+    else
+      assign content_y = 'flex-end'
+  endcase
+  case section.settings.alignment
+    when 'center'
+      assign actions_align = 'center'
+    when 'right'
+      assign actions_align = 'flex-end'
+    else
+      assign actions_align = 'flex-start'
+  endcase
+-%}
+<div class="teklo-hero-film color-{{ section.settings.color_scheme }}" data-teklo-media style="--teklo-hero-height:{{ hero_height }};--teklo-overlay:{{ section.settings.overlay | divided_by: 100.0 }};--teklo-media-position:{{ section.settings.focal_point }};--teklo-content-y:{{ content_y }};--teklo-content-align:{{ section.settings.alignment }};--teklo-actions-align:{{ actions_align }}">
+  <div class="teklo-hero-film__media" aria-hidden="true">
+    <picture class="teklo-hero-film__poster">
+      {%- if section.settings.mobile_poster != blank -%}<source media="(max-width: 749px)" srcset="{{ mobile_poster | image_url: width: 1200 }}">{%- endif -%}
+      {%- if desktop_poster != blank -%}{{ desktop_poster | image_url: width: 2400 | image_tag: widths: '750, 1100, 1500, 2000, 2400', sizes: '100vw', loading: 'eager', fetchpriority: 'high', alt: '' }}{%- else -%}<img src="{{ 'placeholder-hero-desktop.png' | asset_url }}" alt="" width="1672" height="941" loading="eager" fetchpriority="high">{%- endif -%}
+    </picture>
+    {%- if section.settings.mobile_video != blank -%}{{ section.settings.mobile_video | video_tag: autoplay: false, loop: true, muted: true, playsinline: true, controls: false, preload: 'none', class: 'teklo-hero-film__video teklo-hero-film__video--mobile' }}{%- endif -%}
+    {%- if section.settings.video != blank -%}{{ section.settings.video | video_tag: autoplay: false, loop: true, muted: true, playsinline: true, controls: false, preload: 'none', class: 'teklo-hero-film__video teklo-hero-film__video--desktop' }}{%- endif -%}
+    <div class="teklo-hero-film__shade"></div>
+  </div>
+  <div class="teklo-hero-film__content page-width">
+    <div class="teklo-hero-film__content-inner teklo-hero-film__content-inner--{{ section.settings.alignment }}">
+      {%- if section.settings.heading != blank -%}<h1 class="teklo-hero-film__heading">{{ section.settings.heading }}</h1>{%- endif -%}
+      {%- if section.settings.text != blank -%}<div class="teklo-hero-film__text rte">{{ section.settings.text }}</div>{%- endif -%}
+      {%- if section.settings.primary_label != blank and section.settings.primary_link != blank or section.settings.secondary_label != blank and section.settings.secondary_link != blank -%}<div class="teklo-hero-film__actions">
+        {%- if section.settings.primary_label != blank and section.settings.primary_link != blank -%}<a class="button" href="{{ section.settings.primary_link }}">{{ section.settings.primary_label | escape }}</a>{%- endif -%}
+        {%- if section.settings.secondary_label != blank and section.settings.secondary_link != blank -%}<a class="button button--secondary" href="{{ section.settings.secondary_link }}">{{ section.settings.secondary_label | escape }}</a>{%- endif -%}
+      </div>{%- endif -%}
+    </div>
+  </div>
+</div>
+{% schema %}
+{"name":"Teklo hero film","tag":"section","class":"section","disabled_on":{"groups":["header","footer"]},"settings":[
+{"type":"video","id":"video","label":"Desktop video"},{"type":"video","id":"mobile_video","label":"Mobile video (optional)"},{"type":"image_picker","id":"poster","label":"Desktop poster"},{"type":"image_picker","id":"mobile_poster","label":"Mobile poster (optional)"},{"type":"select","id":"focal_point","label":"Media focal point","default":"center center","options":[{"value":"left center","label":"Left"},{"value":"center center","label":"Center"},{"value":"right center","label":"Right"}]},{"type":"inline_richtext","id":"heading","label":"Heading","default":"Objects with intention"},{"type":"richtext","id":"text","label":"Text","default":"<p>Original pieces for considered spaces.</p>"},{"type":"text","id":"primary_label","label":"Primary button label","default":"Shop objects"},{"type":"url","id":"primary_link","label":"Primary button link"},{"type":"text","id":"secondary_label","label":"Secondary button label","default":"Our studio"},{"type":"url","id":"secondary_link","label":"Secondary button link"},{"type":"select","id":"alignment","label":"Text alignment","default":"left","options":[{"value":"left","label":"Left"},{"value":"center","label":"Center"},{"value":"right","label":"Right"}]},{"type":"select","id":"vertical_position","label":"Vertical position","default":"bottom","options":[{"value":"top","label":"Top"},{"value":"center","label":"Center"},{"value":"bottom","label":"Bottom"}]},{"type":"select","id":"height","label":"Section height","default":"viewport","options":[{"value":"medium","label":"Medium"},{"value":"large","label":"Large"},{"value":"viewport","label":"Full viewport"}]},{"type":"range","id":"overlay","min":0,"max":80,"step":5,"unit":"%","label":"Overlay opacity","default":30},{"type":"color_scheme","id":"color_scheme","label":"Color scheme","default":"scheme-4"}],"presets":[{"name":"Teklo hero film"}]}
+{% endschema %}

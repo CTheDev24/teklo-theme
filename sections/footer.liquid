@@ -4,6 +4,9 @@
 {{ 'component-list-menu.css' | asset_url | stylesheet_tag }}
 {{ 'component-list-payment.css' | asset_url | stylesheet_tag }}
 {{ 'component-list-social.css' | asset_url | stylesheet_tag }}
+{%- if section.settings.presentation_style == 'teklo' -%}
+  {{ 'teklo-footer.css' | asset_url | stylesheet_tag }}
+{%- endif -%}
 
 {%- style -%}
   .footer {
@@ -27,8 +30,12 @@
   }
 {%- endstyle -%}
 
-<footer class="footer color-{{ section.settings.color_scheme }} gradient section-{{ section.id }}-padding">
+<footer class="footer color-{{ section.settings.color_scheme }} gradient section-{{ section.id }}-padding{% if section.settings.presentation_style == 'teklo' %} footer--teklo{% endif %}">
   {%- liquid
+    assign show_footer_newsletter = section.settings.newsletter_enable
+    if request.page_type == 'index' and section.settings.suppress_newsletter_homepage
+      assign show_footer_newsletter = false
+    endif
     assign has_social_icons = true
     if settings.social_facebook_link == blank and settings.social_instagram_link == blank and settings.social_youtube_link == blank and settings.social_tiktok_link == blank and settings.social_twitter_link == blank and settings.social_pinterest_link == blank and settings.social_snapchat_link == blank and settings.social_tumblr_link == blank and settings.social_vimeo_link == blank
       assign has_social_icons = false
@@ -38,12 +45,12 @@
       assign brand_empty = true
     endif
 
-    if section.blocks.size == 1 and section.blocks[0].type == 'brand_information' and brand_empty and has_social_icons == false and section.settings.newsletter_enable == false and section.settings.enable_follow_on_shop == false
+    if section.blocks.size == 1 and section.blocks[0].type == 'brand_information' and brand_empty and has_social_icons == false and show_footer_newsletter == false and section.settings.enable_follow_on_shop == false
       assign only_empty_brand = true
     endif
   -%}
   {%- if section.blocks.size > 0
-    or section.settings.newsletter_enable
+    or show_footer_newsletter
     or section.settings.show_social
     and has_social_icons == true
     or section.settings.enable_follow_on_shop
@@ -165,7 +172,7 @@
             data-cascade
           {% endif %}
         >
-          {%- if section.settings.newsletter_enable -%}
+          {%- if show_footer_newsletter -%}
             <div class="footer-block__newsletter">
               {%- if section.settings.newsletter_heading != blank -%}
                 <h2 class="footer-block__heading inline-richtext">{{ section.settings.newsletter_heading }}</h2>
@@ -300,7 +307,7 @@
     <div class="footer__content-bottom-wrapper page-width{% if section.settings.enable_country_selector == false and section.settings.enable_language_selector == false %} footer__content-bottom-wrapper--center{% endif %}">
       <div class="footer__copyright caption">
         <small class="copyright__content"
-          >&copy; {{ 'now' | date: '%Y' }}, {{ shop.name | link_to: routes.root_url -}}
+          >&copy; {{ 'now' | date: '%Y' }}, {% if request.page_type == 'index' and section.settings.homepage_wordmark != blank %}{{ section.settings.homepage_wordmark | escape | link_to: routes.root_url }}{% else %}{{ shop.name | link_to: routes.root_url }}{% endif -%}
         </small>
         <small class="copyright__content">{{ powered_by_link }}</small>
         {%- if section.settings.show_policy -%}
@@ -425,6 +432,22 @@
   ],
   "settings": [
     {
+      "type": "select",
+      "id": "presentation_style",
+      "label": "Presentation style",
+      "options": [
+        { "value": "publisher", "label": "Publisher" },
+        { "value": "teklo", "label": "Teklo" }
+      ],
+      "default": "publisher"
+    },
+    {
+      "type": "text",
+      "id": "homepage_wordmark",
+      "label": "Homepage footer wordmark",
+      "default": "Teklo Studio"
+    },
+    {
       "type": "color_scheme",
       "id": "color_scheme",
       "label": "t:sections.all.colors.label",
@@ -440,6 +463,13 @@
       "id": "newsletter_enable",
       "default": true,
       "label": "t:sections.footer.settings.newsletter_enable.label"
+    },
+    {
+      "type": "checkbox",
+      "id": "suppress_newsletter_homepage",
+      "default": true,
+      "label": "Hide footer newsletter on homepage",
+      "info": "Keeps the footer signup available on other templates when Studio Notes is the homepage signup."
     },
     {
       "type": "inline_richtext",

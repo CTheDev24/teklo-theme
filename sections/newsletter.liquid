@@ -1,5 +1,8 @@
 {{ 'component-newsletter.css' | asset_url | stylesheet_tag }}
 {{ 'newsletter-section.css' | asset_url | stylesheet_tag }}
+{%- if section.settings.presentation == 'teklo' -%}
+  {{ 'teklo-newsletter.css' | asset_url | stylesheet_tag }}
+{%- endif -%}
 
 {%- style -%}
   .section-{{ section.id }}-padding {
@@ -15,8 +18,11 @@
   }
 {%- endstyle -%}
 
-<div class="newsletter center {% if section.settings.full_width == false %}newsletter--narrow page-width{% endif %}">
+<div class="newsletter center{% if section.settings.presentation == 'teklo' %} newsletter--teklo{% endif %} {% if section.settings.full_width == false %}newsletter--narrow page-width{% endif %}">
   <div class="newsletter__wrapper color-{{ section.settings.color_scheme }} gradient content-container isolate{% if section.settings.full_width %} content-container--full-width{% endif %} section-{{ section.id }}-padding">
+    {%- if section.settings.eyebrow != blank -%}
+      <p class="newsletter__eyebrow">{{ section.settings.eyebrow | escape }}</p>
+    {%- endif -%}
     {%- for block in section.blocks -%}
       {%- case block.type -%}
         {%- when '@app' -%}
@@ -83,8 +89,11 @@
                     class="newsletter-form__button field__button"
                     name="commit"
                     id="Subscribe"
-                    aria-label="{{ 'newsletter.button_label' | t }}"
+                    aria-label="{{ section.settings.submit_label | default: 'Join' | escape }}"
                   >
+                    {%- if section.settings.presentation == 'teklo' -%}
+                      <span class="newsletter-form__button-label">{{ section.settings.submit_label | default: 'Join' | escape }}</span>
+                    {%- endif -%}
                     <span class="svg-wrapper">
                       {{- 'icon-arrow.svg' | inline_asset_content -}}
                     </span>
@@ -132,6 +141,30 @@
     {
       "type": "paragraph",
       "content": "t:sections.newsletter.settings.paragraph.content"
+    },
+    {
+      "type": "select",
+      "id": "presentation",
+      "label": "Presentation",
+      "options": [
+        { "value": "publisher", "label": "Publisher" },
+        { "value": "teklo", "label": "Teklo studio notes" }
+      ],
+      "default": "publisher"
+    },
+    {
+      "type": "text",
+      "id": "eyebrow",
+      "label": "Label",
+      "default": "STUDIO NOTES",
+      "visible_if": "{{ section.settings.presentation == 'teklo' }}"
+    },
+    {
+      "type": "text",
+      "id": "submit_label",
+      "label": "Submit label",
+      "default": "JOIN",
+      "visible_if": "{{ section.settings.presentation == 'teklo' }}"
     },
     {
       "type": "color_scheme",

@@ -39,6 +39,9 @@
     "header": {
       "type": "header",
       "settings": {
+        "presentation_style": "teklo",
+        "overlay_homepage": true,
+        "homepage_wordmark": "Teklo",
         "logo_position": "top-center",
         "mobile_logo_position": "center",
         "menu": "main-menu",
@@ -50,8 +53,8 @@
         "enable_country_selector": true,
         "enable_language_selector": true,
         "margin_bottom": 0,
-        "padding_top": 36,
-        "padding_bottom": 16
+        "padding_top": 20,
+        "padding_bottom": 20
       }
     }
   },

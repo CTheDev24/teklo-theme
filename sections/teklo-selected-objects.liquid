@@ -1,0 +1,99 @@
+{{ 'section-teklo-selected-objects.css' | asset_url | stylesheet_tag }}
+
+{%- style -%}
+  .section-{{ section.id }}-padding {
+    padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
+    padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
+  }
+  @media screen and (min-width: 750px) {
+    .section-{{ section.id }}-padding { padding-top: {{ section.settings.padding_top }}px; padding-bottom: {{ section.settings.padding_bottom }}px; }
+  }
+{%- endstyle -%}
+
+<div class="teklo-objects color-{{ section.settings.color_scheme }} gradient">
+  <div class="teklo-objects__inner page-width section-{{ section.id }}-padding">
+    <header class="teklo-objects__header">
+      {%- if section.settings.eyebrow != blank -%}<p class="teklo-eyebrow">{{ section.settings.eyebrow | escape }}</p>{%- endif -%}
+      {%- if section.settings.heading != blank -%}<h2 class="teklo-objects__heading inline-richtext">{{ section.settings.heading }}</h2>{%- endif -%}
+      {%- if section.settings.intro != blank -%}<div class="teklo-objects__intro rte">{{ section.settings.intro }}</div>{%- endif -%}
+    </header>
+
+    <ul class="teklo-objects__grid" role="list">
+      {%- for block in section.blocks -%}
+        {%- liquid
+          assign product = block.settings.product
+          assign display_image = block.settings.image
+          if display_image == blank and product != blank
+            assign display_image = product.featured_image
+          endif
+          assign display_title = block.settings.title
+          if display_title == blank and product != blank
+            assign display_title = product.title
+          endif
+          assign display_url = block.settings.link
+          if display_url == blank and product != blank
+            assign display_url = product.url
+          endif
+        -%}
+        <li class="teklo-object teklo-object--{{ block.settings.emphasis }}" {{ block.shopify_attributes }}>
+          <article>
+            <div class="teklo-object__media">
+              {%- if display_image != blank -%}
+                {%- capture sizes -%}(min-width: 990px) {% if block.settings.emphasis == 'feature' %}58vw{% else %}34vw{% endif %}, (min-width: 750px) 50vw, 100vw{%- endcapture -%}
+                {{ display_image | image_url: width: 2400 | image_tag: widths: '375, 550, 750, 990, 1200, 1500, 1800, 2400', sizes: sizes, loading: 'lazy', class: 'teklo-object__image' }}
+              {%- else -%}
+                {%- case forloop.index -%}
+                  {%- when 1 -%}<img src="{{ 'placeholder-planter-4x5.png' | asset_url }}" alt="" width="1122" height="1402" loading="lazy" class="teklo-object__image">
+                  {%- when 2 -%}<img src="{{ 'placeholder-trace-lifestyle-front.png' | asset_url }}" alt="" width="1536" height="1024" loading="lazy" class="teklo-object__image">
+                  {%- else -%}<img src="{{ 'placeholder-product-pendant-light.png' | asset_url }}" alt="" width="506" height="1024" loading="lazy" class="teklo-object__image">
+                {%- endcase -%}
+              {%- endif -%}
+              {%- if display_url != blank -%}<a class="teklo-object__media-link" href="{{ display_url }}" aria-label="{{ display_title | default: block.settings.link_label | escape }}"></a>{%- endif -%}
+            </div>
+            <div class="teklo-object__content">
+              {%- if block.settings.descriptor != blank -%}<p class="teklo-object__descriptor">{{ block.settings.descriptor | escape }}</p>{%- endif -%}
+              {%- if display_title != blank -%}<h3 class="teklo-object__title">{% if display_url != blank %}<a href="{{ display_url }}">{% endif %}{{ display_title | escape }}{% if display_url != blank %}</a>{% endif %}</h3>{%- endif -%}
+              {%- if block.settings.link_label != blank and display_url != blank -%}
+                <a class="teklo-text-link" href="{{ display_url }}">{{ block.settings.link_label | escape }} <span aria-hidden="true">→</span></a>
+              {%- endif -%}
+            </div>
+          </article>
+        </li>
+      {%- endfor -%}
+    </ul>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Teklo — Selected objects",
+  "tag": "section",
+  "class": "section",
+  "disabled_on": { "groups": ["header", "footer"] },
+  "max_blocks": 4,
+  "settings": [
+    { "type": "text", "id": "eyebrow", "label": "Eyebrow", "default": "Selected objects" },
+    { "type": "inline_richtext", "id": "heading", "label": "Heading", "default": "Designed for daily rituals" },
+    { "type": "richtext", "id": "intro", "label": "Introduction" },
+    { "type": "color_scheme", "id": "color_scheme", "label": "Color scheme", "default": "scheme-1" },
+    { "type": "range", "id": "padding_top", "min": 0, "max": 160, "step": 4, "unit": "px", "label": "Top padding", "default": 96 },
+    { "type": "range", "id": "padding_bottom", "min": 0, "max": 160, "step": 4, "unit": "px", "label": "Bottom padding", "default": 96 }
+  ],
+  "blocks": [
+    {
+      "type": "object",
+      "name": "Object",
+      "settings": [
+        { "type": "product", "id": "product", "label": "Product" },
+        { "type": "image_picker", "id": "image", "label": "Editorial image override", "info": "Uses the product image when left blank." },
+        { "type": "text", "id": "title", "label": "Editorial title override", "info": "Uses the product title when left blank." },
+        { "type": "text", "id": "descriptor", "label": "Category descriptor", "default": "Object / 01" },
+        { "type": "text", "id": "link_label", "label": "Link label", "default": "Explore object" },
+        { "type": "url", "id": "link", "label": "Link override", "info": "Uses the product link when left blank." },
+        { "type": "select", "id": "emphasis", "label": "Layout emphasis", "options": [{ "value": "feature", "label": "Feature" }, { "value": "standard", "label": "Standard" }, { "value": "wide", "label": "Wide" }], "default": "standard" }
+      ]
+    }
+  ],
+  "presets": [{ "name": "Teklo — Selected objects", "blocks": [{ "type": "object", "settings": { "emphasis": "feature" } }, { "type": "object" }, { "type": "object", "settings": { "emphasis": "wide" } }] }]
+}
+{% endschema %}

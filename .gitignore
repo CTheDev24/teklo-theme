@@ -1,0 +1,3 @@
+.shopify-preview-*.log
+.shopify-preview.pid
+review/loop*.log

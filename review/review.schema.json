@@ -1,0 +1,48 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["verdict", "summary", "findings", "evidence", "theme_check", "human_decision"],
+  "properties": {
+    "verdict": { "type": "string", "enum": ["accepted", "revise", "human_review"] },
+    "summary": { "type": "string", "minLength": 1 },
+    "findings": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["severity", "criterion", "description", "action"],
+        "properties": {
+          "severity": { "type": "string", "enum": ["blocking", "major", "minor"] },
+          "criterion": { "type": "string", "minLength": 1 },
+          "description": { "type": "string", "minLength": 1 },
+          "action": { "type": "string", "minLength": 1 }
+        }
+      }
+    },
+    "evidence": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["source", "desktop", "mobile"],
+      "properties": {
+        "source": { "type": "string", "enum": ["local_fixture", "shopify_preview"] },
+        "desktop": {
+          "type": "object", "additionalProperties": false,
+          "required": ["path", "width", "height", "sufficient", "notes"],
+          "properties": { "path": { "type": "string" }, "width": { "type": "integer" }, "height": { "type": "integer" }, "sufficient": { "type": "boolean" }, "notes": { "type": "string" } }
+        },
+        "mobile": {
+          "type": "object", "additionalProperties": false,
+          "required": ["path", "width", "height", "sufficient", "notes"],
+          "properties": { "path": { "type": "string" }, "width": { "type": "integer" }, "height": { "type": "integer" }, "sufficient": { "type": "boolean" }, "notes": { "type": "string" } }
+        }
+      }
+    },
+    "theme_check": {
+      "type": "object", "additionalProperties": false,
+      "required": ["completed", "new_attributable_warnings", "notes"],
+      "properties": { "completed": { "type": "boolean" }, "new_attributable_warnings": { "type": "integer" }, "notes": { "type": "string" } }
+    },
+    "human_decision": { "type": "string" }
+  }
+}

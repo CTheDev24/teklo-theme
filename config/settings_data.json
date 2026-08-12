@@ -15,24 +15,24 @@
       "color_schemes": {
         "scheme-1": {
           "settings": {
-            "background": "#ffffff",
-            "background_gradient": "radial-gradient(rgba(179, 164, 255, 1), rgba(255, 255, 255, 1) 79%, rgba(255, 255, 255, 1) 97%)",
-            "text": "#121212",
+            "background": "#F4F1EA",
+            "background_gradient": "",
+            "text": "#171717",
             "button": "#000000",
             "button_label": "#ffffff",
-            "secondary_button_label": "#121212",
-            "shadow": "#121212"
+            "secondary_button_label": "#171717",
+            "shadow": "#171717"
           }
         },
         "scheme-2": {
           "settings": {
             "background": "#ffffff",
             "background_gradient": "",
-            "text": "#121212",
-            "button": "#121212",
+            "text": "#171717",
+            "button": "#171717",
             "button_label": "#ffffff",
-            "secondary_button_label": "#121212",
-            "shadow": "#121212"
+            "secondary_button_label": "#171717",
+            "shadow": "#171717"
           }
         },
         "scheme-3": {
@@ -48,11 +48,11 @@
         },
         "scheme-4": {
           "settings": {
-            "background": "#000000",
+            "background": "#171717",
             "background_gradient": "",
             "text": "#ffffff",
             "button": "#ffffff",
-            "button_label": "#000000",
+            "button_label": "#171717",
             "secondary_button_label": "#ffffff",
             "shadow": "#121212"
           }
@@ -69,7 +69,7 @@
           }
         }
       },
-      "type_header_font": "newsreader_n4",
+      "type_header_font": "archivo_n4",
       "heading_scale": 130,
       "type_body_font": "archivo_n4",
       "body_scale": 100,

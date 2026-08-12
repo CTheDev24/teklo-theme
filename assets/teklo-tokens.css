@@ -1,0 +1,59 @@
+:root {
+  --teklo-font-body: var(--font-body-family);
+  --teklo-font-display: var(--font-heading-family);
+  --teklo-text-caption: clamp(1.1rem, 1vw, 1.2rem);
+  --teklo-text-small: clamp(1.3rem, 1vw, 1.4rem);
+  --teklo-text-body: clamp(1.5rem, 1.2vw, 1.7rem);
+  --teklo-text-lead: clamp(1.8rem, 1.8vw, 2.4rem);
+  --teklo-heading-sm: clamp(2.4rem, 3vw, 4rem);
+  --teklo-heading-md: clamp(3.6rem, 6vw, 7.2rem);
+  --teklo-heading-display: clamp(4.8rem, 9vw, 11rem);
+  --teklo-leading-tight: 0.94;
+  --teklo-leading-body: 1.55;
+  --teklo-tracking-label: 0.12em;
+  --teklo-space-1: 0.4rem;
+  --teklo-space-2: 0.8rem;
+  --teklo-space-3: 1.2rem;
+  --teklo-space-4: 1.6rem;
+  --teklo-space-6: 2.4rem;
+  --teklo-space-8: 3.2rem;
+  --teklo-space-12: 4.8rem;
+  --teklo-space-16: 6.4rem;
+  --teklo-space-24: 9.6rem;
+  --teklo-space-32: 12.8rem;
+  --teklo-width-wide: 160rem;
+  --teklo-width-content: 128rem;
+  --teklo-width-reading: 76rem;
+  --teklo-page-gutter: clamp(1.6rem, 4vw, 6.4rem);
+}
+
+.teklo-page-width {
+  width: min(100%, var(--teklo-width-content));
+  margin-inline: auto;
+  padding-inline: var(--teklo-page-gutter);
+}
+
+.teklo-page-width--wide { max-width: var(--teklo-width-wide); }
+.teklo-page-width--reading { max-width: var(--teklo-width-reading); }
+
+.teklo-label {
+  font-size: var(--teklo-text-caption);
+  letter-spacing: var(--teklo-tracking-label);
+  line-height: 1.2;
+  text-transform: uppercase;
+}
+
+.teklo-link {
+  color: inherit;
+  text-decoration-thickness: 0.1rem;
+  text-underline-offset: 0.35em;
+}
+
+.teklo-link:focus-visible {
+  outline: 0.2rem solid currentColor;
+  outline-offset: 0.4rem;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .teklo-motion { transition: none !important; }
+}

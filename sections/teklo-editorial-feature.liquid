@@ -1,0 +1,37 @@
+{{ 'section-teklo-editorial-feature.css' | asset_url | stylesheet_tag }}
+{%- if section.settings.video != blank or section.settings.mobile_video != blank -%}<script src="{{ 'teklo-media.js' | asset_url }}" defer="defer"></script>{%- endif -%}
+{%- liquid
+  assign poster = section.settings.image | default: section.settings.video.preview_image
+  assign mobile_poster = section.settings.mobile_image | default: poster
+  if section.settings.height == 'large'
+    assign feature_height = '90svh'
+  else
+    assign feature_height = '72svh'
+  endif
+-%}
+<div class="teklo-editorial teklo-editorial--{{ section.settings.layout }} teklo-editorial--{{ section.settings.media_side }} color-{{ section.settings.color_scheme }} gradient" data-teklo-media style="--teklo-editorial-height:{{ feature_height }};--teklo-overlay:{{ section.settings.overlay | divided_by: 100.0 }};--teklo-media-position:{{ section.settings.focal_point }}">
+  <div class="teklo-editorial__frame{% if section.settings.layout == 'overlay' %} page-width--full{% else %} page-width{% endif %}">
+    <div class="teklo-editorial__media" aria-hidden="true">
+      <picture>
+        {%- if section.settings.mobile_image != blank -%}<source media="(max-width: 749px)" srcset="{{ mobile_poster | image_url: width: 1200 }}">{%- endif -%}
+        {%- if poster != blank -%}{{ poster | image_url: width: 2400 | image_tag: widths: '550, 750, 1100, 1500, 2000, 2400', sizes: '100vw', loading: 'lazy', alt: '' }}{%- elsif section.settings.eyebrow contains 'TRACE' -%}<img src="{{ 'placeholder-trace-section.png' | asset_url }}" alt="" width="1536" height="1024" loading="lazy">{%- else -%}<img src="{{ 'placeholder-lighting-desktop.png' | asset_url }}" alt="" width="1672" height="941" loading="lazy">{%- endif -%}
+      </picture>
+      {%- if section.settings.mobile_video != blank -%}{{ section.settings.mobile_video | video_tag: autoplay: false, loop: true, muted: true, playsinline: true, controls: false, preload: 'none', class: 'teklo-editorial__video teklo-editorial__video--mobile' }}{%- endif -%}
+      {%- if section.settings.video != blank -%}{{ section.settings.video | video_tag: autoplay: false, loop: true, muted: true, playsinline: true, controls: false, preload: 'none', class: 'teklo-editorial__video teklo-editorial__video--desktop' }}{%- endif -%}
+      <div class="teklo-editorial__overlay"></div>
+    </div>
+    <div class="teklo-editorial__content{% if section.settings.layout == 'overlay' %} page-width{% endif %}">
+      <div class="teklo-editorial__copy">
+        {%- if section.settings.eyebrow != blank -%}<p class="teklo-editorial__eyebrow">{{ section.settings.eyebrow | escape }}</p>{%- endif -%}
+        {%- if section.settings.heading != blank -%}<h2 class="teklo-editorial__heading">{{ section.settings.heading }}</h2>{%- endif -%}
+        {%- if section.settings.text != blank -%}<div class="teklo-editorial__text rte">{{ section.settings.text }}</div>{%- endif -%}
+        {%- if section.settings.link_label != blank and section.settings.link != blank -%}<a class="teklo-editorial__link" href="{{ section.settings.link }}">{{ section.settings.link_label | escape }} <span aria-hidden="true">→</span></a>{%- endif -%}
+        {%- if section.blocks.size > 0 -%}<ol class="teklo-editorial__steps">{%- for block in section.blocks -%}<li class="teklo-editorial__step" {{ block.shopify_attributes }}>{{ block.settings.label | escape }}</li>{%- endfor -%}</ol>{%- endif -%}
+      </div>
+    </div>
+  </div>
+</div>
+{% schema %}
+{"name":"Teklo editorial feature","tag":"section","class":"section","disabled_on":{"groups":["header","footer"]},"max_blocks":3,"settings":[
+{"type":"text","id":"eyebrow","label":"Eyebrow","default":"The studio"},{"type":"inline_richtext","id":"heading","label":"Heading","default":"Made through process"},{"type":"richtext","id":"text","label":"Text","default":"<p>A study in material, proportion, and light.</p>"},{"type":"text","id":"link_label","label":"Link label","default":"Discover the collection"},{"type":"url","id":"link","label":"Link"},{"type":"image_picker","id":"image","label":"Desktop image"},{"type":"image_picker","id":"mobile_image","label":"Mobile image (optional)"},{"type":"video","id":"video","label":"Desktop video (optional)"},{"type":"video","id":"mobile_video","label":"Mobile video (optional)"},{"type":"select","id":"focal_point","label":"Media focal point","default":"center center","options":[{"value":"left center","label":"Left"},{"value":"center center","label":"Center"},{"value":"right center","label":"Right"}]},{"type":"select","id":"layout","label":"Layout","default":"overlay","options":[{"value":"overlay","label":"Media overlay"},{"value":"split","label":"Split"}]},{"type":"select","id":"media_side","label":"Media side (split layout)","default":"left","options":[{"value":"left","label":"Left"},{"value":"right","label":"Right"}]},{"type":"select","id":"height","label":"Media height","default":"large","options":[{"value":"medium","label":"Medium"},{"value":"large","label":"Large"}]},{"type":"range","id":"overlay","min":0,"max":80,"step":5,"unit":"%","label":"Overlay opacity","default":45},{"type":"color_scheme","id":"color_scheme","label":"Color scheme","default":"scheme-4"}],"blocks":[{"type":"step","name":"Process step","settings":[{"type":"text","id":"label","label":"Label","default":"Map"}]}],"presets":[{"name":"Teklo editorial — Trace","blocks":[{"type":"step","settings":{"label":"Run"}},{"type":"step","settings":{"label":"Map"}},{"type":"step","settings":{"label":"Make"}}]},{"name":"Teklo editorial — Lighting","settings":{"eyebrow":"Lighting","heading":"Form shaped by light","text":"","link_label":"Explore lighting"}}]}
+{% endschema %}
