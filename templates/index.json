@@ -12,11 +12,14 @@
     "teklo_hero": {
       "type": "teklo-hero-film",
       "settings": {
+        "video": "shopify://files/videos/IMG-3387.MOV",
+        "focal_point": "center center",
         "heading": "DESIGNED THROUGH PROCESS.",
         "text": "<p>Contemporary objects shaped through design, digital craft, and considered making.</p>",
         "primary_label": "SHOP OBJECTS",
         "primary_link": "shopify://collections/all",
         "secondary_label": "",
+        "secondary_link": "",
         "alignment": "left",
         "vertical_position": "bottom",
         "height": "viewport",
@@ -27,62 +30,288 @@
     "selected_objects": {
       "type": "teklo-selected-objects",
       "blocks": {
-        "object_1": { "type": "object", "settings": { "title": "Boho Wall Planter", "descriptor": "Sculptural wall planter", "link_label": "Explore", "emphasis": "feature" } },
-        "object_2": { "type": "object", "settings": { "title": "Trace — Personalized Route Art", "descriptor": "Dimensional route artwork", "link_label": "Explore", "emphasis": "standard" } },
-        "object_3": { "type": "object", "settings": { "title": "Ambient Lighting", "descriptor": "Sculptural ambient light", "link_label": "Explore", "emphasis": "wide" } }
+        "object_1": {
+          "type": "object",
+          "settings": {
+            "product": "",
+            "title": "Boho Wall Planter",
+            "descriptor": "Sculptural wall planter",
+            "link_label": "Explore",
+            "link": "",
+            "emphasis": "feature"
+          }
+        },
+        "object_2": {
+          "type": "object",
+          "settings": {
+            "product": "",
+            "title": "Trace — Personalized Route Art",
+            "descriptor": "Dimensional route artwork",
+            "link_label": "Explore",
+            "link": "",
+            "emphasis": "standard"
+          }
+        },
+        "object_3": {
+          "type": "object",
+          "settings": {
+            "product": "",
+            "title": "Ambient Lighting",
+            "descriptor": "Sculptural ambient light",
+            "link_label": "Explore",
+            "link": "",
+            "emphasis": "wide"
+          }
+        }
       },
-      "block_order": ["object_1", "object_2", "object_3"],
-      "settings": { "eyebrow": "SELECTED OBJECTS", "heading": "Made for the spaces you live in.", "color_scheme": "scheme-1", "padding_top": 96, "padding_bottom": 96 }
+      "block_order": [
+        "object_1",
+        "object_2",
+        "object_3"
+      ],
+      "settings": {
+        "eyebrow": "SELECTED OBJECTS",
+        "heading": "Made for the spaces you live in.",
+        "intro": "",
+        "color_scheme": "scheme-1",
+        "padding_top": 96,
+        "padding_bottom": 96
+      }
     },
     "trace": {
       "type": "teklo-editorial-feature",
       "blocks": {
-        "run": { "type": "step", "settings": { "label": "RUN" } },
-        "map": { "type": "step", "settings": { "label": "MAP" } },
-        "make": { "type": "step", "settings": { "label": "MAKE" } }
+        "run": {
+          "type": "step",
+          "settings": {
+            "label": "RUN"
+          }
+        },
+        "map": {
+          "type": "step",
+          "settings": {
+            "label": "MAP"
+          }
+        },
+        "make": {
+          "type": "step",
+          "settings": {
+            "label": "MAKE"
+          }
+        }
       },
-      "block_order": ["run", "map", "make"],
-      "settings": { "eyebrow": "TRACE / BY TEKLO", "heading": "A route worth remembering.", "text": "<p>Your miles become the starting point. Trace transforms a completed route into dimensional artwork built around the places that made it yours.</p>", "link_label": "", "focal_point": "center center", "layout": "overlay", "media_side": "left", "height": "large", "overlay": 45, "color_scheme": "scheme-4" }
+      "block_order": [
+        "run",
+        "map",
+        "make"
+      ],
+      "settings": {
+        "eyebrow": "TRACE / BY TEKLO",
+        "heading": "A route worth remembering.",
+        "text": "<p>Your miles become the starting point. Trace transforms a completed route into dimensional artwork built around the places that made it yours.</p>",
+        "link_label": "",
+        "link": "",
+        "focal_point": "center center",
+        "layout": "overlay",
+        "media_side": "left",
+        "height": "large",
+        "overlay": 45,
+        "color_scheme": "scheme-4"
+      }
     },
     "lighting": {
       "type": "teklo-editorial-feature",
-      "settings": { "eyebrow": "", "heading": "Form changes when the light comes on.", "text": "", "link_label": "", "focal_point": "center center", "layout": "overlay", "media_side": "left", "height": "large", "overlay": 45, "color_scheme": "scheme-4" }
+      "settings": {
+        "eyebrow": "",
+        "heading": "Form changes when the light comes on.",
+        "text": "",
+        "link_label": "",
+        "link": "",
+        "focal_point": "center center",
+        "layout": "overlay",
+        "media_side": "left",
+        "height": "large",
+        "overlay": 45,
+        "color_scheme": "scheme-4"
+      }
     },
     "more_from_studio": {
       "type": "featured-collection",
-      "settings": { "collection": "all", "products_to_show": 4, "title": "MORE FROM THE STUDIO", "heading_size": "h2", "description": "", "show_description": false, "description_style": "body", "presentation": "teklo", "editorial_title_1": "", "editorial_title_2": "", "editorial_title_3": "", "editorial_title_4": "", "columns_desktop": 4, "enable_desktop_slider": false, "full_width": false, "show_view_all": true, "view_all_label": "View all objects →", "view_all_style": "link", "color_scheme": "scheme-1", "image_ratio": "square", "image_shape": "default", "show_secondary_image": true, "show_vendor": false, "show_rating": false, "quick_add": "none", "columns_mobile": "2", "swipe_on_mobile": false, "padding_top": 96, "padding_bottom": 96 }
+      "settings": {
+        "presentation": "teklo",
+        "collection": "all",
+        "products_to_show": 4,
+        "title": "MORE FROM THE STUDIO",
+        "heading_size": "h2",
+        "description": "",
+        "show_description": false,
+        "description_style": "body",
+        "editorial_title_1": "",
+        "editorial_title_2": "",
+        "editorial_title_3": "",
+        "editorial_title_4": "",
+        "columns_desktop": 4,
+        "enable_desktop_slider": false,
+        "full_width": false,
+        "show_view_all": true,
+        "view_all_label": "View all objects →",
+        "view_all_style": "link",
+        "color_scheme": "scheme-1",
+        "image_ratio": "square",
+        "image_shape": "default",
+        "show_secondary_image": true,
+        "show_vendor": false,
+        "show_rating": false,
+        "quick_add": "none",
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 96,
+        "padding_bottom": 96
+      }
     },
     "made_at_teklo": {
       "type": "teklo-process",
       "blocks": {
-        "form": { "type": "step", "settings": { "number": "01", "title": "FORM", "text": "<p>Ideas take shape in the digital world.</p>" } },
-        "make": { "type": "step", "settings": { "number": "02", "title": "MAKE", "text": "<p>Layer by layer, objects are fabricated.</p>" } },
-        "finish": { "type": "step", "settings": { "number": "03", "title": "FINISH", "text": "<p>Assembly, testing, soldering, inspection, hardware, finishing.</p>" } },
-        "send": { "type": "step", "settings": { "number": "04", "title": "SEND", "text": "<p>Carefully packed, checked, and prepared for its journey.</p>" } }
+        "form": {
+          "type": "step",
+          "settings": {
+            "number": "01",
+            "title": "FORM",
+            "text": "<p>Ideas take shape in the digital world.</p>"
+          }
+        },
+        "make": {
+          "type": "step",
+          "settings": {
+            "number": "02",
+            "title": "MAKE",
+            "text": "<p>Layer by layer, objects are fabricated.</p>"
+          }
+        },
+        "finish": {
+          "type": "step",
+          "settings": {
+            "number": "03",
+            "title": "FINISH",
+            "text": "<p>Assembly, testing, soldering, inspection, hardware, finishing.</p>"
+          }
+        },
+        "send": {
+          "type": "step",
+          "settings": {
+            "number": "04",
+            "title": "SEND",
+            "text": "<p>Carefully packed, checked, and prepared for its journey.</p>"
+          }
+        }
       },
-      "block_order": ["form", "make", "finish", "send"],
-      "settings": { "eyebrow": "MADE AT TEKLO", "heading": "From process, to object.", "button_label": "", "color_scheme": "scheme-1", "padding_top": 96, "padding_bottom": 96 }
+      "block_order": [
+        "form",
+        "make",
+        "finish",
+        "send"
+      ],
+      "settings": {
+        "eyebrow": "MADE AT TEKLO",
+        "heading": "From process, to object.",
+        "intro": "",
+        "button_label": "",
+        "button_link": "",
+        "color_scheme": "scheme-1",
+        "padding_top": 96,
+        "padding_bottom": 96
+      }
     },
     "in_their_space": {
       "type": "teklo-testimonials",
       "blocks": {
-        "testimonial_1": { "type": "testimonial", "settings": { "quote": "", "name": "", "context": "" } },
-        "testimonial_2": { "type": "testimonial", "settings": { "quote": "", "name": "", "context": "" } },
-        "testimonial_3": { "type": "testimonial", "settings": { "quote": "", "name": "", "context": "" } }
+        "testimonial_1": {
+          "type": "testimonial",
+          "settings": {
+            "quote": "",
+            "name": "",
+            "context": ""
+          }
+        },
+        "testimonial_2": {
+          "type": "testimonial",
+          "settings": {
+            "quote": "",
+            "name": "",
+            "context": ""
+          }
+        },
+        "testimonial_3": {
+          "type": "testimonial",
+          "settings": {
+            "quote": "",
+            "name": "",
+            "context": ""
+          }
+        }
       },
-      "block_order": ["testimonial_1", "testimonial_2", "testimonial_3"],
-      "settings": { "eyebrow": "", "heading": "IN THEIR SPACE", "rating_text": "", "count_text": "", "button_label": "", "color_scheme": "scheme-1", "padding_top": 96, "padding_bottom": 96 }
+      "block_order": [
+        "testimonial_1",
+        "testimonial_2",
+        "testimonial_3"
+      ],
+      "settings": {
+        "eyebrow": "",
+        "heading": "IN THEIR SPACE",
+        "rating_text": "",
+        "count_text": "",
+        "button_label": "",
+        "button_link": "",
+        "color_scheme": "scheme-1",
+        "padding_top": 96,
+        "padding_bottom": 96
+      }
     },
     "studio_notes": {
       "type": "newsletter",
       "blocks": {
-        "heading": { "type": "heading", "settings": { "heading": "New objects. Works in progress. Things worth making.", "heading_size": "h2" } },
-        "paragraph": { "type": "paragraph", "settings": { "text": "<p>Occasional notes from Teklo Studio — new releases, experiments, and behind-the-scenes work.</p>" } },
-        "form": { "type": "email_form", "settings": {} }
+        "heading": {
+          "type": "heading",
+          "settings": {
+            "heading": "New objects. Works in progress. Things worth making.",
+            "heading_size": "h2"
+          }
+        },
+        "paragraph": {
+          "type": "paragraph",
+          "settings": {
+            "text": "<p>Occasional notes from Teklo Studio — new releases, experiments, and behind-the-scenes work.</p>"
+          }
+        },
+        "form": {
+          "type": "email_form",
+          "settings": {}
+        }
       },
-      "block_order": ["heading", "paragraph", "form"],
-      "settings": { "presentation": "teklo", "eyebrow": "STUDIO NOTES", "submit_label": "JOIN", "color_scheme": "scheme-1", "full_width": true, "padding_top": 96, "padding_bottom": 96 }
+      "block_order": [
+        "heading",
+        "paragraph",
+        "form"
+      ],
+      "settings": {
+        "presentation": "teklo",
+        "eyebrow": "STUDIO NOTES",
+        "submit_label": "JOIN",
+        "color_scheme": "scheme-1",
+        "full_width": true,
+        "padding_top": 96,
+        "padding_bottom": 96
+      }
     }
   },
-  "order": ["teklo_hero", "selected_objects", "trace", "lighting", "more_from_studio", "made_at_teklo", "in_their_space", "studio_notes"]
+  "order": [
+    "teklo_hero",
+    "selected_objects",
+    "trace",
+    "lighting",
+    "more_from_studio",
+    "made_at_teklo",
+    "in_their_space",
+    "studio_notes"
+  ]
 }
