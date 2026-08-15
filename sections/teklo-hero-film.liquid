@@ -27,8 +27,16 @@
     else
       assign actions_align = 'flex-start'
   endcase
+  assign desktop_scrim_strength = section.settings.desktop_scrim_strength | divided_by: 100.0
+  unless section.settings.desktop_scrim_enabled
+    assign desktop_scrim_strength = 0
+  endunless
+  assign mobile_scrim_strength = section.settings.mobile_scrim_strength | divided_by: 100.0
+  unless section.settings.mobile_scrim_enabled
+    assign mobile_scrim_strength = 0
+  endunless
 -%}
-<div class="teklo-hero-film color-{{ section.settings.color_scheme }}" data-teklo-media style="--teklo-hero-height:{{ hero_height }};--teklo-overlay:{{ section.settings.overlay | divided_by: 100.0 }};--teklo-media-position:{{ section.settings.focal_point }};--teklo-content-y:{{ content_y }};--teklo-content-align:{{ section.settings.alignment }};--teklo-actions-align:{{ actions_align }}">
+<div class="teklo-hero-film teklo-hero-film--{{ section.settings.alignment }} color-{{ section.settings.color_scheme }}" data-teklo-media style="--teklo-hero-height:{{ hero_height }};--teklo-overlay:{{ section.settings.overlay | divided_by: 100.0 }};--teklo-media-position:{{ section.settings.focal_point }};--teklo-content-y:{{ content_y }};--teklo-content-align:{{ section.settings.alignment }};--teklo-actions-align:{{ actions_align }};--teklo-scrim-strength:{{ desktop_scrim_strength }};--teklo-scrim-width:{{ section.settings.desktop_scrim_width }}%;--teklo-mobile-scrim-strength:{{ mobile_scrim_strength }};--teklo-mobile-scrim-width:{{ section.settings.mobile_scrim_width }}%">
   <div class="teklo-hero-film__media" aria-hidden="true">
     <picture class="teklo-hero-film__poster">
       {%- if section.settings.mobile_poster != blank -%}<source media="(max-width: 749px)" srcset="{{ mobile_poster | image_url: width: 1200 }}">{%- endif -%}
@@ -43,6 +51,7 @@
       </video>
     {%- endif -%}
     <div class="teklo-hero-film__shade"></div>
+    <div class="teklo-hero-film__scrim"></div>
   </div>
   <div class="teklo-hero-film__content page-width">
     <div class="teklo-hero-film__content-inner teklo-hero-film__content-inner--{{ section.settings.alignment }}">
@@ -57,5 +66,6 @@
 </div>
 {% schema %}
 {"name":"Teklo hero film","tag":"section","class":"section","disabled_on":{"groups":["header","footer"]},"settings":[
+{"type":"header","content":"Desktop text scrim"},{"type":"checkbox","id":"desktop_scrim_enabled","label":"Enable text scrim","default":true},{"type":"range","id":"desktop_scrim_strength","min":0,"max":70,"step":2,"unit":"%","label":"Scrim strength","default":42},{"type":"range","id":"desktop_scrim_width","min":35,"max":75,"step":5,"unit":"%","label":"Scrim width / fade distance","default":55},{"type":"header","content":"Mobile text scrim"},{"type":"checkbox","id":"mobile_scrim_enabled","label":"Enable text scrim","default":true},{"type":"range","id":"mobile_scrim_strength","min":0,"max":70,"step":2,"unit":"%","label":"Scrim strength","default":42},{"type":"range","id":"mobile_scrim_width","min":35,"max":100,"step":5,"unit":"%","label":"Scrim width / fade distance","default":55},
 {"type":"video","id":"video","label":"Desktop video"},{"type":"video","id":"mobile_video","label":"Mobile video (optional)"},{"type":"image_picker","id":"poster","label":"Desktop poster"},{"type":"image_picker","id":"mobile_poster","label":"Mobile poster (optional)"},{"type":"select","id":"focal_point","label":"Media focal point","default":"center center","options":[{"value":"left center","label":"Left"},{"value":"center center","label":"Center"},{"value":"right center","label":"Right"}]},{"type":"inline_richtext","id":"heading","label":"Heading","default":"Objects with intention"},{"type":"richtext","id":"text","label":"Text","default":"<p>Original pieces for considered spaces.</p>"},{"type":"text","id":"primary_label","label":"Primary button label","default":"Shop objects"},{"type":"url","id":"primary_link","label":"Primary button link"},{"type":"text","id":"secondary_label","label":"Secondary button label","default":"Our studio"},{"type":"url","id":"secondary_link","label":"Secondary button link"},{"type":"select","id":"alignment","label":"Text alignment","default":"left","options":[{"value":"left","label":"Left"},{"value":"center","label":"Center"},{"value":"right","label":"Right"}]},{"type":"select","id":"vertical_position","label":"Vertical position","default":"bottom","options":[{"value":"top","label":"Top"},{"value":"center","label":"Center"},{"value":"bottom","label":"Bottom"}]},{"type":"select","id":"height","label":"Section height","default":"viewport","options":[{"value":"medium","label":"Medium"},{"value":"large","label":"Large"},{"value":"viewport","label":"Full viewport"}]},{"type":"range","id":"overlay","min":0,"max":80,"step":5,"unit":"%","label":"Overlay opacity","default":30},{"type":"color_scheme","id":"color_scheme","label":"Color scheme","default":"scheme-4"}],"presets":[{"name":"Teklo hero film"}]}
 {% endschema %}
