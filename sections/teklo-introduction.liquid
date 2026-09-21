@@ -29,7 +29,7 @@
     {% if section.settings.detail_image != blank or section.settings.detail_caption != blank %}
       <div class="teklo-introduction__column teklo-introduction__detail{% if section.settings.detail_image == blank %} teklo-introduction__detail--text{% endif %}">
         {% if section.settings.detail_image != blank %}
-          {{ section.settings.detail_image | image_url: width: 1000 | image_tag: widths: '300,500,750,1000', sizes: '(min-width: 990px) 21vw, 65vw', loading: 'lazy', class: 'teklo-introduction__detail-image' }}
+          {{ section.settings.detail_image | image_url: width: 1000 | image_tag: widths: '300,500,750,1000', sizes: '(min-width: 990px) 21vw, 65vw', loading: 'lazy', class: 'teklo-introduction__detail-image', alt: 'Close-up of a Trace raised city map and orange race route' }}
         {% endif %}
         {% if section.settings.detail_caption != blank %}<p class="teklo-introduction__caption">{{ section.settings.detail_caption | escape | newline_to_br }}</p>{% endif %}
       </div>

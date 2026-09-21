@@ -20,7 +20,7 @@
             "title": "Curated objects",
             "copy": "<p>Objects from Teklo, including Trace.</p>",
             "use_trace_image": false,
-            "image": "shopify://shop_images/IMG-0423.png"
+            "image": "shopify://shop_images/A122129A-FE1C-4FE3-BFD1-0989902E26F3.jpg"
           }
         },
         "fabrication": {
@@ -28,7 +28,8 @@
           "settings": {
             "enabled": true,
             "title": "Design & fabrication",
-            "copy": "<p>Custom design, fabrication, and reverse engineering.</p>"
+            "copy": "<p>Custom design, fabrication, and reverse engineering.</p>",
+            "image": "shopify://shop_images/9A8B0F62-330B-40DA-9E77-34DF56411D72.jpg"
           }
         },
         "experiments": {
@@ -51,7 +52,8 @@
           "settings": {
             "enabled": true,
             "title": "Tent-pole connector",
-            "copy": "<p>A tent-pole connector, reverse engineered for a friend.</p>"
+            "copy": "<p>A tent-pole connector, reverse engineered for a friend.</p>",
+            "image": "shopify://shop_images/9A8B0F62-330B-40DA-9E77-34DF56411D72.jpg"
           }
         },
         "professional": {

@@ -3,7 +3,7 @@
   <div class="teklo-launch__intro"><p class="teklo-launch__label">{{ section.settings.eyebrow | escape }}</p><h2 id="TraceTitle-{{ section.id }}">{{ section.settings.heading | escape }}</h2><div class="rte">{{ section.settings.intro }}</div></div>
   <div class="teklo-launch__card">
     <div class="teklo-launch__media">
-      {% if section.settings.image != blank %}{{ section.settings.image | image_url: width: 1800 | image_tag: loading: 'lazy', widths: '600, 900, 1200, 1800', sizes: '(min-width: 990px) 55vw, 100vw' }}{% else %}<img src="{{ 'placeholder-trace-section.png' | asset_url }}" width="1536" height="1024" loading="lazy" alt="Trace dimensional route artwork in a frame">{% endif %}
+      {% if section.settings.image != blank %}{{ section.settings.image | image_url: width: 1800 | image_tag: loading: 'lazy', widths: '600, 900, 1200, 1800', sizes: '(min-width: 990px) 55vw, 100vw', alt: 'Trace race artwork with a raised city map and orange route, shown beside a finisher medal' }}{% else %}<img src="{{ 'placeholder-trace-section.png' | asset_url }}" width="1536" height="1024" loading="lazy" alt="Trace dimensional route artwork in a frame">{% endif %}
     </div>
     <div class="teklo-launch__details"><p class="teklo-launch__label">{{ section.settings.card_eyebrow | escape }}</p><h3>{{ section.settings.card_heading | escape }}</h3><div class="rte">{{ section.settings.copy }}</div>
       <dl>{% for block in section.blocks %}{% if block.type == 'spec' %}<div {{ block.shopify_attributes }}><dt>{{ block.settings.label | escape }}</dt><dd>{{ block.settings.value | escape }}</dd></div>{% endif %}{% endfor %}</dl>

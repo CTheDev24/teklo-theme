@@ -25,7 +25,7 @@
           {% if block.type == 'offering' and block.settings.enabled and block.settings.title != blank %}
             <article class="teklo-studio__offering" {{ block.shopify_attributes }}>
               {% if block.settings.image != blank %}
-                {{ block.settings.image | image_url: width: 1200 | image_tag: widths: '375,550,750,990,1200', sizes: '(min-width: 990px) 33vw, 100vw', loading: 'lazy', class: 'teklo-studio__image' }}
+                {{ block.settings.image | image_url: width: 1200 | image_tag: widths: '375,550,750,990,1200', sizes: '(min-width: 990px) 33vw, 100vw', loading: 'lazy', class: 'teklo-studio__image', alt: block.settings.title }}
               {% elsif block.settings.use_trace_image %}
                 <img class="teklo-studio__image" src="{{ 'placeholder-trace-lifestyle-front.png' | asset_url }}" alt="Trace route artwork" width="1536" height="1024" loading="lazy">
               {% endif %}
@@ -47,7 +47,7 @@
           {% for block in section.blocks %}
             {% if block.type == 'project' and block.settings.enabled and block.settings.title != blank %}
               <article class="teklo-studio__project" {{ block.shopify_attributes }}>
-                {% if block.settings.image != blank %}{{ block.settings.image | image_url: width: 1600 | image_tag: widths: '375,550,750,1100,1600', sizes: '(min-width: 990px) 50vw, 100vw', loading: 'lazy', class: 'teklo-studio__image' }}{% endif %}
+                {% if block.settings.image != blank %}{{ block.settings.image | image_url: width: 1600 | image_tag: widths: '375,550,750,1100,1600', sizes: '(min-width: 990px) 50vw, 100vw', loading: 'lazy', class: 'teklo-studio__image', alt: block.settings.title }}{% endif %}
                 <h3>{{ block.settings.title | escape }}</h3>
                 {% if block.settings.copy != blank %}<div class="rte">{{ block.settings.copy }}</div>{% endif %}
                 {% if block.settings.link != blank and block.settings.link_label != blank %}<a class="teklo-studio__link" href="{{ block.settings.link }}">{{ block.settings.link_label | escape }} <span aria-hidden="true">↗</span></a>{% endif %}
