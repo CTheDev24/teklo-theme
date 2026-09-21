@@ -1,0 +1,12 @@
+{% doc %}
+  Captures a customer-visible reference for matching each Trace cart line to intake.
+  @param {string} product_form_id - Unique native product form ID.
+{% enddoc %}
+<div class="product-form__input" data-trace-piece>
+  <label class="form__label" for="TracePiece-{{ product_form_id }}">{{ 'teklo.launch.piece_reference' | t }}</label>
+  <input class="field__input" id="TracePiece-{{ product_form_id }}" type="text" name="properties[Piece reference]" required maxlength="80" pattern=".*\S.*" aria-describedby="TracePieceHelp-{{ product_form_id }}">
+  <p id="TracePieceHelp-{{ product_form_id }}">{{ 'teklo.launch.piece_help' | t }}</p>
+  <label class="form__label" for="TraceGift-{{ product_form_id }}">{{ 'teklo.launch.gift_note' | t }}</label>
+  <textarea class="text-area field__input" id="TraceGift-{{ product_form_id }}" name="properties[Gift note]" maxlength="500"></textarea>
+  <p>{{ 'teklo.launch.workflow_pending' | t }} <a href="{{ routes.root_url }}pages/contact">{{ 'teklo.launch.contact' | t }}</a></p>
+</div>

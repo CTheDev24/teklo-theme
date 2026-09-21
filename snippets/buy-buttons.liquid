@@ -24,6 +24,11 @@
       endif
     -%}
 
+    {%- assign is_trace = false -%}
+    {%- if product.handle == 'personalized-3d-race-map-custom-gpx-running-wall-art-marathon-finisher-gift' -%}
+      {%- assign is_trace = true -%}
+      {%- assign show_dynamic_checkout = false -%}
+    {%- endif -%}
     <product-form
       class="product-form"
       data-hide-errors="{{ gift_card_recipient_feature_active }}"
@@ -60,6 +65,9 @@
           {%- render 'gift-card-recipient-form', product: product, form: form, section: section -%}
         {%- endif -%}
 
+        {% if is_trace %}
+          {% render 'trace-piece-fields', product_form_id: product_form_id %}
+        {% endif %}
         <div class="product-form__buttons">
           {%- liquid
             assign check_against_inventory = true
