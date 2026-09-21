@@ -64,6 +64,10 @@
       "next_slide": "Slinkti dešinėn",
       "previous_slide": "Slinkti kairėn",
       "name": "Slankiklis"
+    },
+    "teklo_media": {
+      "play": "Play video",
+      "pause": "Pause video"
     }
   },
   "newsletter": {
@@ -234,6 +238,10 @@
     }
   },
   "templates": {
+    "404": {
+      "title": "Puslapis nerastas",
+      "subtext": "404"
+    },
     "search": {
       "no_results": "Nerasta jokių rezultatų pagal užklausą „{{ terms }}“. Patikrinkite rašybą arba vartokite kitą žodį ar frazę.",
       "page": "Puslapis",
@@ -288,9 +296,15 @@
         "title": "Kontaktinė forma"
       }
     },
-    "404": {
-      "title": "Puslapis nerastas",
-      "subtext": "404"
+    "custom_work": {
+      "project_description": "Project description",
+      "organization": "Organization",
+      "timing": "Desired timing",
+      "budget": "Budget guidance",
+      "reference": "Reference link",
+      "optional": "optional",
+      "required_note": "Fields marked * are required.",
+      "send": "Send Project Inquiry"
     }
   },
   "sections": {
@@ -559,6 +573,14 @@
       "send_on_label": "Išsiuntimo data (pasirinktinai)",
       "expanded": "Išskleista dovanų kortelės gavėjo forma",
       "collapsed": "Suskleista dovanų kortelės gavėjo forma"
+    }
+  },
+  "teklo": {
+    "navigation": {
+      "shop": "Shop",
+      "trace": "Trace",
+      "studio": "Studio",
+      "custom_work": "Custom Work"
     }
   }
 }

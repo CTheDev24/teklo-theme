@@ -64,6 +64,10 @@
       "next_slide": "Scorri verso destra",
       "previous_slide": "Scorri verso sinistra",
       "name": "Cursore"
+    },
+    "teklo_media": {
+      "play": "Play video",
+      "pause": "Pause video"
     }
   },
   "newsletter": {
@@ -230,6 +234,10 @@
     }
   },
   "templates": {
+    "404": {
+      "title": "Pagina non trovata",
+      "subtext": "404"
+    },
     "search": {
       "no_results": "Nessun risultato per \"{{ terms }}\". Controlla l'ortografia o usa una parola o una frase diversa.",
       "page": "Pagina",
@@ -279,9 +287,15 @@
         "title": "Modulo di contatto"
       }
     },
-    "404": {
-      "title": "Pagina non trovata",
-      "subtext": "404"
+    "custom_work": {
+      "project_description": "Project description",
+      "organization": "Organization",
+      "timing": "Desired timing",
+      "budget": "Budget guidance",
+      "reference": "Reference link",
+      "optional": "optional",
+      "required_note": "Fields marked * are required.",
+      "send": "Send Project Inquiry"
     }
   },
   "sections": {
@@ -547,6 +561,14 @@
       "send_on_label": "Spedisci il giorno (opzionale)",
       "expanded": "Modulo destinatario del buono regalo espanso",
       "collapsed": "Modulo destinatario del buono regalo compresso"
+    }
+  },
+  "teklo": {
+    "navigation": {
+      "shop": "Shop",
+      "trace": "Trace",
+      "studio": "Studio",
+      "custom_work": "Custom Work"
     }
   }
 }

@@ -64,6 +64,10 @@
       "next_slide": "Snímek vpravo",
       "previous_slide": "Snímek vlevo",
       "name": "Posuvník"
+    },
+    "teklo_media": {
+      "play": "Play video",
+      "pause": "Pause video"
     }
   },
   "newsletter": {
@@ -234,6 +238,10 @@
     }
   },
   "templates": {
+    "404": {
+      "title": "Stránka nebyla nalezena",
+      "subtext": "404"
+    },
     "search": {
       "no_results": "Nebyly nalezeny žádné výsledky pro {{ terms }}. Zkontrolujte pravopis nebo zadejte jiné slovo či slovní spojení.",
       "title": "Výsledky hledání",
@@ -288,9 +296,15 @@
         "title": "Kontaktní formulář"
       }
     },
-    "404": {
-      "title": "Stránka nebyla nalezena",
-      "subtext": "404"
+    "custom_work": {
+      "project_description": "Project description",
+      "organization": "Organization",
+      "timing": "Desired timing",
+      "budget": "Budget guidance",
+      "reference": "Reference link",
+      "optional": "optional",
+      "required_note": "Fields marked * are required.",
+      "send": "Send Project Inquiry"
     }
   },
   "sections": {
@@ -559,6 +573,14 @@
       "send_on_label": "Datum odeslání (volitelné)",
       "expanded": "Formulář pro příjemce dárkové karty se rozbalil.",
       "collapsed": "Formulář pro příjemce dárkové karty se sbalil."
+    }
+  },
+  "teklo": {
+    "navigation": {
+      "shop": "Shop",
+      "trace": "Trace",
+      "studio": "Studio",
+      "custom_work": "Custom Work"
     }
   }
 }

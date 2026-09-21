@@ -9,7 +9,7 @@
     assign feature_height = '72svh'
   endif
 -%}
-<div class="teklo-editorial teklo-editorial--{{ section.settings.layout }} teklo-editorial--{{ section.settings.media_side }} color-{{ section.settings.color_scheme }} gradient" data-teklo-media style="--teklo-editorial-height:{{ feature_height }};--teklo-overlay:{{ section.settings.overlay | divided_by: 100.0 }};--teklo-media-position:{{ section.settings.focal_point }}">
+<div{% if section.settings.eyebrow contains 'TRACE' %} id="teklo-trace"{% endif %} class="teklo-editorial teklo-editorial--{{ section.settings.layout }} teklo-editorial--{{ section.settings.media_side }} color-{{ section.settings.color_scheme }} gradient" data-teklo-media style="--teklo-editorial-height:{{ feature_height }};--teklo-overlay:{{ section.settings.overlay | divided_by: 100.0 }};--teklo-media-position:{{ section.settings.focal_point }}">
   <div class="teklo-editorial__frame{% if section.settings.layout == 'overlay' %} page-width--full{% else %} page-width{% endif %}">
     <div class="teklo-editorial__media" aria-hidden="true">
       <picture>

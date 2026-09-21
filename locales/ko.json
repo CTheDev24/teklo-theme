@@ -64,6 +64,10 @@
       "next_slide": "오른쪽으로 슬라이드",
       "previous_slide": "왼쪽으로 슬라이드",
       "name": "슬라이더"
+    },
+    "teklo_media": {
+      "play": "Play video",
+      "pause": "Pause video"
     }
   },
   "newsletter": {
@@ -226,6 +230,10 @@
     }
   },
   "templates": {
+    "404": {
+      "title": "페이지를 찾을 수 없음",
+      "subtext": "404"
+    },
     "search": {
       "no_results": "\"{{ terms }}\"에 대한 검색 결과가 없습니다. 철자를 확인하거나 다른 단어/문구를 사용해 보십시오.",
       "results_with_count": {
@@ -270,9 +278,15 @@
         "title": "연락처 양식"
       }
     },
-    "404": {
-      "title": "페이지를 찾을 수 없음",
-      "subtext": "404"
+    "custom_work": {
+      "project_description": "Project description",
+      "organization": "Organization",
+      "timing": "Desired timing",
+      "budget": "Budget guidance",
+      "reference": "Reference link",
+      "optional": "optional",
+      "required_note": "Fields marked * are required.",
+      "send": "Send Project Inquiry"
     }
   },
   "sections": {
@@ -535,6 +549,14 @@
       "send_on_label": "전송 날짜(선택 사항)",
       "expanded": "기프트 카드 수신자 양식 펼치기",
       "collapsed": "기프트 카드 수신자 양식 접기"
+    }
+  },
+  "teklo": {
+    "navigation": {
+      "shop": "Shop",
+      "trace": "Trace",
+      "studio": "Studio",
+      "custom_work": "Custom Work"
     }
   }
 }

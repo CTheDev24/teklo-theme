@@ -1,0 +1,116 @@
+{{ 'teklo-custom-work.css' | asset_url | stylesheet_tag }}
+{% liquid
+  assign project_count = 0
+  for block in section.blocks
+    if block.settings.image != blank and block.settings.title != blank and block.settings.description != blank and block.settings.outcome != blank
+      assign project_count = project_count | plus: 1
+    endif
+  endfor
+  assign form_id = 'CustomWorkForm-' | append: section.id
+%}
+<div class="teklo-custom-work color-{{ section.settings.color_scheme }} gradient">
+  <div class="page-width">
+    <header class="teklo-custom-work__intro">
+      {% if section.settings.eyebrow != blank %}<p class="teklo-eyebrow">{{ section.settings.eyebrow | escape }}</p>{% endif %}
+      <h1>{{ section.settings.heading | escape }}</h1>
+      {% if section.settings.intro != blank %}<div class="rte">{{ section.settings.intro }}</div>{% endif %}
+    </header>
+    {% if project_count > 0 %}
+      <section class="teklo-custom-work__projects" aria-labelledby="Projects-{{ section.id }}">
+        <h2 id="Projects-{{ section.id }}">{{ section.settings.projects_heading | escape }}</h2>
+        <div class="teklo-custom-work__grid">
+          {% for block in section.blocks %}
+            {% if block.settings.image != blank and block.settings.title != blank and block.settings.description != blank and block.settings.outcome != blank %}
+              <article class="teklo-custom-work__project" {{ block.shopify_attributes }}>
+                {{ block.settings.image | image_url: width: 1600 | image_tag: widths: '375,550,750,1100,1600', sizes: '(min-width: 750px) 50vw, 100vw', loading: 'lazy' }}
+                <h3>{{ block.settings.title | escape }}</h3>
+                <div class="rte">{{ block.settings.description }}</div>
+                <p class="teklo-custom-work__outcome">{{ block.settings.outcome | escape }}</p>
+              </article>
+            {% endif %}
+          {% endfor %}
+        </div>
+      </section>
+    {% endif %}
+    <section id="inquiry" class="teklo-custom-work__inquiry" aria-labelledby="Inquiry-{{ section.id }}">
+      <div class="teklo-custom-work__inquiry-intro">
+        <h2 id="Inquiry-{{ section.id }}">{{ section.settings.form_heading | escape }}</h2>
+        {% if section.settings.form_intro != blank %}<div class="rte">{{ section.settings.form_intro }}</div>{% endif %}
+        <p class="teklo-custom-work__note">{{ 'templates.custom_work.required_note' | t }}</p>
+      </div>
+      {% form 'contact', id: form_id, class: 'teklo-custom-work__form', return_to: 'back' %}
+        <input type="hidden" name="contact[Inquiry type]" value="Custom Work">
+        {% if form.posted_successfully? %}
+          <p class="teklo-custom-work__status" role="status" tabindex="-1" autofocus>{{ 'templates.contact.form.post_success' | t }}</p>
+        {% elsif form.errors %}
+          <div class="teklo-custom-work__status" role="alert" tabindex="-1" autofocus>
+            <p>{{ 'templates.contact.form.error_heading' | t }}</p>
+            {{ form.errors | default_errors }}
+          </div>
+        {% endif %}
+        <div class="teklo-custom-work__fields">
+          <div class="teklo-custom-work__field">
+            <label for="{{ form_id }}-name">{{ 'templates.contact.form.name' | t }} <span aria-hidden="true">*</span></label>
+            <input id="{{ form_id }}-name" type="text" name="contact[name]" autocomplete="name" value="{{ form.name | default: customer.name | escape }}" required>
+          </div>
+          <div class="teklo-custom-work__field">
+            <label for="{{ form_id }}-email">{{ 'templates.contact.form.email' | t }} <span aria-hidden="true">*</span></label>
+            <input id="{{ form_id }}-email" type="email" name="contact[email]" autocomplete="email" autocapitalize="off" spellcheck="false" value="{{ form.email | default: customer.email | escape }}" required{% if form.errors contains 'email' %} aria-invalid="true" aria-describedby="{{ form_id }}-email-error"{% endif %}>
+            {% if form.errors contains 'email' %}<p id="{{ form_id }}-email-error">{{ form.errors.translated_fields.email | capitalize }} {{ form.errors.messages.email }}</p>{% endif %}
+          </div>
+          <div class="teklo-custom-work__field teklo-custom-work__field--full">
+            <label for="{{ form_id }}-organization">{{ 'templates.custom_work.organization' | t }} <span>({{ 'templates.custom_work.optional' | t }})</span></label>
+            <input id="{{ form_id }}-organization" type="text" name="contact[Organization]" autocomplete="organization" value="{{ form['Organization'] | escape }}">
+          </div>
+          <div class="teklo-custom-work__field teklo-custom-work__field--full">
+            <label for="{{ form_id }}-body">{{ 'templates.custom_work.project_description' | t }} <span aria-hidden="true">*</span></label>
+            <textarea id="{{ form_id }}-body" name="contact[body]" rows="7" required>{{ form.body | escape }}</textarea>
+          </div>
+          <div class="teklo-custom-work__field">
+            <label for="{{ form_id }}-timing">{{ 'templates.custom_work.timing' | t }} <span>({{ 'templates.custom_work.optional' | t }})</span></label>
+            <input id="{{ form_id }}-timing" type="text" name="contact[Desired timing]" value="{{ form['Desired timing'] | escape }}">
+          </div>
+          <div class="teklo-custom-work__field">
+            <label for="{{ form_id }}-budget">{{ 'templates.custom_work.budget' | t }} <span>({{ 'templates.custom_work.optional' | t }})</span></label>
+            <input id="{{ form_id }}-budget" type="text" name="contact[Budget guidance]" value="{{ form['Budget guidance'] | escape }}">
+          </div>
+          <div class="teklo-custom-work__field teklo-custom-work__field--full">
+            <label for="{{ form_id }}-reference">{{ 'templates.custom_work.reference' | t }} <span>({{ 'templates.custom_work.optional' | t }})</span></label>
+            <input id="{{ form_id }}-reference" type="url" name="contact[Reference link]" inputmode="url" value="{{ form['Reference link'] | escape }}">
+          </div>
+        </div>
+        <button class="teklo-custom-button" type="submit">{{ 'templates.custom_work.send' | t }}<span class="svg-wrapper" aria-hidden="true">{{ 'icon-arrow.svg' | inline_asset_content }}</span></button>
+      {% endform %}
+    </section>
+  </div>
+</div>
+{% schema %}
+{
+  "name": "Teklo — Custom work",
+  "tag": "section",
+  "class": "section",
+  "enabled_on": { "templates": ["page"] },
+  "max_blocks": 12,
+  "settings": [
+    { "type": "text", "id": "eyebrow", "label": "Eyebrow", "default": "Made at Teklo" },
+    { "type": "text", "id": "heading", "label": "Heading", "default": "Custom work, made with intention." },
+    { "type": "richtext", "id": "intro", "label": "Introduction", "default": "<p>We take on selective design and fabrication projects. From an early idea to a specific making challenge, tell us what you have in mind and we can explore whether Teklo is the right fit.</p>" },
+    { "type": "text", "id": "projects_heading", "label": "Projects heading", "default": "Selected projects" },
+    { "type": "paragraph", "content": "Projects appear only when an image, title, description, and outcome have been added. Use real work with permission to display it." },
+    { "type": "text", "id": "form_heading", "label": "Inquiry heading", "default": "Tell us what you have in mind" },
+    { "type": "richtext", "id": "form_intro", "label": "Inquiry introduction", "default": "<p>Share the problem, the context, and what you hope to make. An early idea is welcome.</p>" },
+    { "type": "color_scheme", "id": "color_scheme", "label": "Color scheme", "default": "scheme-1" }
+  ],
+  "blocks": [{
+    "type": "project",
+    "name": "Project",
+    "settings": [
+      { "type": "image_picker", "id": "image", "label": "Project image" },
+      { "type": "text", "id": "title", "label": "Title" },
+      { "type": "richtext", "id": "description", "label": "Problem and solution" },
+      { "type": "textarea", "id": "outcome", "label": "Outcome" }
+    ]
+  }],
+  "presets": [{ "name": "Teklo — Custom work" }]
+}
+{% endschema %}
