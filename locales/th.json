@@ -64,6 +64,10 @@
       "next_slide": "ไปสไลด์ขวา",
       "previous_slide": "ไปสไลด์ซ้าย",
       "name": "แถบเลื่อน"
+    },
+    "teklo_media": {
+      "play": "Play video",
+      "pause": "Pause video"
     }
   },
   "newsletter": {
@@ -226,6 +230,10 @@
     }
   },
   "templates": {
+    "404": {
+      "title": "ไม่พบหน้า",
+      "subtext": "404"
+    },
     "search": {
       "no_results": "ไม่พบผลลัพธ์สำหรับ “{{ terms }}” ตรวจสอบการสะกดคำหรือลองค้นหาคำอื่น",
       "results_with_count": {
@@ -270,9 +278,15 @@
         "title": "แบบฟอร์มการติดต่อ"
       }
     },
-    "404": {
-      "title": "ไม่พบหน้า",
-      "subtext": "404"
+    "custom_work": {
+      "project_description": "Project description",
+      "organization": "Organization",
+      "timing": "Desired timing",
+      "budget": "Budget guidance",
+      "reference": "Reference link",
+      "optional": "optional",
+      "required_note": "Fields marked * are required.",
+      "send": "Send Project Inquiry"
     }
   },
   "sections": {
@@ -535,6 +549,14 @@
       "send_on_label": "ส่งเมื่อ (ไม่บังคับ)",
       "expanded": "ขยายแบบฟอร์มผู้รับบัตรของขวัญแล้ว",
       "collapsed": "ย่อแบบฟอร์มผู้รับบัตรของขวัญแล้ว"
+    }
+  },
+  "teklo": {
+    "navigation": {
+      "shop": "Shop",
+      "trace": "Trace",
+      "studio": "Studio",
+      "custom_work": "Custom Work"
     }
   }
 }

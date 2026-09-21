@@ -64,6 +64,10 @@
       "next_slide": "Podrsajte desno",
       "previous_slide": "Podrsajte levo",
       "name": "Drsnik"
+    },
+    "teklo_media": {
+      "play": "Play video",
+      "pause": "Pause video"
     }
   },
   "newsletter": {
@@ -234,6 +238,10 @@
     }
   },
   "templates": {
+    "404": {
+      "title": "Strani ni mogoče najti",
+      "subtext": "404"
+    },
     "search": {
       "no_results": "Za »{{ terms }}« ni bil najden noben rezultat. Preverite črkovanje ali uporabite drugo besedo ali frazo.",
       "page": "Stran",
@@ -288,9 +296,15 @@
         "title": "Obrazec za stik"
       }
     },
-    "404": {
-      "title": "Strani ni mogoče najti",
-      "subtext": "404"
+    "custom_work": {
+      "project_description": "Project description",
+      "organization": "Organization",
+      "timing": "Desired timing",
+      "budget": "Budget guidance",
+      "reference": "Reference link",
+      "optional": "optional",
+      "required_note": "Fields marked * are required.",
+      "send": "Send Project Inquiry"
     }
   },
   "sections": {
@@ -559,6 +573,14 @@
       "send_on_label": "Pošlji na datum (izbirno)",
       "expanded": "Razširjen obrazec prejemnika darilnega bona",
       "collapsed": "Strnjen obrazec prejemnika darilnega bona"
+    }
+  },
+  "teklo": {
+    "navigation": {
+      "shop": "Shop",
+      "trace": "Trace",
+      "studio": "Studio",
+      "custom_work": "Custom Work"
     }
   }
 }

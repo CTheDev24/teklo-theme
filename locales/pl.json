@@ -64,6 +64,10 @@
       "next_slide": "Przesuń w prawo",
       "previous_slide": "Przesuń w lewo",
       "name": "Suwak"
+    },
+    "teklo_media": {
+      "play": "Play video",
+      "pause": "Pause video"
     }
   },
   "newsletter": {
@@ -234,6 +238,10 @@
     }
   },
   "templates": {
+    "404": {
+      "title": "Nie znaleziono strony",
+      "subtext": "404"
+    },
     "search": {
       "no_results": "Nie znaleziono wyników dla “{{ terms }}”. Sprawdź pisownię lub użyj innego słowa lub zwrotu.",
       "page": "Strona",
@@ -288,9 +296,15 @@
         "title": "Formularz kontaktowy"
       }
     },
-    "404": {
-      "title": "Nie znaleziono strony",
-      "subtext": "404"
+    "custom_work": {
+      "project_description": "Project description",
+      "organization": "Organization",
+      "timing": "Desired timing",
+      "budget": "Budget guidance",
+      "reference": "Reference link",
+      "optional": "optional",
+      "required_note": "Fields marked * are required.",
+      "send": "Send Project Inquiry"
     }
   },
   "sections": {
@@ -559,6 +573,14 @@
       "send_on_label": "Wyślij dnia (opcjonalnie)",
       "expanded": "Rozwinięty formularz odbiorcy karty prezentowej",
       "collapsed": "Zwinięty formularz odbiorcy karty prezentowej"
+    }
+  },
+  "teklo": {
+    "navigation": {
+      "shop": "Shop",
+      "trace": "Trace",
+      "studio": "Studio",
+      "custom_work": "Custom Work"
     }
   }
 }

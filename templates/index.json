@@ -14,17 +14,18 @@
       "settings": {
         "video": "shopify://files/videos/IMG-3387.MOV",
         "focal_point": "center center",
-        "heading": "DESIGNED THROUGH PROCESS.",
+        "heading": "Designed through process.",
         "text": "<p>Contemporary objects shaped through design, digital craft, and considered making.</p>",
-        "primary_label": "SHOP OBJECTS",
+        "primary_label": "Shop Objects",
         "primary_link": "shopify://collections/all",
-        "secondary_label": "",
-        "secondary_link": "",
+        "secondary_label": "Our Process",
+        "secondary_link": "#made-at-teklo",
         "alignment": "left",
-        "vertical_position": "bottom",
+        "vertical_position": "center",
         "height": "viewport",
         "overlay": 30,
-        "color_scheme": "scheme-4"
+        "color_scheme": "scheme-1",
+        "layout": "split"
       }
     },
     "selected_objects": {
@@ -33,7 +34,7 @@
         "object_1": {
           "type": "object",
           "settings": {
-            "product": "",
+            "product": "boho-wall-planter-a-touch-of-nature-elevated",
             "title": "Boho Wall Planter",
             "descriptor": "Sculptural wall planter",
             "link_label": "Explore",
@@ -55,7 +56,7 @@
         "object_3": {
           "type": "object",
           "settings": {
-            "product": "",
+            "product": "birch-moody-accent-pendant-light-calm-lighting-for-dining-living-spaces-eco-friendly-decor",
             "title": "Ambient Lighting",
             "descriptor": "Sculptural ambient light",
             "link_label": "Explore",
@@ -109,12 +110,12 @@
         "eyebrow": "TRACE / BY TEKLO",
         "heading": "A route worth remembering.",
         "text": "<p>Your miles become the starting point. Trace transforms a completed route into dimensional artwork built around the places that made it yours.</p>",
-        "link_label": "",
+        "link_label": "Explore Trace",
         "link": "",
         "focal_point": "center center",
-        "layout": "overlay",
+        "layout": "split",
         "media_side": "left",
-        "height": "large",
+        "height": "medium",
         "overlay": 45,
         "color_scheme": "scheme-4"
       }
@@ -122,15 +123,15 @@
     "lighting": {
       "type": "teklo-editorial-feature",
       "settings": {
-        "eyebrow": "",
+        "eyebrow": "LIGHTING / BY TEKLO",
         "heading": "Form changes when the light comes on.",
         "text": "",
-        "link_label": "",
-        "link": "",
+        "link_label": "Explore lighting",
+        "link": "/products/birch-moody-accent-pendant-light-calm-lighting-for-dining-living-spaces-eco-friendly-decor",
         "focal_point": "center center",
         "layout": "overlay",
         "media_side": "left",
-        "height": "large",
+        "height": "medium",
         "overlay": 45,
         "color_scheme": "scheme-4"
       }
@@ -141,7 +142,7 @@
         "presentation": "teklo",
         "collection": "all",
         "products_to_show": 4,
-        "title": "MORE FROM THE STUDIO",
+        "title": "More from the studio",
         "heading_size": "h2",
         "description": "",
         "show_description": false,
@@ -165,8 +166,8 @@
         "quick_add": "none",
         "columns_mobile": "2",
         "swipe_on_mobile": false,
-        "padding_top": 96,
-        "padding_bottom": 96
+        "padding_top": 80,
+        "padding_bottom": 80
       }
     },
     "made_at_teklo": {
@@ -299,8 +300,14 @@
         "submit_label": "JOIN",
         "color_scheme": "scheme-1",
         "full_width": true,
-        "padding_top": 96,
-        "padding_bottom": 96
+        "padding_top": 64,
+        "padding_bottom": 64
+      }
+    },
+    "custom_invitation": {
+      "type": "teklo-custom-invitation",
+      "settings": {
+        "button_link": "/pages/contact?view=custom-work#inquiry"
       }
     }
   },
@@ -312,6 +319,7 @@
     "more_from_studio",
     "made_at_teklo",
     "in_their_space",
-    "studio_notes"
+    "studio_notes",
+    "custom_invitation"
   ]
 }

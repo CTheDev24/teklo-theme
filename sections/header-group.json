@@ -40,21 +40,23 @@
       "type": "header",
       "settings": {
         "presentation_style": "teklo",
-        "overlay_homepage": true,
+        "overlay_homepage": false,
         "homepage_wordmark": "Teklo Studio",
-        "logo_position": "top-center",
-        "mobile_logo_position": "center",
+        "logo_position": "middle-left",
+        "mobile_logo_position": "left",
         "menu": "main-menu",
         "menu_type_desktop": "dropdown",
         "sticky_header_type": "on-scroll-up",
-        "show_line_separator": false,
+        "show_line_separator": true,
         "color_scheme": "scheme-1",
-        "menu_color_scheme": "scheme-2",
+        "menu_color_scheme": "scheme-1",
         "enable_country_selector": true,
         "enable_language_selector": true,
         "margin_bottom": 0,
         "padding_top": 20,
-        "padding_bottom": 20
+        "padding_bottom": 20,
+        "studio_navigation": true,
+        "custom_work_url": "/pages/contact?view=custom-work"
       }
     }
   },

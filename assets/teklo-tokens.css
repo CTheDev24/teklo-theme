@@ -1,4 +1,12 @@
 :root {
+  --teklo-cream: #f6f4ed;
+  --teklo-paper: var(--teklo-cream);
+  --teklo-warm-neutral: var(--teklo-sand);
+  --teklo-ink: #202925;
+  --teklo-sand: #ded6c8;
+  --teklo-accent: #f25c25;
+  --teklo-rule: rgba(32, 41, 37, .18);
+  --teklo-font-label: ui-monospace, 'Courier New', monospace;
   --teklo-font-body: var(--font-body-family);
   --teklo-font-display: var(--font-heading-family);
   --teklo-text-caption: clamp(1.1rem, 1vw, 1.2rem);

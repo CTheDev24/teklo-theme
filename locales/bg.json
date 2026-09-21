@@ -64,6 +64,10 @@
       "next_slide": "Плъзгане надясно",
       "previous_slide": "Плъзгане наляво",
       "name": "Плъзгач"
+    },
+    "teklo_media": {
+      "play": "Play video",
+      "pause": "Pause video"
     }
   },
   "newsletter": {
@@ -226,6 +230,10 @@
     }
   },
   "templates": {
+    "404": {
+      "title": "Страницата не е открита",
+      "subtext": "404"
+    },
     "search": {
       "no_results": "Няма резултати за „{{ terms }}“. Проверете начина на изписване или използвайте различна дума или фраза.",
       "results_with_count": {
@@ -270,9 +278,15 @@
         "title": "Формуляр за контакт"
       }
     },
-    "404": {
-      "title": "Страницата не е открита",
-      "subtext": "404"
+    "custom_work": {
+      "project_description": "Project description",
+      "organization": "Organization",
+      "timing": "Desired timing",
+      "budget": "Budget guidance",
+      "reference": "Reference link",
+      "optional": "optional",
+      "required_note": "Fields marked * are required.",
+      "send": "Send Project Inquiry"
     }
   },
   "sections": {
@@ -535,6 +549,14 @@
       "send_on_label": "Изпращане на (незадължително)",
       "expanded": "Формулярът за получател на ваучер за подарък е разгънат",
       "collapsed": "Формулярът за получател на ваучер за подарък е свит"
+    }
+  },
+  "teklo": {
+    "navigation": {
+      "shop": "Shop",
+      "trace": "Trace",
+      "studio": "Studio",
+      "custom_work": "Custom Work"
     }
   }
 }

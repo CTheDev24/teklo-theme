@@ -16,8 +16,8 @@
       "settings": {
         "presentation_style": "teklo",
         "homepage_wordmark": "Teklo Studio",
-        "color_scheme": "scheme-4",
-        "newsletter_enable": true,
+        "color_scheme": "scheme-1",
+        "newsletter_enable": false,
         "suppress_newsletter_homepage": true,
         "newsletter_heading": "Join our email list",
         "enable_follow_on_shop": true,
