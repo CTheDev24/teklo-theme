@@ -1,0 +1,52 @@
+.teklo-custom-work,
+.teklo-custom-invitation {
+  color: rgb(var(--color-foreground));
+}
+.teklo-custom-work { padding: clamp(4.8rem, 8vw, 11rem) 0; }
+.teklo-custom-work__intro { max-width: 88rem; padding-bottom: clamp(4.8rem, 8vw, 10rem); }
+.teklo-custom-work h1,
+.teklo-custom-invitation h2 { margin: 1.6rem 0 2.4rem; font-size: clamp(3.6rem, 5.5vw, 7.6rem); line-height: 1.04; letter-spacing: -.045em; }
+.teklo-custom-work__intro .rte { max-width: 65rem; font-size: clamp(1.8rem, 2vw, 2.2rem); line-height: 1.6; }
+.teklo-custom-work h2 { margin: 0 0 2.4rem; font-size: clamp(2.8rem, 3.5vw, 4.8rem); line-height: 1.12; letter-spacing: -.035em; }
+.teklo-custom-work__projects { border-top: 1px solid rgba(var(--color-foreground), .25); padding: 4.8rem 0 7.2rem; }
+.teklo-custom-work__grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 4.8rem 3.2rem; }
+.teklo-custom-work__project img { display: block; width: 100%; height: auto; aspect-ratio: 4/3; object-fit: cover; }
+.teklo-custom-work__project h3 { margin: 2.4rem 0 1.2rem; font-size: 2.6rem; letter-spacing: -.025em; }
+.teklo-custom-work__outcome { border-top: 1px solid rgba(var(--color-foreground), .2); padding-top: 1.6rem; }
+.teklo-custom-work__inquiry { display: grid; grid-template-columns: minmax(0, .8fr) minmax(0, 1.2fr); gap: clamp(3.2rem, 7vw, 10rem); border-top: 1px solid rgba(var(--color-foreground), .25); padding-top: clamp(4rem, 6vw, 7.2rem); scroll-margin-top: 12rem; }
+.teklo-custom-work__note { font-size: 1.3rem; margin-top: 2.4rem; }
+.teklo-custom-work__fields { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 2.4rem; margin-bottom: 3.2rem; }
+.teklo-custom-work__field { min-width: 0; }
+.teklo-custom-work__field--full { grid-column: 1/-1; }
+.teklo-custom-work__field label { display: block; margin-bottom: .8rem; font-size: 1.4rem; font-weight: 500; }
+.teklo-custom-work__field label span { font-weight: 400; }
+.teklo-custom-work__field input,
+.teklo-custom-work__field textarea { width: 100%; box-sizing: border-box; min-height: 4.8rem; border: 1px solid rgba(var(--color-foreground), .5); border-radius: 0; padding: 1.2rem; font: inherit; color: inherit; background: rgb(var(--color-background)); }
+.teklo-custom-work__field textarea { resize: vertical; min-height: 16rem; }
+.teklo-custom-work__field [aria-invalid="true"] { border-width: 2px; }
+.teklo-custom-work__status { padding: 1.6rem; border: 1px solid currentColor; margin: 0 0 2.4rem; }
+.teklo-custom-work__status a { color: inherit; }
+.teklo-custom-button { display: inline-flex; align-items: center; justify-content: center; gap: 2rem; min-height: 4.8rem; padding: 1.6rem 2.4rem; border: 1px solid var(--teklo-ink, #202925); border-radius: 0; background: var(--teklo-ink, #202925); color: var(--teklo-paper, #f6f4ed); font: inherit; font-size: 1.4rem; font-weight: 500; text-decoration: none; text-align: center; cursor: pointer; }
+.teklo-custom-button:hover { background: var(--teklo-paper, #f6f4ed); color: var(--teklo-ink, #202925); }
+.teklo-custom-button:focus-visible,
+.teklo-custom-work input:focus-visible,
+.teklo-custom-work textarea:focus-visible { outline: 2px solid currentColor; outline-offset: 4px; }
+.teklo-custom-invitation { background: var(--teklo-warm-neutral, #ded6c8); color: var(--teklo-ink, #202925); }
+.teklo-custom-invitation__inner { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 4rem; align-items: center; padding-top: clamp(4.8rem, 7vw, 9.6rem); padding-bottom: clamp(4.8rem, 7vw, 9.6rem); }
+.teklo-custom-invitation h2 { max-width: 76rem; color: inherit; font-size: clamp(3.2rem, 4vw, 5.6rem); }
+.teklo-custom-invitation .rte { max-width: 55rem; }
+@media (max-width: 749px) {
+  .teklo-custom-work__grid,
+  .teklo-custom-work__inquiry,
+  .teklo-custom-work__fields,
+  .teklo-custom-invitation__inner { grid-template-columns: minmax(0, 1fr); }
+  .teklo-custom-invitation__inner > .teklo-custom-button { justify-self: start; }
+  .teklo-custom-work__field input,
+  .teklo-custom-work__field textarea { font-size: 1.6rem; }
+}
+
+.teklo-custom-button:focus-visible { outline-color: var(--teklo-ink, #202925); }
+.teklo-custom-work { --color-background: 246, 244, 237; --color-foreground: 32, 41, 37; background: var(--teklo-cream); }
+.teklo-custom-work h1, .teklo-custom-work h2, .teklo-custom-invitation h2 { font-weight: 400; }
+.teklo-custom-work .teklo-eyebrow, .teklo-custom-invitation .teklo-eyebrow { font-family: var(--teklo-font-label); font-size: 1.1rem; letter-spacing: .15em; text-transform: uppercase; }
+.teklo-custom-button { font-family: var(--teklo-font-label); font-size: 1.2rem; letter-spacing: .1em; text-transform: uppercase; }

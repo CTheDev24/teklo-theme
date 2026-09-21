@@ -64,6 +64,10 @@
       "next_slide": "Bla til høyre",
       "previous_slide": "Bla til venstre",
       "name": "Glidefelt"
+    },
+    "teklo_media": {
+      "play": "Play video",
+      "pause": "Pause video"
     }
   },
   "newsletter": {
@@ -226,6 +230,10 @@
     }
   },
   "templates": {
+    "404": {
+      "title": "Siden finnes ikke",
+      "subtext": "404"
+    },
     "search": {
       "no_results": "Fant ingen resultater for «{{ terms }}». Kontroller stavemåten, eller bruk et annet ord.",
       "page": "Side",
@@ -270,9 +278,15 @@
         "title": "Kontaktskjema"
       }
     },
-    "404": {
-      "title": "Siden finnes ikke",
-      "subtext": "404"
+    "custom_work": {
+      "project_description": "Project description",
+      "organization": "Organization",
+      "timing": "Desired timing",
+      "budget": "Budget guidance",
+      "reference": "Reference link",
+      "optional": "optional",
+      "required_note": "Fields marked * are required.",
+      "send": "Send Project Inquiry"
     }
   },
   "sections": {
@@ -535,6 +549,14 @@
       "send_on_label": "Send (valgfritt)",
       "expanded": "Utvidet skjema for gavekortmottaker",
       "collapsed": "Lukket skjema for gavekortmottaker"
+    }
+  },
+  "teklo": {
+    "navigation": {
+      "shop": "Shop",
+      "trace": "Trace",
+      "studio": "Studio",
+      "custom_work": "Custom Work"
     }
   }
 }

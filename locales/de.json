@@ -64,6 +64,10 @@
       "next_slide": "Nach rechts schieben",
       "previous_slide": "Nach links schieben",
       "name": "Slider"
+    },
+    "teklo_media": {
+      "play": "Play video",
+      "pause": "Pause video"
     }
   },
   "newsletter": {
@@ -226,6 +230,10 @@
     }
   },
   "templates": {
+    "404": {
+      "title": "Seite nicht gefunden",
+      "subtext": "404"
+    },
     "search": {
       "no_results": "Keine Ergebnisse gefunden für \"{{ terms }}\". Überprüfe die Schreibweise oder versuche es mit einer anderen Suchanfrage.",
       "results_with_count": {
@@ -270,9 +278,15 @@
         "title": "Kontaktformular"
       }
     },
-    "404": {
-      "title": "Seite nicht gefunden",
-      "subtext": "404"
+    "custom_work": {
+      "project_description": "Project description",
+      "organization": "Organization",
+      "timing": "Desired timing",
+      "budget": "Budget guidance",
+      "reference": "Reference link",
+      "optional": "optional",
+      "required_note": "Fields marked * are required.",
+      "send": "Send Project Inquiry"
     }
   },
   "sections": {
@@ -535,6 +549,14 @@
       "send_on_label": "Senden am (optional)",
       "expanded": "Formular für den Empfänger des Gutscheins erweitert",
       "collapsed": "Formular für den Empfänger des Gutscheins minimiert"
+    }
+  },
+  "teklo": {
+    "navigation": {
+      "shop": "Shop",
+      "trace": "Trace",
+      "studio": "Studio",
+      "custom_work": "Custom Work"
     }
   }
 }

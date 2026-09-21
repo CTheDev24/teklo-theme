@@ -64,6 +64,10 @@
       "next_slide": "Következő dia",
       "previous_slide": "Előző dia",
       "name": "Csúszka"
+    },
+    "teklo_media": {
+      "play": "Play video",
+      "pause": "Pause video"
     }
   },
   "newsletter": {
@@ -226,6 +230,10 @@
     }
   },
   "templates": {
+    "404": {
+      "title": "Nem találjuk az oldalt",
+      "subtext": "404-es hiba történt."
+    },
     "search": {
       "no_results": "Nincs találat erre: {{ terms }}. Ellenőrizd a helyesírást, vagy írj be egy másik szót vagy kifejezést.",
       "results_with_count": {
@@ -270,9 +278,15 @@
         "title": "Kapcsolattartói űrlap"
       }
     },
-    "404": {
-      "title": "Nem találjuk az oldalt",
-      "subtext": "404-es hiba történt."
+    "custom_work": {
+      "project_description": "Project description",
+      "organization": "Organization",
+      "timing": "Desired timing",
+      "budget": "Budget guidance",
+      "reference": "Reference link",
+      "optional": "optional",
+      "required_note": "Fields marked * are required.",
+      "send": "Send Project Inquiry"
     }
   },
   "sections": {
@@ -535,6 +549,14 @@
       "send_on_label": "Küldés dátuma (nem kötelező)",
       "expanded": "Ajándékkártya címzettjének űrlapja kibontva",
       "collapsed": "Ajándékkártya címzettjének űrlapja összecsukva"
+    }
+  },
+  "teklo": {
+    "navigation": {
+      "shop": "Shop",
+      "trace": "Trace",
+      "studio": "Studio",
+      "custom_work": "Custom Work"
     }
   }
 }

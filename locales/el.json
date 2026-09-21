@@ -64,6 +64,10 @@
       "next_slide": "Σύρετε δεξιά",
       "previous_slide": "Σύρετε αριστερά",
       "name": "Ρυθμιστικό"
+    },
+    "teklo_media": {
+      "play": "Play video",
+      "pause": "Pause video"
     }
   },
   "newsletter": {
@@ -226,6 +230,10 @@
     }
   },
   "templates": {
+    "404": {
+      "title": "Η σελίδα δεν βρέθηκε",
+      "subtext": "404"
+    },
     "search": {
       "no_results": "Δεν βρέθηκαν αποτελέσματα για «{{ terms }}». Ελέγξτε την ορθογραφία ή χρησιμοποιήστε άλλη λέξη ή φράση.",
       "results_with_count": {
@@ -270,9 +278,15 @@
         "title": "Φόρμα επικοινωνίας"
       }
     },
-    "404": {
-      "title": "Η σελίδα δεν βρέθηκε",
-      "subtext": "404"
+    "custom_work": {
+      "project_description": "Project description",
+      "organization": "Organization",
+      "timing": "Desired timing",
+      "budget": "Budget guidance",
+      "reference": "Reference link",
+      "optional": "optional",
+      "required_note": "Fields marked * are required.",
+      "send": "Send Project Inquiry"
     }
   },
   "sections": {
@@ -535,6 +549,14 @@
       "send_on_label": "Ημερομηνία αποστολής (προαιρετικά)",
       "expanded": "Η φόρμα παραλήπτη δωροκάρτας αναπτύχθηκε",
       "collapsed": "Η φόρμα παραλήπτη δωροκάρτας συμπτύχθηκε"
+    }
+  },
+  "teklo": {
+    "navigation": {
+      "shop": "Shop",
+      "trace": "Trace",
+      "studio": "Studio",
+      "custom_work": "Custom Work"
     }
   }
 }

@@ -1,0 +1,157 @@
+.template-index {
+  --color-background: 246, 244, 237;
+  --color-foreground: 32, 41, 37;
+  background: var(--teklo-cream);
+  color: var(--teklo-ink);
+}
+.template-index .color-scheme-1,
+.template-index .color-scheme-4 {
+  --color-button: 32, 41, 37;
+  --color-button-text: 246, 244, 237;
+}
+.template-index .color-scheme-1 {
+  --color-background: 246, 244, 237;
+  --color-foreground: 32, 41, 37;
+}
+.template-index .color-scheme-4 {
+  --color-background: 32, 41, 37;
+  --color-foreground: 246, 244, 237;
+  --color-button: 246, 244, 237;
+  --color-button-text: 32, 41, 37;
+}
+.template-index .button {
+  --buttons-radius: 0;
+  --buttons-radius-outset: 0;
+  min-height: 5.2rem;
+  font-family: var(--teklo-font-label);
+  font-size: 1.2rem;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+}
+.template-index :is(.teklo-eyebrow, .teklo-editorial__eyebrow, .teklo-object__descriptor, .teklo-editorial__step, .newsletter__eyebrow) {
+  font-family: var(--teklo-font-label);
+  font-size: 1.1rem;
+  letter-spacing: .15em;
+  font-weight: 400;
+}
+.template-index :is(.teklo-objects__heading, .teklo-process__heading, .teklo-editorial__heading, .newsletter__wrapper h2, .teklo-featured-collection .title) {
+  font-weight: 400;
+  letter-spacing: -.045em;
+  line-height: 1.04;
+}
+.template-index :is(.teklo-objects__heading, .teklo-process__heading) {
+  font-size: clamp(3.4rem, 4.4vw, 6.4rem);
+}
+.template-index .teklo-objects__header {
+  max-width: 82rem;
+  margin-bottom: clamp(3.2rem, 5vw, 6.4rem);
+}
+.template-index .teklo-object__content {
+  padding-top: 2rem;
+  border-bottom: 1px solid var(--teklo-rule);
+  padding-bottom: 2.4rem;
+}
+.template-index .teklo-object__title {
+  font-weight: 400;
+  letter-spacing: -.035em;
+  font-size: clamp(2.4rem, 2.8vw, 3.8rem);
+}
+.template-index .teklo-editorial--split {
+  padding: 0;
+}
+.template-index .teklo-editorial--split .teklo-editorial__frame {
+  width: 100%;
+  max-width: none;
+  padding: 0;
+  grid-template-columns: minmax(0, 1.12fr) minmax(0, 1fr);
+  gap: 0;
+  min-height: 0;
+  align-items: stretch;
+}
+.template-index .teklo-editorial--split .teklo-editorial__media {
+  min-height: min(76rem, 80svh);
+}
+.template-index .teklo-editorial--split .teklo-editorial__media picture {
+  position: absolute;
+  inset: 0;
+}
+.template-index .teklo-editorial--split .teklo-editorial__content {
+  min-width: 0;
+  align-items: center;
+  padding: clamp(3.2rem, 6vw, 9.6rem);
+}
+.template-index .teklo-editorial--split .teklo-editorial__heading {
+  font-size: clamp(3.6rem, 4.5vw, 6.4rem);
+  color: inherit;
+}
+.template-index .teklo-editorial__text {
+  line-height: 1.65;
+}
+.template-index .teklo-editorial__link {
+  font-family: var(--teklo-font-label);
+  font-size: 1.2rem;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+}
+.template-index .teklo-editorial--split .teklo-editorial__link {
+  background: var(--teklo-accent);
+  color: var(--teklo-ink);
+  padding: 1.8rem 2.4rem;
+  text-decoration: none;
+}
+.template-index .teklo-editorial--split .teklo-editorial__link:hover {
+  background: var(--teklo-cream);
+}
+.template-index .teklo-editorial--split .teklo-editorial__steps {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  margin-top: 3.2rem;
+  gap: 1.2rem;
+}
+.template-index .teklo-editorial--overlay .teklo-editorial__frame,
+.template-index .teklo-editorial--overlay .teklo-editorial__content {
+  min-height: 72svh;
+}
+.template-index .teklo-process {
+  background: var(--teklo-sand);
+  color: var(--teklo-ink);
+}
+.template-index .teklo-process__steps {
+  margin-bottom: 0;
+}
+.template-index .teklo-process__step h3 {
+  font-family: var(--teklo-font-label);
+  font-size: 1.3rem;
+  letter-spacing: .12em;
+}
+.template-index .teklo-process__step .rte {
+  font-size: 1.5rem;
+  line-height: 1.6;
+}
+.template-index .newsletter--teklo {
+  border-top: 1px solid var(--teklo-rule);
+}
+.template-index .newsletter--teklo .newsletter__wrapper h2 {
+  font-size: clamp(3rem, 3.5vw, 4.8rem);
+}
+.template-index .newsletter--teklo .newsletter__wrapper > * {
+  max-width: 68rem;
+}
+.template-index :is(#made-at-teklo, #teklo-trace) {
+  scroll-margin-top: 12rem;
+}
+@media (max-width: 749px) {
+  .template-index .teklo-editorial--split .teklo-editorial__media {
+    min-height: 0;
+    aspect-ratio: 4 / 3;
+  }
+  .template-index .teklo-editorial--split .teklo-editorial__content {
+    padding: 4rem 2.4rem;
+  }
+  .template-index .teklo-editorial--overlay .teklo-editorial__frame,
+  .template-index .teklo-editorial--overlay .teklo-editorial__content {
+    min-height: 58svh;
+  }
+  .template-index .teklo-process__steps { gap: 3.2rem; }
+  .template-index .teklo-process__media img { aspect-ratio: 4 / 3; }
+  .template-index .teklo-objects__grid { gap: 4rem; }
+}

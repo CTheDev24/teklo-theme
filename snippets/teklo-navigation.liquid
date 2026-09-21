@@ -1,0 +1,51 @@
+{% doc %}
+  Renders the studio navigation in the native header or drawer.
+  @param {section} section - Header settings containing optional destinations.
+  @param {boolean} [drawer] - Use native mobile drawer classes.
+{% enddoc %}
+{%- liquid
+  assign trace_url = routes.root_url | append: '#teklo-trace'
+  assign studio_url = routes.root_url | append: '#made-at-teklo'
+  assign trace_url = section.settings.trace_url | default: trace_url
+  assign studio_url = section.settings.studio_url | default: studio_url
+  assign custom_page = section.settings.custom_work_page | default: pages['custom-work']
+  assign link_keys = 'shop,trace,studio,custom_work' | split: ','
+  assign link_class = 'header__menu-item list-menu__item link link--text focus-inset'
+  assign active_class = 'header__active-menu-item'
+  if drawer
+    assign link_class = 'menu-drawer__menu-item list-menu__item link link--text focus-inset'
+    assign active_class = 'menu-drawer__menu-item--active'
+  endif
+-%}
+{%- unless drawer -%}<nav class="header__inline-menu">{%- endunless -%}
+<ul class="{% if drawer %}menu-drawer__menu{% else %}list-menu--inline{% endif %} list-menu" role="list">
+  {%- for key in link_keys -%}
+    {%- liquid
+      assign destination = blank
+      case key
+        when 'shop'
+          assign destination = trace_url
+        when 'trace'
+          assign destination = trace_url
+        when 'studio'
+          assign destination = studio_url
+        when 'custom_work'
+          assign destination = custom_page.url | default: section.settings.custom_work_url
+      endcase
+      assign is_current = false
+      assign local_destination = destination | remove: request.origin
+      unless destination contains '#'
+        if local_destination == request.path
+          assign is_current = true
+        endif
+      endunless
+      assign label_key = 'teklo.navigation.' | append: key
+    -%}
+    {%- if destination != blank -%}
+      <li>
+        <a{% if drawer %} data-teklo-studio-link{% endif %} href="{{ destination | escape }}" class="{{ link_class }}{% if is_current %} {{ active_class }}{% endif %}"{% if is_current %} aria-current="page"{% endif %}>{{ label_key | t }}</a>
+      </li>
+    {%- endif -%}
+  {%- endfor -%}
+</ul>
+{%- unless drawer -%}</nav>{%- endunless -%}

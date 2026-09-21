@@ -64,6 +64,10 @@
       "next_slide": "Geser kanan",
       "previous_slide": "Geser kiri",
       "name": "Slider"
+    },
+    "teklo_media": {
+      "play": "Play video",
+      "pause": "Pause video"
     }
   },
   "newsletter": {
@@ -226,6 +230,10 @@
     }
   },
   "templates": {
+    "404": {
+      "title": "Halaman tidak ditemukan",
+      "subtext": "404"
+    },
     "search": {
       "no_results": "Tidak ada hasil ditemukan untuk “{{ terms }}”. Periksa ejaan atau gunakan kata atau frasa yang berbeda.",
       "results_with_count": {
@@ -270,9 +278,15 @@
         "title": "Formulir kontak"
       }
     },
-    "404": {
-      "title": "Halaman tidak ditemukan",
-      "subtext": "404"
+    "custom_work": {
+      "project_description": "Project description",
+      "organization": "Organization",
+      "timing": "Desired timing",
+      "budget": "Budget guidance",
+      "reference": "Reference link",
+      "optional": "optional",
+      "required_note": "Fields marked * are required.",
+      "send": "Send Project Inquiry"
     }
   },
   "sections": {
@@ -535,6 +549,14 @@
       "send_on_label": "Kirim pada (opsional)",
       "expanded": "Formulir penerima voucher dibuka",
       "collapsed": "Formulir penerima voucher ditutup"
+    }
+  },
+  "teklo": {
+    "navigation": {
+      "shop": "Shop",
+      "trace": "Trace",
+      "studio": "Studio",
+      "custom_work": "Custom Work"
     }
   }
 }

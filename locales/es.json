@@ -64,6 +64,10 @@
       "next_slide": "Diapositiva a la derecha",
       "previous_slide": "Diapositiva a la izquierda",
       "name": "Carrusel"
+    },
+    "teklo_media": {
+      "play": "Play video",
+      "pause": "Pause video"
     }
   },
   "newsletter": {
@@ -230,6 +234,10 @@
     }
   },
   "templates": {
+    "404": {
+      "title": "Página no encontrada",
+      "subtext": "404"
+    },
     "search": {
       "no_results": "No se encontraron resultados para “{{ terms }}” Revisa la ortografía o usa una palabra o frase diferente.",
       "results_with_count": {
@@ -279,9 +287,15 @@
         "title": "Formulario de contacto"
       }
     },
-    "404": {
-      "title": "Página no encontrada",
-      "subtext": "404"
+    "custom_work": {
+      "project_description": "Project description",
+      "organization": "Organization",
+      "timing": "Desired timing",
+      "budget": "Budget guidance",
+      "reference": "Reference link",
+      "optional": "optional",
+      "required_note": "Fields marked * are required.",
+      "send": "Send Project Inquiry"
     }
   },
   "sections": {
@@ -547,6 +561,14 @@
       "send_on_label": "Enviar el (opcional)",
       "expanded": "Formulario del destinatario de la tarjeta de regalo expandido",
       "collapsed": "Formulario del destinatario de tarjeta de regalo contraído"
+    }
+  },
+  "teklo": {
+    "navigation": {
+      "shop": "Shop",
+      "trace": "Trace",
+      "studio": "Studio",
+      "custom_work": "Custom Work"
     }
   }
 }

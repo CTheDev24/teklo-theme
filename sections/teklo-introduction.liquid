@@ -1,0 +1,64 @@
+{{ 'teklo-introduction.css' | asset_url | stylesheet_tag }}
+{% liquid
+  assign trace_link = section.settings.trace_link | default: '#teklo-trace'
+  assign studio_link = section.settings.studio_link | default: '/pages/about-us?view=studio'
+%}
+<div class="teklo-introduction">
+  <div class="page-width teklo-introduction__grid{% if section.settings.detail_image == blank and section.settings.detail_caption == blank %} teklo-introduction__grid--pair{% endif %}">
+    <div class="teklo-introduction__column teklo-introduction__trace">
+      <h2 class="teklo-introduction__trace-title">
+        {% if section.settings.trace_logo != blank %}
+          {{ section.settings.trace_logo | image_url: width: 700 | image_tag: widths: '200,350,500,700', sizes: '(min-width: 990px) 22vw, 60vw', alt: section.settings.trace_heading, loading: 'lazy', class: 'teklo-introduction__logo' }}
+        {% else %}
+          {{ section.settings.trace_heading | escape }}
+        {% endif %}
+      </h2>
+      {% if section.settings.trace_text != blank %}<div class="rte">{{ section.settings.trace_text }}</div>{% endif %}
+      {% if section.settings.trace_link_label != blank %}
+        <a class="teklo-introduction__link" href="{{ trace_link }}">{{ section.settings.trace_link_label | escape }}<span class="svg-wrapper" aria-hidden="true">{{ 'icon-arrow.svg' | inline_asset_content }}</span></a>
+      {% endif %}
+    </div>
+    <div class="teklo-introduction__column teklo-introduction__studio">
+      {% if section.settings.studio_eyebrow != blank %}<p class="teklo-introduction__eyebrow">{{ section.settings.studio_eyebrow | escape }}</p>{% endif %}
+      {% if section.settings.studio_heading != blank %}<h2>{{ section.settings.studio_heading | escape }}</h2>{% endif %}
+      {% if section.settings.studio_text != blank %}<div class="rte">{{ section.settings.studio_text }}</div>{% endif %}
+      {% if section.settings.studio_link_label != blank %}
+        <a class="teklo-introduction__link" href="{{ studio_link }}">{{ section.settings.studio_link_label | escape }}<span class="svg-wrapper" aria-hidden="true">{{ 'icon-arrow.svg' | inline_asset_content }}</span></a>
+      {% endif %}
+    </div>
+    {% if section.settings.detail_image != blank or section.settings.detail_caption != blank %}
+      <div class="teklo-introduction__column teklo-introduction__detail{% if section.settings.detail_image == blank %} teklo-introduction__detail--text{% endif %}">
+        {% if section.settings.detail_image != blank %}
+          {{ section.settings.detail_image | image_url: width: 1000 | image_tag: widths: '300,500,750,1000', sizes: '(min-width: 990px) 21vw, 65vw', loading: 'lazy', class: 'teklo-introduction__detail-image', alt: 'Close-up of a Trace raised city map and orange race route' }}
+        {% endif %}
+        {% if section.settings.detail_caption != blank %}<p class="teklo-introduction__caption">{{ section.settings.detail_caption | escape | newline_to_br }}</p>{% endif %}
+      </div>
+    {% endif %}
+  </div>
+</div>
+{% schema %}
+{
+  "name": "Teklo — Introduction",
+  "tag": "section",
+  "class": "section",
+  "disabled_on": { "groups": ["header", "footer"] },
+  "settings": [
+    { "type": "header", "content": "Trace" },
+    { "type": "image_picker", "id": "trace_logo", "label": "Trace logo" },
+    { "type": "text", "id": "trace_heading", "label": "Trace heading and logo text alternative", "default": "Trace" },
+    { "type": "richtext", "id": "trace_text", "label": "Trace introduction", "default": "<p>Your route, made dimensional. Trace turns a meaningful route into a piece of art you can see and feel.</p>" },
+    { "type": "text", "id": "trace_link_label", "label": "Trace link label", "default": "Discover Trace" },
+    { "type": "url", "id": "trace_link", "label": "Trace link", "info": "Defaults to the Trace section on this page." },
+    { "type": "header", "content": "The studio" },
+    { "type": "text", "id": "studio_eyebrow", "label": "Studio eyebrow", "default": "The studio" },
+    { "type": "text", "id": "studio_heading", "label": "Studio heading", "default": "Purposeful objects for what moves you." },
+    { "type": "richtext", "id": "studio_text", "label": "Studio introduction", "default": "<p>From ready-to-ship designs to custom and industrial solutions, Teklo Studio brings ideas to life through thoughtful design and precise fabrication.</p>" },
+    { "type": "text", "id": "studio_link_label", "label": "Studio link label", "default": "About Teklo Studio" },
+    { "type": "url", "id": "studio_link", "label": "Studio link", "info": "Defaults to the About page using the Studio template." },
+    { "type": "header", "content": "Detail image" },
+    { "type": "image_picker", "id": "detail_image", "label": "Portrait detail image" },
+    { "type": "textarea", "id": "detail_caption", "label": "Image-side caption", "default": "PEOPLE\nPLACES\nPURPOSE\nIN 3D" }
+  ],
+  "presets": [{ "name": "Teklo — Introduction" }]
+}
+{% endschema %}

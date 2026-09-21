@@ -1,0 +1,171 @@
+{{ 'teklo-trace-launch.css' | asset_url | stylesheet_tag }}
+<section class="teklo-launch page-width" id="teklo-trace" aria-labelledby="TraceTitle-{{ section.id }}">
+  <div class="teklo-launch__intro"><p class="teklo-launch__label">{{ section.settings.eyebrow | escape }}</p><h2 id="TraceTitle-{{ section.id }}">{{ section.settings.heading | escape }}</h2><div class="rte">{{ section.settings.intro }}</div></div>
+  <div class="teklo-launch__card">
+    <div class="teklo-launch__media">
+      {% if section.settings.image != blank %}{{ section.settings.image | image_url: width: 1800 | image_tag: loading: 'lazy', widths: '600, 900, 1200, 1800', sizes: '(min-width: 990px) 55vw, 100vw', alt: 'Trace race artwork with a raised city map and orange route, shown beside a finisher medal' }}{% else %}<img src="{{ 'placeholder-trace-section.png' | asset_url }}" width="1536" height="1024" loading="lazy" alt="Trace dimensional route artwork in a frame">{% endif %}
+    </div>
+    <div class="teklo-launch__details"><p class="teklo-launch__label">{{ section.settings.card_eyebrow | escape }}</p><h3>{{ section.settings.card_heading | escape }}</h3><div class="rte">{{ section.settings.copy }}</div>
+      <dl>{% for block in section.blocks %}{% if block.type == 'spec' %}<div {{ block.shopify_attributes }}><dt>{{ block.settings.label | escape }}</dt><dd>{{ block.settings.value | escape }}</dd></div>{% endif %}{% endfor %}</dl>
+      {% if section.settings.product != blank %}<a class="teklo-launch__cta" href="{{ section.settings.product.url }}">{{ section.settings.button_label | escape }} {{ 'icon-arrow.svg' | inline_asset_content }}</a>{% elsif section.settings.inquiry_link != blank %}<a class="teklo-launch__cta" href="{{ section.settings.inquiry_link }}">{{ section.settings.inquiry_label | escape }} {{ 'icon-arrow.svg' | inline_asset_content }}</a>{% endif %}
+    </div>
+  </div>
+  <div class="teklo-launch__graphics">
+    {% for block in section.blocks %}{% if block.type == 'graphic' and block.settings.image != blank %}
+      <figure {{ block.shopify_attributes }}>{{ block.settings.image | image_url: width: 1080 | image_tag: widths: '400,700,1080', sizes: '(min-width: 990px) 30vw, 90vw', loading: 'lazy', alt: block.settings.alt }}<figcaption>{{ block.settings.caption | escape }}</figcaption></figure>
+    {% endif %}{% endfor %}
+  </div>
+  <div class="teklo-launch__next">
+    <article><p class="teklo-launch__label">{{ section.settings.home_eyebrow | escape }}</p><h3>{{ section.settings.home_heading | escape }}</h3><div class="rte">{{ section.settings.home_copy }}</div></article>
+    <article><p class="teklo-launch__label">THE STUDIO</p><h3>{{ section.settings.studio_heading | escape }}</h3><div class="rte">{{ section.settings.studio_copy }}</div>{% if section.settings.studio_link != blank %}<a href="{{ section.settings.studio_link }}">Meet the maker {{ 'icon-arrow.svg' | inline_asset_content }}</a>{% endif %}</article>
+  </div>
+</section>
+{% schema %}
+{
+  "name": "Trace launch",
+  "settings": [
+    {
+      "type": "text",
+      "id": "eyebrow",
+      "label": "Eyebrow",
+      "default": "TRACE / BY TEKLO"
+    },
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading",
+      "default": "A route worth remembering."
+    },
+    {
+      "type": "richtext",
+      "id": "intro",
+      "label": "Introduction",
+      "default": "<p>Your miles become the starting point. Trace turns a route that matters into dimensional artwork.</p>"
+    },
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "Trace image"
+    },
+    {
+      "type": "text",
+      "id": "card_eyebrow",
+      "label": "Card eyebrow",
+      "default": "THE LAUNCH COLLECTION"
+    },
+    {
+      "type": "text",
+      "id": "card_heading",
+      "label": "Card heading",
+      "default": "A finish for every memory."
+    },
+    {
+      "type": "richtext",
+      "id": "copy",
+      "label": "Card text",
+      "default": "<p>A personal route, made tangible. Dimensional details bring your journey off the page and into your home.</p>"
+    },
+    {
+      "type": "product",
+      "id": "product",
+      "label": "Trace product"
+    },
+    {
+      "type": "text",
+      "id": "button_label",
+      "label": "Product button label",
+      "default": "Start your Trace"
+    },
+    {
+      "type": "url",
+      "id": "inquiry_link",
+      "label": "Inquiry link when no product is selected"
+    },
+    {
+      "type": "text",
+      "id": "inquiry_label",
+      "label": "Inquiry label",
+      "default": "Ask about Trace"
+    },
+    {
+      "type": "text",
+      "id": "home_eyebrow",
+      "label": "Home card eyebrow",
+      "default": "HOME OBJECTS"
+    },
+    {
+      "type": "text",
+      "id": "home_heading",
+      "label": "Home card heading",
+      "default": "For the spaces we live in."
+    },
+    {
+      "type": "richtext",
+      "id": "home_copy",
+      "label": "Home card text",
+      "default": "<p>Considered objects for everyday spaces. For now, discover Trace: a piece of your own story, at home.</p>"
+    },
+    {
+      "type": "text",
+      "id": "studio_heading",
+      "label": "Studio card heading",
+      "default": "An idea. A test. Something made."
+    },
+    {
+      "type": "richtext",
+      "id": "studio_copy",
+      "label": "Studio card text",
+      "default": "<p>Behind Teklo is a maker who likes to experiment. Explore the projects, processes, and work in progress.</p>"
+    },
+    {
+      "type": "url",
+      "id": "studio_link",
+      "label": "Studio link"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "spec",
+      "name": "Product detail",
+      "settings": [
+        {
+          "type": "text",
+          "id": "label",
+          "label": "Label"
+        },
+        {
+          "type": "text",
+          "id": "value",
+          "label": "Value"
+        }
+      ]
+    },
+    {
+      "type": "graphic",
+      "name": "Trace listing graphic",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Graphic"
+        },
+        {
+          "type": "textarea",
+          "id": "alt",
+          "label": "Image description"
+        },
+        {
+          "type": "text",
+          "id": "caption",
+          "label": "Caption"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Trace launch"
+    }
+  ]
+}
+{% endschema %}

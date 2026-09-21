@@ -1,3 +1,10 @@
+{% liquid
+  assign header_logo = section.settings.brand_logo | default: settings.logo
+  assign header_logo_width = settings.logo_width
+  if section.settings.brand_logo != blank
+    assign header_logo_width = 150
+  endif
+%}
 <link rel="stylesheet" href="{{ 'component-list-menu.css' | asset_url }}" media="print" onload="this.media='all'">
 <link rel="stylesheet" href="{{ 'component-search.css' | asset_url }}" media="print" onload="this.media='all'">
 <link rel="stylesheet" href="{{ 'component-menu-drawer.css' | asset_url }}" media="print" onload="this.media='all'">
@@ -9,6 +16,7 @@
 >
 {%- if section.settings.presentation_style == 'teklo' -%}
   {{ 'teklo-header.css' | asset_url | stylesheet_tag }}
+  {%- if section.settings.studio_navigation -%}<script src="{{ 'teklo-navigation.js' | asset_url }}" defer="defer"></script>{%- endif -%}
   {%- if section.settings.overlay_homepage -%}
     <script src="{{ 'teklo-header.js' | asset_url }}" defer="defer"></script>
   {%- endif -%}
@@ -171,15 +179,19 @@
       assign language_selector = true
     endif
   -%}
-  <header class="header header--{{ section.settings.logo_position }} header--mobile-{{ section.settings.mobile_logo_position }} page-width{% if section.settings.menu_type_desktop == 'drawer' %} drawer-menu{% endif %}{% if section.settings.menu != blank %} header--has-menu{% endif %}{% if has_app_block %} header--has-app{% endif %}{% if social_links %} header--has-social{% endif %}{% if shop.customer_accounts_enabled %} header--has-account{% endif %}{% if country_selector or language_selector %} header--has-localizations{% endif %}">
+  <header class="header header--{{ section.settings.logo_position }} header--mobile-{{ section.settings.mobile_logo_position }} page-width{% if section.settings.menu_type_desktop == 'drawer' %} drawer-menu{% endif %}{% if section.settings.menu != blank or section.settings.studio_navigation %} header--has-menu{% endif %}{% if has_app_block %} header--has-app{% endif %}{% if social_links %} header--has-social{% endif %}{% if shop.customer_accounts_enabled %} header--has-account{% endif %}{% if country_selector or language_selector %} header--has-localizations{% endif %}">
     {%- liquid
       assign render_search_left = false
       if section.settings.logo_position == 'top-center' or section.settings.menu == blank or shop.customer_accounts_enabled
         assign render_search_left = true
       endif
 
-      if section.settings.menu != blank
+      if section.settings.menu != blank or section.settings.studio_navigation
         render 'header-drawer', show_country_selector: country_selector, show_language_selector: language_selector, show_social_links: social_links
+      endif
+
+      if section.settings.studio_navigation
+        assign render_search_left = false
       endif
 
       if render_search_left
@@ -192,27 +204,27 @@
         <h1 class="header__heading">
       {%- endif -%}
       <a href="{{ routes.root_url }}" class="header__heading-link link link--text focus-inset">
-        {%- if settings.logo != blank -%}
+        {%- if header_logo != blank -%}
           <div class="header__heading-logo-wrapper">
-            {%- assign logo_alt = settings.logo.alt | default: shop.name | escape -%}
-            {%- assign logo_height = settings.logo_width | divided_by: settings.logo.aspect_ratio -%}
-            {% capture sizes %}(max-width: {{ settings.logo_width | times: 2 }}px) 50vw, {{ settings.logo_width }}px{% endcapture %}
-            {% capture widths %}{{ settings.logo_width }}, {{ settings.logo_width | times: 1.5 | round }}, {{ settings.logo_width | times: 2 }}{% endcapture %}
+            {%- assign logo_alt = header_logo.alt | default: section.settings.homepage_wordmark | default: shop.name | escape -%}
+            {%- assign logo_height = header_logo_width | divided_by: header_logo.aspect_ratio -%}
+            {% capture sizes %}(max-width: {{ header_logo_width | times: 2 }}px) 50vw, {{ header_logo_width }}px{% endcapture %}
+            {% capture widths %}{{ header_logo_width }}, {{ header_logo_width | times: 1.5 | round }}, {{ header_logo_width | times: 2 }}{% endcapture %}
             {{
-              settings.logo
+              header_logo
               | image_url: width: 600
               | image_tag:
                 class: 'header__heading-logo motion-reduce',
                 widths: widths,
                 height: logo_height,
-                width: settings.logo_width,
+                width: header_logo_width,
                 alt: logo_alt,
                 sizes: sizes,
                 preload: true
             }}
           </div>
         {%- else -%}
-          <span class="h2">{% if request.page_type == 'index' and section.settings.homepage_wordmark != blank %}{{ section.settings.homepage_wordmark | escape }}{% else %}{{ shop.name }}{% endif %}</span>
+          <span class="h2">{% if section.settings.presentation_style == 'teklo' and section.settings.homepage_wordmark != blank %}{{ section.settings.homepage_wordmark | escape }}{% else %}{{ shop.name }}{% endif %}</span>
         {%- endif -%}
       </a>
       {%- if request.page_type == 'index' and section.settings.presentation_style != 'teklo' -%}
@@ -221,8 +233,10 @@
     {%- endif -%}
 
     {%- liquid
-      if section.settings.menu != blank
-        if section.settings.menu_type_desktop == 'dropdown'
+      if section.settings.menu != blank or section.settings.studio_navigation
+        if section.settings.studio_navigation and section.settings.menu_type_desktop != 'drawer'
+          render 'teklo-navigation', section: section
+        elsif section.settings.menu_type_desktop == 'dropdown'
           render 'header-dropdown-menu'
         elsif section.settings.menu_type_desktop != 'drawer'
           render 'header-mega-menu'
@@ -235,27 +249,27 @@
         <h1 class="header__heading">
       {%- endif -%}
       <a href="{{ routes.root_url }}" class="header__heading-link link link--text focus-inset">
-        {%- if settings.logo != blank -%}
+        {%- if header_logo != blank -%}
           <div class="header__heading-logo-wrapper">
-            {%- assign logo_alt = settings.logo.alt | default: shop.name | escape -%}
-            {%- assign logo_height = settings.logo_width | divided_by: settings.logo.aspect_ratio -%}
-            {% capture sizes %}(min-width: 750px) {{ settings.logo_width }}px, 50vw{% endcapture %}
-            {% capture widths %}{{ settings.logo_width }}, {{ settings.logo_width | times: 1.5 | round }}, {{ settings.logo_width | times: 2 }}{% endcapture %}
+            {%- assign logo_alt = header_logo.alt | default: section.settings.homepage_wordmark | default: shop.name | escape -%}
+            {%- assign logo_height = header_logo_width | divided_by: header_logo.aspect_ratio -%}
+            {% capture sizes %}(min-width: 750px) {{ header_logo_width }}px, 50vw{% endcapture %}
+            {% capture widths %}{{ header_logo_width }}, {{ header_logo_width | times: 1.5 | round }}, {{ header_logo_width | times: 2 }}{% endcapture %}
             {{
-              settings.logo
+              header_logo
               | image_url: width: 600
               | image_tag:
                 class: 'header__heading-logo',
                 widths: widths,
                 height: logo_height,
-                width: settings.logo_width,
+                width: header_logo_width,
                 alt: logo_alt,
                 sizes: sizes,
                 preload: true
             }}
           </div>
         {%- else -%}
-          <span class="h2">{% if request.page_type == 'index' and section.settings.homepage_wordmark != blank %}{{ section.settings.homepage_wordmark | escape }}{% else %}{{ shop.name }}{% endif %}</span>
+          <span class="h2">{% if section.settings.presentation_style == 'teklo' and section.settings.homepage_wordmark != blank %}{{ section.settings.homepage_wordmark | escape }}{% else %}{{ shop.name }}{% endif %}</span>
         {%- endif -%}
       </a>
       {%- if request.page_type == 'index' and section.settings.presentation_style != 'teklo' -%}
@@ -470,8 +484,8 @@
     "@context": "http://schema.org",
     "@type": "Organization",
     "name": {{ shop.name | json }},
-    {% if settings.logo %}
-      "logo": {{ settings.logo | image_url: width: 500 | prepend: "https:" | json }},
+    {% if header_logo %}
+      "logo": {{ header_logo | image_url: width: 500 | prepend: "https:" | json }},
     {% endif %}
     "sameAs": [
       {{ settings.social_twitter_link | json }},
@@ -512,12 +526,48 @@
   "max_blocks": 3,
   "settings": [
     {
+      "type": "image_picker",
+      "id": "brand_logo",
+      "label": "Teklo brand logo"
+    },
+    {
+      "type": "checkbox",
+      "id": "studio_navigation",
+      "label": "Use studio navigation",
+      "info": "Shows Shop, Trace, Studio and a configured Custom Work page.",
+      "default": false
+    },
+    {
+      "type": "url",
+      "id": "trace_url",
+      "label": "Trace destination",
+      "info": "Defaults to the Trace story on the homepage."
+    },
+    {
+      "type": "url",
+      "id": "studio_url",
+      "label": "Studio destination",
+      "info": "Defaults to Made at Teklo on the homepage."
+    },
+    {
+      "type": "page",
+      "id": "custom_work_page",
+      "label": "Custom Work page",
+      "info": "Uses the custom-work page when available. Hidden until a page exists."
+    },
+    {
       "type": "select",
       "id": "presentation_style",
       "label": "Presentation style",
       "options": [
-        { "value": "publisher", "label": "Publisher" },
-        { "value": "teklo", "label": "Teklo" }
+        {
+          "value": "publisher",
+          "label": "Publisher"
+        },
+        {
+          "value": "teklo",
+          "label": "Teklo"
+        }
       ],
       "default": "publisher"
     },
@@ -531,8 +581,8 @@
     {
       "type": "text",
       "id": "homepage_wordmark",
-      "label": "Homepage text wordmark",
-      "default": "Teklo",
+      "label": "Text wordmark",
+      "default": "Teklo Studio",
       "info": "Used only when no approved logo image is configured."
     },
     {
@@ -707,6 +757,12 @@
       "unit": "px",
       "label": "t:sections.all.padding.padding_bottom",
       "default": 20
+    },
+    {
+      "type": "url",
+      "id": "custom_work_url",
+      "label": "Custom work preview link",
+      "info": "Optional preview destination until the Custom Work page is published. A configured or published Custom Work page takes precedence."
     }
   ],
   "blocks": [

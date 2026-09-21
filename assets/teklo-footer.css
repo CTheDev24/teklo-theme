@@ -36,3 +36,26 @@
   .footer--teklo .footer__blocks-wrapper { justify-content: space-between; }
   .footer--teklo .footer-block.grid__item { max-width: 30rem; }
 }
+.footer--teklo {
+  --color-background: 246, 244, 237;
+  --color-foreground: 32, 41, 37;
+  background: #f6f4ed;
+  color: #202925;
+}
+.footer--teklo .teklo-footer-brand {
+  max-width: var(--teklo-width-wide);
+  padding-inline: var(--teklo-page-gutter);
+  padding-top: 3.2rem;
+}
+.footer--teklo .teklo-footer-wordmark {
+  display: inline-block;
+  font-size: clamp(2.8rem, 4vw, 4.4rem);
+  font-weight: 600;
+  letter-spacing: -0.06em;
+  line-height: 1.2;
+  text-decoration: none;
+}
+.footer--teklo .footer__content-top { padding-top: 3.2rem; padding-bottom: 3.2rem; }
+.footer--teklo .footer-block__heading { letter-spacing: normal; text-transform: none; font-size: 1.4rem; }
+.footer--teklo .footer__copyright { letter-spacing: normal; }
+.footer--teklo .teklo-footer-logo{display:block;width:180px;max-width:100%;height:auto}

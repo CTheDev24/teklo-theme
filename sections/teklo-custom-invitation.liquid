@@ -1,0 +1,38 @@
+{{ 'teklo-custom-work.css' | asset_url | stylesheet_tag }}
+{% liquid
+  assign custom_page = section.settings.custom_page | default: pages['custom-work']
+  assign invitation_link = section.settings.button_link
+  if invitation_link == blank and custom_page != blank
+    assign invitation_link = custom_page.url | append: '#inquiry'
+  endif
+%}
+<div class="teklo-custom-invitation color-{{ section.settings.color_scheme }} gradient">
+  <div class="page-width teklo-custom-invitation__inner">
+    <div>
+      {% if section.settings.eyebrow != blank %}<p class="teklo-eyebrow">{{ section.settings.eyebrow | escape }}</p>{% endif %}
+      {% if section.settings.heading != blank %}<h2>{{ section.settings.heading | escape }}</h2>{% endif %}
+      {% if section.settings.text != blank %}<div class="rte">{{ section.settings.text }}</div>{% endif %}
+    </div>
+    {% if invitation_link != blank and section.settings.button_label != blank %}
+      <a class="teklo-custom-button" href="{{ invitation_link }}">{{ section.settings.button_label | escape }}<span class="svg-wrapper" aria-hidden="true">{{ 'icon-arrow.svg' | inline_asset_content }}</span></a>
+    {% endif %}
+  </div>
+</div>
+{% schema %}
+{
+  "name": "Teklo — Custom invitation",
+  "tag": "section",
+  "class": "section",
+  "disabled_on": { "groups": ["header", "footer"] },
+  "settings": [
+    { "type": "text", "id": "eyebrow", "label": "Eyebrow", "default": "Custom work" },
+    { "type": "text", "id": "heading", "label": "Heading", "default": "Have a problem worth making for?" },
+    { "type": "richtext", "id": "text", "label": "Text", "default": "<p>We take on selective design and fabrication projects. Tell us what you have in mind.</p>" },
+    { "type": "text", "id": "button_label", "label": "Button label", "default": "Start a Conversation" },
+    { "type": "page", "id": "custom_page", "label": "Custom work page", "info": "Defaults to the published page with handle custom-work. The button remains hidden until a page or link is available." },
+    { "type": "url", "id": "button_link", "label": "Button link" },
+    { "type": "color_scheme", "id": "color_scheme", "label": "Color scheme", "default": "scheme-1" }
+  ],
+  "presets": [{ "name": "Teklo — Custom invitation" }]
+}
+{% endschema %}

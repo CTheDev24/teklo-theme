@@ -1,0 +1,29 @@
+.teklo-studio { background: var(--teklo-cream, #f6f4ed); color: var(--teklo-ink, #202925); padding: clamp(4.8rem, 8vw, 10rem) 0; }
+.teklo-studio h1, .teklo-studio h2, .teklo-studio h3 { color: inherit; letter-spacing: -.035em; }
+.teklo-studio__eyebrow { font: 1.2rem/1.5 var(--teklo-font-label, monospace); text-transform: uppercase; letter-spacing: .12em; margin: 0 0 2rem; }
+.teklo-studio h1 { font-size: clamp(4.8rem, 7vw, 9rem); line-height: 1.02; margin: 0 0 2.4rem; }
+.teklo-studio__intro { max-width: 84rem; margin-bottom: clamp(4rem, 6vw, 7.2rem); }
+.teklo-studio__lead { font-size: clamp(1.8rem, 2vw, 2.3rem); line-height: 1.6; }
+.teklo-studio__offerings { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 3.2rem; }
+.teklo-studio__offering, .teklo-studio__project { border-top: 1px solid var(--teklo-rule, rgba(32, 41, 37, .18)); padding-top: 2.4rem; min-width: 0; }
+.teklo-studio__image { display: block; width: 100%; height: auto; aspect-ratio: 4 / 3; object-fit: cover; margin-bottom: 2.4rem; }
+.teklo-studio__offering h2, .teklo-studio__project h3 { font-size: clamp(2.4rem, 2.5vw, 3.2rem); line-height: 1.15; margin: 0 0 1.6rem; }
+.teklo-studio__link { display: inline-flex; gap: 1.6rem; align-items: center; min-height: 4.4rem; margin-top: 1.6rem; color: inherit; text-underline-offset: .5rem; text-decoration-thickness: 1px; }
+.teklo-studio__link:hover { text-decoration-thickness: 2px; }
+.teklo-studio__link:focus-visible { outline: 2px solid currentColor; outline-offset: 4px; }
+.teklo-studio__projects, .teklo-studio__around { border-top: 1px solid var(--teklo-rule, rgba(32, 41, 37, .18)); margin-top: clamp(5.6rem, 8vw, 10rem); padding-top: clamp(4rem, 5vw, 6.4rem); }
+.teklo-studio__section-heading { margin-bottom: 4rem; }
+.teklo-studio__section-heading h2 { font-size: clamp(3.6rem, 4.8vw, 6.4rem); line-height: 1.05; margin: 0; }
+.teklo-studio__project-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 4rem; }
+.teklo-studio__around { display: grid; grid-template-columns: minmax(0, .8fr) minmax(0, 1.2fr); gap: 6.4rem; }
+.teklo-studio__around-content { min-width: 0; }
+.teklo-studio__around-content > :first-child { margin-top: 0; }
+.teklo-studio__note { border-top: 1px solid var(--teklo-rule, rgba(32, 41, 37, .18)); padding-top: 2.4rem; margin-top: 3.2rem; }
+.teklo-studio__note h3 { font-size: 2rem; margin: 0 0 1.2rem; }
+@media (max-width: 989px) {
+  .teklo-studio__offerings, .teklo-studio__around { grid-template-columns: minmax(0, 1fr); gap: 3.2rem; }
+  .teklo-studio__around .teklo-studio__section-heading { margin-bottom: 0; }
+}
+@media (max-width: 749px) {
+  .teklo-studio__project-grid { grid-template-columns: minmax(0, 1fr); gap: 3.2rem; }
+}

@@ -1,3 +1,13 @@
 .shopify-preview-*.log
 .shopify-preview.pid
 review/loop*.log
+
+review/studio-refresh-*-render.html
+review/studio-refresh-render.html
+# Local media inspection copies and machine-specific check outputs
+review/brand-originals/
+review/clean-photos/
+review/brand-assets.json
+review/clean-photos.json
+review/*theme-check.json
+review/studio-refresh-verification.json

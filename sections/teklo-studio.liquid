@@ -1,0 +1,126 @@
+{{ 'teklo-studio.css' | asset_url | stylesheet_tag }}
+{% liquid
+  assign offering_count = 0
+  assign project_count = 0
+  for block in section.blocks
+    if block.settings.enabled and block.settings.title != blank
+      if block.type == 'offering'
+        assign offering_count = offering_count | plus: 1
+      elsif block.type == 'project'
+        assign project_count = project_count | plus: 1
+      endif
+    endif
+  endfor
+%}
+<div class="teklo-studio">
+  <div class="page-width">
+    <header class="teklo-studio__intro">
+      {% if section.settings.eyebrow != blank %}<p class="teklo-studio__eyebrow">{{ section.settings.eyebrow | escape }}</p>{% endif %}
+      <h1>{{ section.settings.heading | escape }}</h1>
+      {% if section.settings.intro != blank %}<div class="rte teklo-studio__lead">{{ section.settings.intro }}</div>{% endif %}
+    </header>
+    {% if offering_count > 0 %}
+      <div class="teklo-studio__offerings">
+        {% for block in section.blocks %}
+          {% if block.type == 'offering' and block.settings.enabled and block.settings.title != blank %}
+            <article class="teklo-studio__offering" {{ block.shopify_attributes }}>
+              {% if block.settings.image != blank %}
+                {{ block.settings.image | image_url: width: 1200 | image_tag: widths: '375,550,750,990,1200', sizes: '(min-width: 990px) 33vw, 100vw', loading: 'lazy', class: 'teklo-studio__image', alt: block.settings.title }}
+              {% elsif block.settings.use_trace_image %}
+                <img class="teklo-studio__image" src="{{ 'placeholder-trace-lifestyle-front.png' | asset_url }}" alt="Trace route artwork" width="1536" height="1024" loading="lazy">
+              {% endif %}
+              <h2>{{ block.settings.title | escape }}</h2>
+              {% if block.settings.copy != blank %}<div class="rte">{{ block.settings.copy }}</div>{% endif %}
+              {% if block.settings.link != blank and block.settings.link_label != blank %}<a class="teklo-studio__link" href="{{ block.settings.link }}">{{ block.settings.link_label | escape }} <span aria-hidden="true">↗</span></a>{% endif %}
+            </article>
+          {% endif %}
+        {% endfor %}
+      </div>
+    {% endif %}
+    {% if project_count > 0 %}
+      <section class="teklo-studio__projects" aria-labelledby="StudioProjects-{{ section.id }}">
+        <div class="teklo-studio__section-heading">
+          {% if section.settings.projects_eyebrow != blank %}<p class="teklo-studio__eyebrow">{{ section.settings.projects_eyebrow | escape }}</p>{% endif %}
+          <h2 id="StudioProjects-{{ section.id }}">{{ section.settings.projects_heading | escape }}</h2>
+        </div>
+        <div class="teklo-studio__project-grid">
+          {% for block in section.blocks %}
+            {% if block.type == 'project' and block.settings.enabled and block.settings.title != blank %}
+              <article class="teklo-studio__project" {{ block.shopify_attributes }}>
+                {% if block.settings.image != blank %}{{ block.settings.image | image_url: width: 1600 | image_tag: widths: '375,550,750,1100,1600', sizes: '(min-width: 990px) 50vw, 100vw', loading: 'lazy', class: 'teklo-studio__image', alt: block.settings.title }}{% endif %}
+                <h3>{{ block.settings.title | escape }}</h3>
+                {% if block.settings.copy != blank %}<div class="rte">{{ block.settings.copy }}</div>{% endif %}
+                {% if block.settings.link != blank and block.settings.link_label != blank %}<a class="teklo-studio__link" href="{{ block.settings.link }}">{{ block.settings.link_label | escape }} <span aria-hidden="true">↗</span></a>{% endif %}
+              </article>
+            {% endif %}
+          {% endfor %}
+        </div>
+      </section>
+    {% endif %}
+    <section class="teklo-studio__around" aria-labelledby="StudioAround-{{ section.id }}">
+      <div class="teklo-studio__section-heading">
+        {% if section.settings.around_eyebrow != blank %}<p class="teklo-studio__eyebrow">{{ section.settings.around_eyebrow | escape }}</p>{% endif %}
+        <h2 id="StudioAround-{{ section.id }}">{{ section.settings.around_heading | escape }}</h2>
+      </div>
+      <div class="teklo-studio__around-content">
+        {% if section.settings.maker_image != blank %}{{ section.settings.maker_image | image_url: width: 1400 | image_tag: widths: '375,550,750,1100,1400', sizes: '(min-width: 990px) 60vw, 100vw', loading: 'lazy', class: 'teklo-studio__image' }}{% endif %}
+        {% if section.settings.maker_intro != blank %}<div class="rte teklo-studio__lead">{{ section.settings.maker_intro }}</div>{% endif %}
+        {% if section.settings.current_project != blank %}
+          <div class="teklo-studio__note"><h3>{{ section.settings.current_heading | escape }}</h3><div class="rte">{{ section.settings.current_project }}</div></div>
+        {% endif %}
+        {% if section.settings.setup != blank %}
+          <div class="teklo-studio__note"><h3>{{ section.settings.setup_heading | escape }}</h3><div class="rte">{{ section.settings.setup }}</div></div>
+        {% endif %}
+      </div>
+    </section>
+  </div>
+</div>
+{% schema %}
+{
+  "name": "Teklo — Studio",
+  "tag": "section",
+  "class": "section",
+  "enabled_on": { "templates": ["page"] },
+  "settings": [
+    { "type": "text", "id": "eyebrow", "label": "Eyebrow", "default": "What we do / who we are" },
+    { "type": "text", "id": "heading", "label": "Heading", "default": "The studio" },
+    { "type": "richtext", "id": "intro", "label": "Introduction", "default": "<p>Curated objects, design and fabrication, and space to experiment.</p>" },
+    { "type": "text", "id": "projects_eyebrow", "label": "Projects eyebrow", "default": "From the studio" },
+    { "type": "text", "id": "projects_heading", "label": "Projects heading", "default": "Selected projects" },
+    { "type": "text", "id": "around_eyebrow", "label": "Around the shop eyebrow", "default": "The maker behind the work" },
+    { "type": "text", "id": "around_heading", "label": "Around the shop heading", "default": "Around the shop" },
+    { "type": "image_picker", "id": "maker_image", "label": "Maker or workshop image" },
+    { "type": "richtext", "id": "maker_intro", "label": "Personal introduction", "default": "<p>I enjoy experimenting and making things. Teklo is a place to share that work.</p>" },
+    { "type": "text", "id": "current_heading", "label": "Current project heading", "default": "On the workbench" },
+    { "type": "richtext", "id": "current_project", "label": "Current project", "info": "Optional. Describe what you are working on now." },
+    { "type": "text", "id": "setup_heading", "label": "Setup heading", "default": "The setup" },
+    { "type": "richtext", "id": "setup", "label": "Workshop setup", "info": "Optional. Include only equipment and details you want to share." }
+  ],
+  "blocks": [
+    {
+      "type": "offering", "name": "Studio area", "limit": 3,
+      "settings": [
+        { "type": "checkbox", "id": "enabled", "label": "Show area", "default": true },
+        { "type": "text", "id": "title", "label": "Title" },
+        { "type": "richtext", "id": "copy", "label": "Description" },
+        { "type": "image_picker", "id": "image", "label": "Image" },
+        { "type": "checkbox", "id": "use_trace_image", "label": "Use existing Trace image when no image is selected", "default": false },
+        { "type": "url", "id": "link", "label": "Link" },
+        { "type": "text", "id": "link_label", "label": "Link label" }
+      ]
+    },
+    {
+      "type": "project", "name": "Selected project", "limit": 12,
+      "settings": [
+        { "type": "checkbox", "id": "enabled", "label": "Show project", "default": false },
+        { "type": "text", "id": "title", "label": "Title" },
+        { "type": "richtext", "id": "copy", "label": "Description", "info": "Add confirmed project details only." },
+        { "type": "image_picker", "id": "image", "label": "Image" },
+        { "type": "url", "id": "link", "label": "Link" },
+        { "type": "text", "id": "link_label", "label": "Link label" }
+      ]
+    }
+  ],
+  "presets": [{ "name": "Teklo — Studio" }]
+}
+{% endschema %}

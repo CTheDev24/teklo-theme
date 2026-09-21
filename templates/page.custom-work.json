@@ -1,0 +1,9 @@
+{
+  "sections": {
+    "main": {
+      "type": "teklo-custom-work",
+      "settings": {}
+    }
+  },
+  "order": ["main"]
+}

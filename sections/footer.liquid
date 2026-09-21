@@ -31,6 +31,11 @@
 {%- endstyle -%}
 
 <footer class="footer color-{{ section.settings.color_scheme }} gradient section-{{ section.id }}-padding{% if section.settings.presentation_style == 'teklo' %} footer--teklo{% endif %}">
+  {%- if section.settings.presentation_style == 'teklo' -%}
+    <div class="teklo-footer-brand page-width">
+      <a class="teklo-footer-wordmark link link--text" href="{{ routes.root_url }}">{% if section.settings.brand_logo != blank %}{{ section.settings.brand_logo | image_url: width: 500 | image_tag: width: 180, alt: 'Teklo Studio', loading: 'lazy', class: 'teklo-footer-logo' }}{% else %}{{ section.settings.homepage_wordmark | default: shop.name | escape }}{% endif %}</a>
+    </div>
+  {%- endif -%}
   {%- liquid
     assign show_footer_newsletter = section.settings.newsletter_enable
     if request.page_type == 'index' and section.settings.suppress_newsletter_homepage
@@ -307,7 +312,7 @@
     <div class="footer__content-bottom-wrapper page-width{% if section.settings.enable_country_selector == false and section.settings.enable_language_selector == false %} footer__content-bottom-wrapper--center{% endif %}">
       <div class="footer__copyright caption">
         <small class="copyright__content"
-          >&copy; {{ 'now' | date: '%Y' }}, {% if request.page_type == 'index' and section.settings.homepage_wordmark != blank %}{{ section.settings.homepage_wordmark | escape | link_to: routes.root_url }}{% else %}{{ shop.name | link_to: routes.root_url }}{% endif -%}
+          >&copy; {{ 'now' | date: '%Y' }}, {% if section.settings.presentation_style == 'teklo' and section.settings.homepage_wordmark != blank %}{{ section.settings.homepage_wordmark | escape | link_to: routes.root_url }}{% else %}{{ shop.name | link_to: routes.root_url }}{% endif -%}
         </small>
         <small class="copyright__content">{{ powered_by_link }}</small>
         {%- if section.settings.show_policy -%}
@@ -432,12 +437,23 @@
   ],
   "settings": [
     {
+      "type": "image_picker",
+      "id": "brand_logo",
+      "label": "Teklo brand logo"
+    },
+    {
       "type": "select",
       "id": "presentation_style",
       "label": "Presentation style",
       "options": [
-        { "value": "publisher", "label": "Publisher" },
-        { "value": "teklo", "label": "Teklo" }
+        {
+          "value": "publisher",
+          "label": "Publisher"
+        },
+        {
+          "value": "teklo",
+          "label": "Teklo"
+        }
       ],
       "default": "publisher"
     },
