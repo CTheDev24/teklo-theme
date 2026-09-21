@@ -29,7 +29,7 @@ Rollback through Jotform revision history to the saved original revision, preser
 
 ## No changes applied
 
-Billing/plan, payment activation/test mode, shipping rates/zones/taxes, discount 25OFF, support email addresses, policies, notification templates, app billing/installation/configuration, pixels/consent, DNS and retention/deletion automation. Prepared changes live in REVIEW-PACKET.md and order-confirmation-insert.liquid. Do not assume these are live.
+Billing/plan, payment activation/test mode, shipping rates/zones/taxes, discount 25OFF, support email addresses, policies, notification templates, app billing/installation/configuration, pixels/consent, DNS and retention/deletion automation. Prepared changes live in REVIEW-PACKET.md and order-confirmation-insert.liquid.txt. Do not assume these are live.
 
 ## Homepage SEO rollback
 

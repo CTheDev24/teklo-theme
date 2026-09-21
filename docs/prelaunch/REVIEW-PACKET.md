@@ -69,7 +69,7 @@ Route-data notice must enumerate Jotform intake, Drive transfer, local productio
 
 > After payment, complete one [Trace intake form](https://form.jotform.com/262521531346047) for each physical piece. Use your Shopify order number, order email, piece reference and unit number. Supply a GPX file, accessible activity link, official-course details or course map. A submitted form is not production approval. We will deliver the identified proof to [VERIFIED ORDER-EMAIL CHANNEL]. Check the route, spelling, layout, finish and accent. Reply with the order, piece reference/unit and proof version plus “APPROVED FOR PRODUCTION,” or send one consolidated correction request. Missing/invalid input, inaccessible links, uncertain courses or colors require clarification; no response keeps production on hold. [CONFIRMED FOLLOW-UP/CANCELLATION RULE].
 
-Use the same approved text next to the purchase button, in the product description, the order confirmation and intake acknowledgment. `order-confirmation-insert.liquid` is prepared but NOT installed.
+Use the same approved text next to the purchase button, in the product description, the order confirmation and intake acknowledgment. `order-confirmation-insert.liquid.txt` is prepared but NOT installed.
 
 ## Smallest remaining rollout backlog
 
