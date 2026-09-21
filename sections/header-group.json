@@ -56,7 +56,8 @@
         "padding_top": 20,
         "padding_bottom": 20,
         "studio_navigation": true,
-        "custom_work_url": "/pages/contact?view=custom-work"
+        "custom_work_url": "/pages/contact?view=custom-work",
+        "studio_url": "/pages/about-us?view=studio"
       }
     }
   },

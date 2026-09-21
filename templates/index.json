@@ -16,16 +16,17 @@
         "focal_point": "center center",
         "heading": "Designed through process.",
         "text": "<p>Contemporary objects shaped through design, digital craft, and considered making.</p>",
-        "primary_label": "Shop Objects",
-        "primary_link": "shopify://collections/all",
-        "secondary_label": "Our Process",
-        "secondary_link": "#made-at-teklo",
+        "primary_label": "Explore Trace",
+        "primary_link": "#teklo-trace",
+        "secondary_label": "The Studio",
+        "secondary_link": "/pages/about-us?view=studio",
         "alignment": "left",
         "vertical_position": "center",
         "height": "viewport",
         "overlay": 30,
         "color_scheme": "scheme-1",
-        "layout": "split"
+        "layout": "split",
+        "eyebrow": "OBJECTS FOR A MORE MEANINGFUL LIFE"
       }
     },
     "selected_objects": {
@@ -77,48 +78,43 @@
         "color_scheme": "scheme-1",
         "padding_top": 96,
         "padding_bottom": 96
-      }
+      },
+      "disabled": true
     },
     "trace": {
-      "type": "teklo-editorial-feature",
+      "type": "teklo-trace-launch",
+      "settings": {
+        "inquiry_link": "/pages/contact",
+        "studio_link": "/pages/about-us?view=studio"
+      },
       "blocks": {
-        "run": {
-          "type": "step",
+        "format": {
+          "type": "spec",
           "settings": {
-            "label": "RUN"
+            "label": "FORMAT",
+            "value": "11 × 14 in framed artwork"
           }
         },
-        "map": {
-          "type": "step",
+        "material": {
+          "type": "spec",
           "settings": {
-            "label": "MAP"
+            "label": "MATERIAL",
+            "value": "Dimensional print + archival poster"
           }
         },
-        "make": {
-          "type": "step",
+        "made": {
+          "type": "spec",
           "settings": {
-            "label": "MAKE"
+            "label": "MADE",
+            "value": "Designed, fabricated, and finished in Houston"
           }
         }
       },
       "block_order": [
-        "run",
-        "map",
-        "make"
-      ],
-      "settings": {
-        "eyebrow": "TRACE / BY TEKLO",
-        "heading": "A route worth remembering.",
-        "text": "<p>Your miles become the starting point. Trace transforms a completed route into dimensional artwork built around the places that made it yours.</p>",
-        "link_label": "Explore Trace",
-        "link": "",
-        "focal_point": "center center",
-        "layout": "split",
-        "media_side": "left",
-        "height": "medium",
-        "overlay": 45,
-        "color_scheme": "scheme-4"
-      }
+        "format",
+        "material",
+        "made"
+      ]
     },
     "lighting": {
       "type": "teklo-editorial-feature",
@@ -134,7 +130,8 @@
         "height": "medium",
         "overlay": 45,
         "color_scheme": "scheme-4"
-      }
+      },
+      "disabled": true
     },
     "more_from_studio": {
       "type": "featured-collection",
@@ -168,7 +165,8 @@
         "swipe_on_mobile": false,
         "padding_top": 80,
         "padding_bottom": 80
-      }
+      },
+      "disabled": true
     },
     "made_at_teklo": {
       "type": "teklo-process",
@@ -221,7 +219,8 @@
         "color_scheme": "scheme-1",
         "padding_top": 96,
         "padding_bottom": 96
-      }
+      },
+      "disabled": true
     },
     "in_their_space": {
       "type": "teklo-testimonials",
@@ -266,7 +265,8 @@
         "color_scheme": "scheme-1",
         "padding_top": 96,
         "padding_bottom": 96
-      }
+      },
+      "disabled": true
     },
     "studio_notes": {
       "type": "newsletter",
@@ -313,8 +313,8 @@
   },
   "order": [
     "teklo_hero",
-    "selected_objects",
     "trace",
+    "selected_objects",
     "lighting",
     "more_from_studio",
     "made_at_teklo",
@@ -323,3 +323,4 @@
     "custom_invitation"
   ]
 }
+
