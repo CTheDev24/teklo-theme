@@ -85,35 +85,63 @@
       "type": "teklo-trace-launch",
       "settings": {
         "inquiry_link": "/pages/contact",
-        "studio_link": "/pages/about-us?view=studio"
+        "studio_link": "/pages/about-us?view=studio",
+        "image": "shopify://shop_images/IMG-0423.png",
+        "copy": "<p>Choose Gallery for a light, architectural finish or Nocturne for a dark, graphic look. Each Trace combines a raised 3D map, your route, and a custom race poster in a matte-black wooden shadow box.</p>"
       },
       "blocks": {
-        "format": {
+        "frame": {
           "type": "spec",
           "settings": {
-            "label": "FORMAT",
-            "value": "11 × 14 in framed artwork"
+            "label": "FRAME",
+            "value": "12.5 × 15 × 2.4 in · matte-black wooden shadow box"
           }
         },
-        "material": {
+        "map": {
           "type": "spec",
           "settings": {
-            "label": "MATERIAL",
-            "value": "Dimensional print + archival poster"
+            "label": "3D MAP",
+            "value": "8 × 10 in · raised city form and your route"
           }
         },
-        "made": {
+        "poster": {
           "type": "spec",
           "settings": {
-            "label": "MADE",
-            "value": "Designed, fabricated, and finished in Houston"
+            "label": "POSTER",
+            "value": "Custom race details and typography"
+          }
+        },
+        "finish": {
+          "type": "spec",
+          "settings": {
+            "label": "FINISH",
+            "value": "Gallery or Nocturne · ready to hang"
+          }
+        },
+        "finishes": {
+          "type": "graphic",
+          "settings": {
+            "image": "shopify://shop_images/Trace-Listing_Graphics_-_Choose_Your_Style.png",
+            "alt": "Gallery is light and architectural; Nocturne is dark and high-contrast. Both feature a raised route.",
+            "caption": "Two finishes. Your route."
+          }
+        },
+        "materials": {
+          "type": "graphic",
+          "settings": {
+            "image": "shopify://shop_images/Trace-Listing_Graphics_-_Dimensions_Materials.png",
+            "alt": "Trace includes a 3D printed map, custom printed race poster, and matte-black wooden shadow box. Frame: 12.5 inches wide, 15 inches tall, 2.4 inches deep. 3D map: 8 by 10 inches.",
+            "caption": "Made with dimension."
           }
         }
       },
       "block_order": [
-        "format",
-        "material",
-        "made"
+        "frame",
+        "map",
+        "poster",
+        "finish",
+        "finishes",
+        "materials"
       ]
     },
     "lighting": {
@@ -309,11 +337,26 @@
       "settings": {
         "button_link": "/pages/contact?view=custom-work#inquiry"
       }
+    },
+    "introduction": {
+      "type": "teklo-introduction",
+      "settings": {
+        "trace_logo": "shopify://shop_images/trace-wordmark.svg",
+        "detail_image": "shopify://shop_images/Trace-Listing_Graphics_-_YOUR_ROUTE_GIVEN_DIMENSION.png"
+      }
+    },
+    "philosophy": {
+      "type": "teklo-philosophy",
+      "settings": {
+        "seal": "shopify://shop_images/teklo-maker-seal.svg"
+      }
     }
   },
   "order": [
     "teklo_hero",
+    "introduction",
     "trace",
+    "philosophy",
     "selected_objects",
     "lighting",
     "more_from_studio",
@@ -323,4 +366,3 @@
     "custom_invitation"
   ]
 }
-

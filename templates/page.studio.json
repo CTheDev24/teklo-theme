@@ -13,15 +13,66 @@
       "type": "teklo-studio",
       "settings": {},
       "blocks": {
-        "objects": { "type": "offering", "settings": { "enabled": true, "title": "Curated objects", "copy": "<p>Objects from Teklo, including Trace.</p>", "use_trace_image": true } },
-        "fabrication": { "type": "offering", "settings": { "enabled": true, "title": "Design & fabrication", "copy": "<p>Custom design, fabrication, and reverse engineering.</p>" } },
-        "experiments": { "type": "offering", "settings": { "enabled": true, "title": "Experiments", "copy": "<p>A place for experimenting and making things, including an assembled drone.</p>" } },
-        "hull": { "type": "project", "settings": { "enabled": true, "title": "Ship-hull master mold" } },
-        "connector": { "type": "project", "settings": { "enabled": true, "title": "Tent-pole connector", "copy": "<p>A tent-pole connector, reverse engineered for a friend.</p>" } },
-        "professional": { "type": "project", "settings": { "enabled": false, "title": "Previous professional project" } }
+        "objects": {
+          "type": "offering",
+          "settings": {
+            "enabled": true,
+            "title": "Curated objects",
+            "copy": "<p>Objects from Teklo, including Trace.</p>",
+            "use_trace_image": false,
+            "image": "shopify://shop_images/IMG-0423.png"
+          }
+        },
+        "fabrication": {
+          "type": "offering",
+          "settings": {
+            "enabled": true,
+            "title": "Design & fabrication",
+            "copy": "<p>Custom design, fabrication, and reverse engineering.</p>"
+          }
+        },
+        "experiments": {
+          "type": "offering",
+          "settings": {
+            "enabled": true,
+            "title": "Experiments",
+            "copy": "<p>A place for experimenting and making things, including an assembled drone.</p>"
+          }
+        },
+        "hull": {
+          "type": "project",
+          "settings": {
+            "enabled": true,
+            "title": "Ship-hull master mold"
+          }
+        },
+        "connector": {
+          "type": "project",
+          "settings": {
+            "enabled": true,
+            "title": "Tent-pole connector",
+            "copy": "<p>A tent-pole connector, reverse engineered for a friend.</p>"
+          }
+        },
+        "professional": {
+          "type": "project",
+          "settings": {
+            "enabled": false,
+            "title": "Previous professional project"
+          }
+        }
       },
-      "block_order": ["objects", "fabrication", "experiments", "hull", "connector", "professional"]
+      "block_order": [
+        "objects",
+        "fabrication",
+        "experiments",
+        "hull",
+        "connector",
+        "professional"
+      ]
     }
   },
-  "order": ["main"]
+  "order": [
+    "main"
+  ]
 }

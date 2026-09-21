@@ -1,0 +1,11 @@
+{{ 'teklo-philosophy.css' | asset_url | stylesheet_tag }}
+<div class="teklo-philosophy">
+  <div class="page-width teklo-philosophy__grid">
+    <h2>{{ section.settings.heading | escape }}</h2>
+    <div class="teklo-philosophy__copy rte">{{ section.settings.text }}</div>
+    {% if section.settings.seal != blank %}{{ section.settings.seal | image_url: width: 500 | image_tag: widths: '180,250,360,500', sizes: '(min-width: 990px) 15vw, 160px', alt: 'The Teklo Standard — Design and Fabrication', loading: 'lazy', class: 'teklo-philosophy__seal' }}{% endif %}
+  </div>
+</div>
+{% schema %}
+{"name":"Teklo — A new way","tag":"section","class":"section","settings":[{"type":"text","id":"heading","label":"Heading","default":"A new way of thinking about things."},{"type":"richtext","id":"text","label":"Text","default":"<p>We pair digital tools with a maker’s eye—developing objects that solve a problem, hold a memory, or make a space feel more considered. Catalog designs lead the studio; selective custom work lets us pursue the right challenges.</p>"},{"type":"image_picker","id":"seal","label":"Teklo maker seal"}],"presets":[{"name":"Teklo — A new way"}]}
+{% endschema %}

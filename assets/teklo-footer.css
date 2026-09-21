@@ -58,3 +58,4 @@
 .footer--teklo .footer__content-top { padding-top: 3.2rem; padding-bottom: 3.2rem; }
 .footer--teklo .footer-block__heading { letter-spacing: normal; text-transform: none; font-size: 1.4rem; }
 .footer--teklo .footer__copyright { letter-spacing: normal; }
+.footer--teklo .teklo-footer-logo{display:block;width:180px;max-width:100%;height:auto}
