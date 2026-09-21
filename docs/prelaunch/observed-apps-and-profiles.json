@@ -1,0 +1,100 @@
+{
+  "data": {
+    "deliveryProfiles": {
+      "nodes": [
+        {
+          "id": "gid://shopify/DeliveryProfile/93564829862",
+          "name": "General profile"
+        },
+        {
+          "id": "gid://shopify/DeliveryProfile/93565550758",
+          "name": "Flat Rate"
+        }
+      ],
+      "pageInfo": {
+        "hasNextPage": false,
+        "endCursor": "eyJsYXN0X2lkIjo5MzU2NTU1MDc1OCwibGFzdF92YWx1ZSI6IjkzNTY1NTUwNzU4In0="
+      }
+    },
+    "appInstallations": {
+      "nodes": [
+        {
+          "id": "gid://shopify/AppInstallation/552931917990",
+          "app": {
+            "title": "Order Printer Templates"
+          }
+        },
+        {
+          "id": "gid://shopify/AppInstallation/552958886054",
+          "app": {
+            "title": "Etsy Reviews Sync - Boostify"
+          }
+        },
+        {
+          "id": "gid://shopify/AppInstallation/566579953830",
+          "app": {
+            "title": "Klaviyo: Email Marketing & SMS"
+          }
+        },
+        {
+          "id": "gid://shopify/AppInstallation/568466407590",
+          "app": {
+            "title": "Hextom: Sales Boost"
+          }
+        },
+        {
+          "id": "gid://shopify/AppInstallation/568910413990",
+          "app": {
+            "title": "Junip"
+          }
+        },
+        {
+          "id": "gid://shopify/AppInstallation/568911429798",
+          "app": {
+            "title": "AI Bundles & Upsells"
+          }
+        },
+        {
+          "id": "gid://shopify/AppInstallation/568914346150",
+          "app": {
+            "title": "AOV.ai Bundle"
+          }
+        },
+        {
+          "id": "gid://shopify/AppInstallation/575102910630",
+          "app": {
+            "title": "Flow"
+          }
+        },
+        {
+          "id": "gid://shopify/AppInstallation/975976530086",
+          "app": {
+            "title": "Zapier"
+          }
+        },
+        {
+          "id": "gid://shopify/AppInstallation/996239245478",
+          "app": {
+            "title": "QuickBooks Online"
+          }
+        },
+        {
+          "id": "gid://shopify/AppInstallation/1004184338598",
+          "app": {
+            "title": "SP Etsy Importer & Sync"
+          }
+        },
+        {
+          "id": "gid://shopify/AppInstallation/1053188227238",
+          "app": {
+            "title": "Shopify ChatGPT MCP App"
+          }
+        }
+      ],
+      "pageInfo": {
+        "hasNextPage": false,
+        "endCursor": "eyJsYXN0X2lkIjoxMDUzMTg4MjI3MjM4LCJsYXN0X3ZhbHVlIjoiMjAyNi0wOS0xOSAwMToyNDozMSAtMDUwMCJ9"
+      }
+    }
+  }
+}

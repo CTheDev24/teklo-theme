@@ -1,0 +1,48 @@
+{
+  "alts": [
+    {
+      "id": "gid://shopify/MediaImage/70354423939238",
+      "alt": "Trace frame dimensions and materials diagram."
+    },
+    {
+      "id": "gid://shopify/MediaImage/70354423742630",
+      "alt": "Signal Orange, Volt Lime and Pulse Pink raised route accents."
+    },
+    {
+      "id": "gid://shopify/MediaImage/70354423775398",
+      "alt": "Trace ordering steps: choose finish, submit route details, review proof and receive artwork."
+    },
+    {
+      "id": "gid://shopify/MediaImage/70354423840934",
+      "alt": "GPX export guide for Strava, Garmin Connect, COROS and Suunto, with activity-link and race-detail alternatives."
+    },
+    {
+      "id": "gid://shopify/MediaImage/70354423906470",
+      "alt": "Activity export examples for Strava, Garmin Connect and COROS."
+    },
+    {
+      "id": "gid://shopify/MediaImage/70354423808166",
+      "alt": "Trace proof review and written production approval instructions."
+    }
+  ],
+  "detachedReferences": [
+    {
+      "id": "gid://shopify/MediaImage/70354423939238",
+      "referencesToRemove": [
+        "gid://shopify/Product/15807121490086"
+      ]
+    },
+    {
+      "id": "gid://shopify/MediaImage/70354423775398",
+      "referencesToRemove": [
+        "gid://shopify/Product/15807121490086"
+      ]
+    },
+    {
+      "id": "gid://shopify/MediaImage/70354423808166",
+      "referencesToRemove": [
+        "gid://shopify/Product/15807121490086"
+      ]
+    }
+  ]
+}

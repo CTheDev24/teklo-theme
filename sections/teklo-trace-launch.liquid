@@ -7,7 +7,7 @@
     </div>
     <div class="teklo-launch__details"><p class="teklo-launch__label">{{ section.settings.card_eyebrow | escape }}</p><h3>{{ section.settings.card_heading | escape }}</h3><div class="rte">{{ section.settings.copy }}</div>
       <dl>{% for block in section.blocks %}{% if block.type == 'spec' %}<div {{ block.shopify_attributes }}><dt>{{ block.settings.label | escape }}</dt><dd>{{ block.settings.value | escape }}</dd></div>{% endif %}{% endfor %}</dl>
-      {% if section.settings.product != blank %}<a class="teklo-launch__cta" href="{{ section.settings.product.url }}">{{ section.settings.button_label | escape }} {{ 'icon-arrow.svg' | inline_asset_content }}</a>{% elsif section.settings.inquiry_link != blank %}<a class="teklo-launch__cta" href="{{ section.settings.inquiry_link }}">{{ section.settings.inquiry_label | escape }} {{ 'icon-arrow.svg' | inline_asset_content }}</a>{% endif %}
+      {% if section.settings.product != blank %}{% assign trace_price = section.settings.product.price_min | money_with_currency %}<p>{{ 'teklo.launch.starting_price' | t: price: trace_price }}</p><a class="teklo-launch__cta" href="{{ section.settings.product.url }}">{{ section.settings.button_label | escape }} {{ 'icon-arrow.svg' | inline_asset_content }}</a>{% elsif section.settings.inquiry_link != blank %}<a class="teklo-launch__cta" href="{{ section.settings.inquiry_link }}">{{ section.settings.inquiry_label | escape }} {{ 'icon-arrow.svg' | inline_asset_content }}</a>{% endif %}
     </div>
   </div>
   <div class="teklo-launch__graphics">

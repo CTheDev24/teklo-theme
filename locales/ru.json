@@ -581,6 +581,15 @@
       "trace": "Trace",
       "studio": "Studio",
       "custom_work": "Custom Work"
+    },
+    "launch": {
+      "starting_price": "From {{ price }}",
+      "browse_products": "Browse available products",
+      "piece_reference": "Piece reference",
+      "piece_help": "Give this piece a short reference, such as Runner A. Add differently personalized pieces separately with different references. Keep this reference for your order intake. For quantities greater than one, identify each unit separately in your intake.",
+      "gift_note": "Gift note (optional)",
+      "workflow_pending": "Trace intake and proof delivery are being prepared for launch. Contact us before ordering with questions about your route.",
+      "contact": "Contact Teklo Studio"
     }
   }
 }
