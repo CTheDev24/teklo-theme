@@ -6,6 +6,10 @@ Branch `codex/feature/launch-readiness-next`, based on `origin/dev` at `918361f`
 
 [Draft preview](https://at3dshop.myshopify.com/?preview_theme_id=196729798822) · [Trace preview](https://at3dshop.myshopify.com/products/personalized-3d-race-map-custom-gpx-running-wall-art-marathon-finisher-gift?preview_theme_id=196729798822) · [Custom Work preview](https://at3dshop.myshopify.com/pages/contact?view=custom-work&preview_theme_id=196729798822)
 
+## Policy decisions update — 22 September
+
+See [merchant decisions and prepared copy](POLICY-DECISIONS.md). Merchant selected 8–10 business days production, 7-day damage reporting, domestic US launch shipping, a 14-day post-delivery file deletion target, the current $25 medal upsell and a maximum 30-day relaunch discount. Cancellation/refund boundaries, response clocks, actual storage deletion and exact shipping/discount configuration still need the limited clarifications recorded there. These decisions supersede older requests to choose production/damage/surcharge values below; external application is not claimed.
+
 ## Implementation and findings matrix
 
 Mailbox follow-up: merchant confirmed all three Teklo mailboxes are monitored. Trace routing is orders@; Custom Work is hello@. Four policy contact sections and Shopify store email now use support@, independently read back. Test Email delivered to the account's iCloud address, not the configured recipients. Merchant approved removing the unexpected intake e-signature gate. A fresh synthetic submission succeeded and merchant confirmed notification receipt at orders@. The obsolete Etsy/time promise on the success page was corrected and saved. Later proof approval remains required. See [current mailbox configuration](MAILBOX-CONFIGURATION.md) for evidence and rollback.
