@@ -64,3 +64,7 @@ All audit IDs are retained. Status distinguishes current work from inherited fix
 ## Rollback boundaries
 
 Revert this batch's code commit through normal review and redeploy only its changed theme files to the same unpublished theme. Do not restore an entire theme or overwrite unrelated merchant edits. Deployment record contains remote before/after evidence. Code reverts do not undo Shopify media, Jotform settings, policies, notifications, billing or Drive sharing: use their explicit records separately. Stop the offline ledger tool without deleting private order evidence. No public release rollback is needed because no publication occurred.
+
+## Five-product Shop and fresh audit — 22 September 2026
+
+Homepage Custom Work now offers the existing upload form inline through an expandable invitation. Shop uses a new manual collection (693062697126) containing Trace, Modern Art Deco clock, Birch light, Torio and Luxar. Draft deployment verified. See [fresh readiness audit and rollback](audit-2026-09-22/README.md). Verdict remains NOT READY; the new audit distinguishes current evidence from historical checks and retains every original finding ID. Discounts remain disabled; this supersedes old activation suggestions in this packet.

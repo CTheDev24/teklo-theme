@@ -1,0 +1,166 @@
+- main:
+  - heading "Complete Your Trace" [level=1]
+  - generic: Complete one submission for each customized piece. Have your Shopify order number ready. Submitting this form does not approve a design or begin production.
+  - heading "Your Order" [level=3]
+  - generic: Shopify order number*
+  - textbox "Shopify order number"
+  - generic: Name used on the Shopify order*
+  - group "Name used on the Shopify order":
+    - textbox "First Name"
+    - generic: First Name
+    - textbox "Last Name"
+    - generic: Last Name
+  - generic: Order email*
+  - textbox "Order email example@example.com"
+  - generic: example@example.com
+  - generic: Piece reference*
+  - textbox "Piece reference"
+  - generic: Piece number*
+  - spinbutton "Piece number Use 1 for the first piece with this reference, 2 for the second, and so on. Enter a whole number; we check it against your order quantity before preparing a proof."
+  - generic: Use 1 for the first piece with this reference, 2 for the second, and so on. Enter a whole number; we check it against your order quantity before preparing a proof.
+  - generic: Finish*
+  - radiogroup "Finish":
+    - radio "Gallery"
+    - generic: Gallery
+    - radio "Nocturne"
+    - generic: Nocturne
+  - generic: Route accent*
+  - radiogroup "Route accent":
+    - radio "Signal Orange"
+    - generic: Signal Orange
+    - radio "Volt Lime"
+    - generic: Volt Lime
+    - radio "Pulse Pink"
+    - generic: Pulse Pink
+    - radio "Match My Medal Color"
+    - generic: Match My Medal Color
+  - generic: Medal photo
+  - group "Medal photo":
+    - text: Upload a File
+    - generic: Drag and drop files here
+    - button "Upload a FileDrag and drop files here Choose a file"
+    - list "Uploaded files"
+  - generic: Desired medal color description
+  - textbox "Desired medal color description"
+  - heading "Your Race Details" [level=3]
+  - generic: Runner display name*
+  - textbox "Runner display name"
+  - generic: Bib number
+  - textbox "Bib number"
+  - generic: Race or event name
+  - textbox "Race or event name"
+  - generic: Race date*
+  - group "Race date":
+    - textbox "Race date Date":
+      - /placeholder: MM-DD-YYYY
+    - generic: 2 digit month, 2 digit day, 4 digit year
+    - button "Choose Date"
+    - generic: Date
+  - generic: Race location (City, State)
+  - textbox "Race location (City, State)"
+  - generic: Race distance
+  - combobox "Race distance":
+    - option "Please Select" [selected]
+    - option "1K"
+    - option "5K"
+    - option "10K"
+    - option "Half Marathon"
+    - option "Marathon"
+    - option "Ultra"
+    - option "Other"
+  - generic: Official finish time
+  - textbox "Official finish time"
+  - generic: Additional wording or important notes
+  - textbox "Additional wording or important notes"
+  - generic: Preferred shortened name
+  - textbox "Preferred shortened name"
+  - heading "Your Route" [level=3]
+  - generic: How would you like to provide your route?*
+  - radiogroup "How would you like to provide your route?":
+    - radio "Upload my activity file — Best accuracy"
+    - generic: Upload my activity file — Best accuracy
+    - radio "Share an activity or public route link"
+    - generic: Share an activity or public route link
+    - radio "Help me locate the official race course"
+    - generic: Help me locate the official race course
+    - radio "Upload a course map or screenshot"
+    - generic: Upload a course map or screenshot
+  - generic: Upload your route file
+  - group "Upload your route file":
+    - text: Upload a File
+    - generic: Drag and drop files here
+    - button "Upload a FileDrag and drop files here Choose a file"
+    - list "Uploaded files"
+  - generic: Activity or public route link
+  - textbox "Activity or public route link"
+  - generic: Activity platform
+  - group "Activity platform":
+    - checkbox "Strava"
+    - generic: Strava
+    - checkbox "Garmin"
+    - generic: Garmin
+    - checkbox "COROS"
+    - generic: COROS
+    - checkbox "MapMyRun"
+    - generic: MapMyRun
+    - checkbox "RideWithGPS"
+    - generic: RideWithGPS
+    - checkbox "Other"
+    - generic: Other
+    - checkbox "Other"
+    - generic: Other
+  - generic: Race year for course research
+  - spinbutton "Race year for course research"
+  - generic: Official event website
+  - textbox "Official event website"
+  - generic: Exact distance or race category
+  - textbox "Exact distance or race category"
+  - generic: Course details that may help us locate it
+  - textbox "Course details that may help us locate it"
+  - generic: Upload a course map or screenshot
+  - group "Upload a course map or screenshot":
+    - text: Upload a File
+    - generic: Drag and drop files here
+    - button "Upload a FileDrag and drop files here Choose a file"
+    - list "Uploaded files"
+  - generic: Course map source link
+  - textbox "Course map source link"
+  - heading "Route Confirmation" [level=3]
+  - generic: Does your activity include any miles that were not part of the official course?*
+  - radiogroup "Does your activity include any miles that were not part of the official course?":
+    - radio "No"
+    - generic: "No"
+    - radio "Yes"
+    - generic: "Yes"
+  - generic: Are the start and finish at the same location?*
+  - radiogroup "Are the start and finish at the same location?":
+    - radio "Yes"
+    - generic: "Yes"
+    - radio "No"
+    - generic: "No"
+    - radio "Not sure"
+    - generic: Not sure
+  - generic: Route notes
+  - textbox "Route notes"
+  - heading "Proof and Approval" [level=3]
+  - generic: Acknowledgment*
+  - group "Acknowledgment":
+    - checkbox "I understand that production requires written approval of the proof for my piece."
+    - generic: I understand that production requires written approval of the proof for my piece.
+    - checkbox "I understand that production begins only after I provide written approval."
+    - generic: I understand that production begins only after I provide written approval.
+    - checkbox "I have reviewed the names, dates, time, pace, distance and other information submitted above for accuracy."
+    - generic: I have reviewed the names, dates, time, pace, distance and other information submitted above for accuracy.
+  - paragraph: Submit one intake per piece within 48 hours of receiving your order confirmation and intake instructions. We send your first proof to your order email within 48 hours after receiving complete, usable intake. Reply within 48 hours of each proof email with changes or written approval identifying the piece and proof version.
+  - paragraph: Missing details, invalid route files, private activity links, unavailable courses, or unclear medal colors require clarification. Production stays on hold until the details and route are verified and you approve the proof in writing. Silence never counts as approval.
+  - paragraph: For an unanswered intake, clarification or proof request, we send a reminder at 48 hours and a final reminder on day 7. After 10 calendar days without a response to that request, an unapproved order is canceled and fully refunded.
+  - paragraph: You may cancel for a full refund before written proof approval. After approval but before production, cancellation is at our discretion. Orders cannot be canceled once production starts; changes are at our discretion. Production takes 8–10 business days after complete intake and written approval. Shipping transit time is additional.
+  - paragraph: Questions or corrections? Email orders@teklostudio.com with your order number and piece reference.
+  - button "Submit My Trace Details"
+- link "Jotform Logo":
+  - /url: https://www.jotform.com/products/form-builder/?utm_source=formfooter&utm_medium=banner&utm_term=262521531346047&utm_content=jotform_logo&utm_campaign=powered_by_jotform_le
+  - img "Jotform Logo"
+- generic: Now create your own Jotform - It’s free!
+- link "Create your own Jotform":
+  - /url: https://www.jotform.com/products/form-builder/?utm_source=formfooter&utm_medium=banner&utm_term=262521531346047&utm_content=jotform_button&utm_campaign=powered_by_jotform_le
+- status

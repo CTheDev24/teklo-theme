@@ -13,7 +13,16 @@
       {% if section.settings.heading != blank %}<h2>{{ section.settings.heading | escape }}</h2>{% endif %}
       {% if section.settings.text != blank %}<div class="rte">{{ section.settings.text }}</div>{% endif %}
     </div>
-    {% if invitation_link != blank and section.settings.button_label != blank %}
+    {% if section.settings.show_inline_form %}
+      <details class="teklo-custom-invitation__form">
+        <summary class="teklo-custom-button">{{ section.settings.button_label | escape }}</summary>
+        <div class="teklo-custom-work__upload-form">
+          <p>{{ 'templates.custom_work.upload_guidance' | t }}</p>
+          <p><a class="link" href="https://form.jotform.com/262637916705061" target="_blank" rel="noopener">{{ 'templates.custom_work.open_upload_form' | t }}</a></p>
+          <iframe id="JotFormIFrame-262637916705061-{{ section.id }}" title="{{ 'templates.custom_work.upload_title' | t | escape }}" src="https://form.jotform.com/262637916705061" width="100%" height="1500" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+        </div>
+      </details>
+    {% elsif invitation_link != blank and section.settings.button_label != blank %}
       <a class="teklo-custom-button" href="{{ invitation_link }}">{{ section.settings.button_label | escape }}<span class="svg-wrapper" aria-hidden="true">{{ 'icon-arrow.svg' | inline_asset_content }}</span></a>
     {% endif %}
   </div>
@@ -29,6 +38,7 @@
     { "type": "text", "id": "heading", "label": "Heading", "default": "Have a problem worth making for?" },
     { "type": "richtext", "id": "text", "label": "Text", "default": "<p>We take on selective design and fabrication projects. Tell us what you have in mind.</p>" },
     { "type": "text", "id": "button_label", "label": "Button label", "default": "Start a Conversation" },
+    { "type": "checkbox", "id": "show_inline_form", "label": "Show expandable upload form", "default": false },
     { "type": "page", "id": "custom_page", "label": "Custom work page", "info": "Defaults to the published page with handle custom-work. The button remains hidden until a page or link is available." },
     { "type": "url", "id": "button_link", "label": "Button link" },
     { "type": "color_scheme", "id": "color_scheme", "label": "Color scheme", "default": "scheme-1" }

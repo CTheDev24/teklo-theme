@@ -1,0 +1,948 @@
+{
+  "date": "2026-09-22",
+  "collection": {
+    "id": "gid://shopify/Collection/693062697126",
+    "title": "Shop",
+    "handle": "shop",
+    "descriptionHtml": "<p>Trace personalized route artwork, sculptural clocks, lighting, and planters from Teklo Studio.</p>",
+    "imageUrl": null,
+    "imageAltText": null,
+    "sortOrder": "MANUAL",
+    "collectionType": "manual",
+    "productsCount": 5,
+    "products": [
+      {
+        "title": "Personalized 3D Race Map | Custom GPX Running Wall Art | Marathon Finisher Gift",
+        "variantTitle": "Race Day / Gallery / Signal Orange",
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0670/0518/6214/files/Trace-Listing_Graphics_-_YOUR_TRACE.png?v=1790008414",
+        "price": "149.95",
+        "currencyCode": "USD",
+        "status": "ACTIVE"
+      },
+      {
+        "title": "Modern Art Deco Wall Clock, Two-Tone Minimalist Home Decor",
+        "variantTitle": "Brown|Off White",
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0670/0518/6214/files/Modern_Art_Deco_Wall_Clock_Two_Tone_Minimalist_Home_Decor_5_4437546213.jpg?v=1777232145",
+        "price": "38.95",
+        "currencyCode": "USD",
+        "status": "ACTIVE"
+      },
+      {
+        "title": "Birch Moody Accent Pendant Light | Calm Lighting for Dining & Living Spaces | Eco-Friendly Decor",
+        "variantTitle": "Black / No",
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0670/0518/6214/files/Birch_Moody_Accent_Pendant_Light_Calm_Lighting_for_Dining_Living_Spaces_Eco_Friendly_Decor_1_4422122133.jpg?v=1777232135",
+        "price": "69.95",
+        "currencyCode": "USD",
+        "status": "ACTIVE"
+      },
+      {
+        "title": "The Torio - Unique Geometric 3D Printed Planter with Drainage",
+        "variantTitle": "White / 2\" Opening",
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0670/0518/6214/files/il_fullxfull.6572220500_iw9r.jpg?v=1741236041",
+        "price": "12.00",
+        "currencyCode": "USD",
+        "status": "ACTIVE"
+      },
+      {
+        "title": "The Luxar - Sleek 3D Printed Planter with Geometric Elegance",
+        "variantTitle": "White / 2\" Opening",
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0670/0518/6214/files/D71DA7C0-6FE1-47EB-9F91-E6542953D21B.png?v=1741237155",
+        "price": "12.00",
+        "currencyCode": "USD",
+        "status": "ACTIVE"
+      }
+    ],
+    "rules": null,
+    "updatedAt": "2026-09-22T22:29:00Z",
+    "currencyCode": "USD"
+  },
+  "store": {
+    "name": "Teklo Studio",
+    "domain": "teklostudio.com",
+    "email": "support@teklostudio.com",
+    "planName": "Pause and Build",
+    "currencyCode": "USD",
+    "timezone": "CDT",
+    "country": "United States",
+    "criticalUserMessage": ""
+  },
+  "selectedProducts": [
+    {
+      "id": "gid://shopify/Product/15807121490086",
+      "title": "Personalized 3D Race Map | Custom GPX Running Wall Art | Marathon Finisher Gift",
+      "vendor": "Teklo Studio",
+      "status": "ACTIVE",
+      "productType": "",
+      "descriptionHtml": "<p>The course. The city. The finish you earned—given dimension.</p>\n<p>Trace is personalized, framed 3D race-map artwork by Teklo Studio.</p>\n<h2>Pre-launch ordering status</h2>\n<p>Shopify ordering, intake receipt and proof delivery are still being verified. Trace is not ready for completed purchases. Please <a href=\"/pages/contact\">contact Teklo Studio</a> with questions before ordering.</p>\n<h2>Choose your finish and route accent</h2>\n<p>Choose Gallery or Nocturne. Route accents are Signal Orange, Volt Lime, Pulse Pink and Match My Medal Color. The currently configured medal-match option adds $25 USD to the standard variant price in either finish, before applicable discounts. Your selected variant price is shown above.</p>\n<h2>Personalization and route information</h2>\n<ul>\n<li>Runner display name, race name, date, location and distance.</li>\n<li>Official finish time, or an explicit request to omit it; bib number is optional.</li>\n<li>A separate piece reference for each differently personalized item.</li>\n<li>Route input may be a GPX file, public activity link, official-course information or a course map for review.</li>\n</ul>\n<p>The Shopify intake and proof handoff must be verified before launch. A submitted route or intake is not production approval. Never provide fitness-account passwords or login credentials.</p>\n<h2>Product details being confirmed</h2>\n<p>Exterior frame, insert and raised-map measurements are being reconciled before launch. End-to-end proof delivery and route-data deletion are still being verified.</p>\n<h2>Proof, production and response deadlines</h2><p>Your first digital proof will be prepared within 48 hours after we receive complete, usable intake and route information. Trace production takes 8–10 business days after complete intake and written approval of the identified proof. Proof preparation, production and carrier transit are separate stages. Priority shipping does not shorten production time.</p><p>Complete intake within 48 hours after receiving your order confirmation and intake instructions. Respond to each proof within 48 hours after it is sent. Missing or unclear details require clarification and keep production on hold. We send a reminder after 48 hours and a final reminder on day 7. If we receive no response for 10 calendar days after the relevant intake request or proof message, we cancel the unapproved order and issue a full refund. A reply requiring clarification is not treated as silence. No response is not approval.</p><p>Trace launches with domestic US shipping only. Delivery options and charges are shown at checkout. Trace is excluded from the general free-shipping-over-$35 offer unless a Trace-specific promotion is expressly shown at checkout.</p><h2>Returns and support</h2>\n<p><strong>Trace terms effective September 22, 2026:</strong> These terms apply to new Trace orders placed on or after this date. Terms supplied with earlier orders remain unchanged.</p><p>Trace is custom-made and is not eligible for change-of-mind returns. This does not exclude remedies for damaged or defective items under our refund policy. You may cancel for a full refund before giving written approval of your proof. Written approval authorizes production, so cancellation after approval but before production is at our discretion. Once production starts, the order cannot be canceled. Changes after approval may be considered at our discretion and must be accepted by us before they take effect.</p><p>Report shipping damage within 7 calendar days after delivery to <a href=\"mailto:support@teklostudio.com\">support@teklostudio.com</a>, with your order number and photos of the item and packaging. This shipping-damage reporting window does not remove the remedies for defective items described in our refund policy.</p>\n<h2>Gift notes</h2>\n<p>Add a gift note in the product form or cart before checkout.</p>",
+      "tags": [],
+      "totalInventory": 80,
+      "featuredImageUrl": "https://cdn.shopify.com/s/files/1/0670/0518/6214/files/Trace-Listing_Graphics_-_YOUR_TRACE.png?v=1790008414",
+      "images": [
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0670/0518/6214/files/Trace-Listing_Graphics_-_YOUR_TRACE.png?v=1790008414",
+          "altText": "Framed Gallery Trace sample with raised city buildings, orange route and personalized race poster.",
+          "mediaId": "gid://shopify/MediaImage/70401314619558"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0670/0518/6214/files/Trace-Listing_Graphics_-_WHAT_YOU_LL_RECEIVE.png?v=1790008415",
+          "altText": "Assembled Trace with black glazed shadow-box frame, custom race poster and mounted 3D race map.",
+          "mediaId": "gid://shopify/MediaImage/70401314652326"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0670/0518/6214/files/6E225F15-750C-4835-9E81-9D11ECCD1564.jpg?v=1789581103",
+          "altText": "Nocturne Houston 5K and Gallery Pennant 10K Trace samples displayed side by side in black frames.",
+          "mediaId": "gid://shopify/MediaImage/70305865203878"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0670/0518/6214/files/Trace-Listing_Graphics_-_Choose_Your_Style.png?v=1790008414",
+          "altText": "Gallery light finish and Nocturne dark finish shown side by side with orange routes.",
+          "mediaId": "gid://shopify/MediaImage/70401314685094"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0670/0518/6214/files/Choose_your_accent.png?v=1790035383",
+          "altText": "Route accent samples labeled Signal Orange, Pulse Pink, Volt Lime and Graphite/Stone on a Gallery map.",
+          "mediaId": "gid://shopify/MediaImage/70404128309414"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0670/0518/6214/files/Trace-Listing_Graphics_-_YOUR_ROUTE_GIVEN_DIMENSION.png?v=1790008415",
+          "altText": "Close-up of raised light-colored city buildings and an orange race route in a Trace frame.",
+          "mediaId": "gid://shopify/MediaImage/70401314848934"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0670/0518/6214/files/Trace-Listing_Graphics_-_SEE_THE_DEPTH.png?v=1790008414",
+          "altText": "Low-angle view of the raised city, elevated orange route and race poster inside a black frame.",
+          "mediaId": "gid://shopify/MediaImage/70401314586790"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0670/0518/6214/files/Trace-Listing_Graphics_-_HOW_IT_WORKS.png?v=1790008414",
+          "altText": "Ordering graphic illustrating option selection, route submission, proof review, production approval and displaying Trace.",
+          "mediaId": "gid://shopify/MediaImage/70401314881702"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0670/0518/6214/files/Trace-Listing_Graphics_-_SEND_US_YOUR_ROUTE.png?v=1790008414",
+          "altText": "Route-input guide illustrating GPX files, public activity links and official race-course maps.",
+          "mediaId": "gid://shopify/MediaImage/70401314783398"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0670/0518/6214/files/Trace-Listing_Graphics_-_SEE_IT_BEFORE_WE_BUILD_IT.png?v=1790008415",
+          "altText": "Proof-review graphic illustrating design preparation, checking the route and custom details, and approval before production.",
+          "mediaId": "gid://shopify/MediaImage/70401314816166"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0670/0518/6214/files/Trace-Listing_Graphics_-_Dimensions_Materials.png?v=1790008414",
+          "altText": "Diagram of a framed Nocturne Trace with frame and map measurement annotations and material descriptions.",
+          "mediaId": "gid://shopify/MediaImage/70401314750630"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0670/0518/6214/files/Trace-Listing_Graphics_-_QUESTIONS.png?v=1790008414",
+          "altText": "Questions graphic about routes, GPX, customization and race courses; directs customers to Etsy Messages.",
+          "mediaId": "gid://shopify/MediaImage/70401314717862"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0670/0518/6214/files/IMG-0423.png?v=1790008427",
+          "altText": "Framed Gallery Pennant 10K Trace with raised city map and orange route displayed beside a plant.",
+          "mediaId": "gid://shopify/MediaImage/70401315012774"
+        }
+      ],
+      "totalVariants": 8,
+      "variants": [
+        {
+          "id": "gid://shopify/ProductVariant/57452337397926",
+          "title": "Race Day / Gallery / Signal Orange",
+          "sku": null,
+          "price": "149.95",
+          "inventoryQuantity": 10
+        },
+        {
+          "id": "gid://shopify/ProductVariant/57452337430694",
+          "title": "Race Day / Gallery / Volt Lime",
+          "sku": null,
+          "price": "149.95",
+          "inventoryQuantity": 10
+        },
+        {
+          "id": "gid://shopify/ProductVariant/57452337463462",
+          "title": "Race Day / Gallery / Pulse Pink",
+          "sku": null,
+          "price": "149.95",
+          "inventoryQuantity": 10
+        },
+        {
+          "id": "gid://shopify/ProductVariant/57452337496230",
+          "title": "Race Day / Gallery / Match My Medal Color",
+          "sku": null,
+          "price": "174.95",
+          "inventoryQuantity": 10
+        },
+        {
+          "id": "gid://shopify/ProductVariant/57452337528998",
+          "title": "Race Day / Nocturne / Signal Orange",
+          "sku": null,
+          "price": "149.95",
+          "inventoryQuantity": 10
+        },
+        {
+          "id": "gid://shopify/ProductVariant/57452337561766",
+          "title": "Race Day / Nocturne / Volt Lime",
+          "sku": null,
+          "price": "149.95",
+          "inventoryQuantity": 10
+        },
+        {
+          "id": "gid://shopify/ProductVariant/57452337594534",
+          "title": "Race Day / Nocturne / Pulse Pink",
+          "sku": null,
+          "price": "149.95",
+          "inventoryQuantity": 10
+        },
+        {
+          "id": "gid://shopify/ProductVariant/57452337627302",
+          "title": "Race Day / Nocturne / Match My Medal Color",
+          "sku": null,
+          "price": "174.95",
+          "inventoryQuantity": 10
+        }
+      ],
+      "currencyCode": "USD"
+    },
+    {
+      "id": "gid://shopify/Product/15295976439974",
+      "title": "Modern Art Deco Wall Clock, Two-Tone Minimalist Home Decor",
+      "vendor": "AllThings3DShop",
+      "status": "ACTIVE",
+      "productType": "",
+      "descriptionHtml": "Minimalist Two-Tone Sculptural Wall Clock<br><br>Make a bold yet refined statement with this modern two-tone wall clock. Designed as both a functional timepiece and a sculptural decor element, its layered form and flowing geometry add depth, texture, and visual rhythm to any space.<br><br>Perfect for those who appreciate clean lines, modern design, and thoughtfully crafted objects.<br><br>✨ Design Highlights<br><br>Sculptural, layered surface creates a sense of motion and depth<br>Two-tone colorway adds contrast without overpowering your space<br>Modern minimalist aesthetic with subtle Art Deco influence<br>Designed to function as both wall art and a clock<br><br>🏡 Ideal For<br><br>Living rooms and bedrooms<br>Home offices and studios<br>Modern, minimalist, or design-forward interiors<br>A unique housewarming or design-lover gift<br><br>🔧 Materials &amp; Construction<br><br>3D printed using high-quality PLA<br>Lightweight yet sturdy construction<br>Smooth, refined finish with visible layered detail<br>(Each clock is made to order. Minor layer lines are part of the design and add to its character.)<br><br>⏱️ Clock Details<br><br>Diameter: 8.96″ (ideal for shelves, gallery walls, or smaller feature spaces)<br>Silent quartz movement (no ticking noise)<br>Easy wall mounting<br>Battery operated (AA battery not included)<br><br>🎨 Color Options<br><br>Available in select curated two-tone colorways.<br>Additional color combinations coming soon!<br><br>📦 Production &amp; Shipping<br><br>Made to order<br>Carefully packaged for safe delivery",
+      "tags": [
+        "apartment wall decor",
+        "art deco wall art",
+        "chich wall clock",
+        "eco friendly decor",
+        "minimalist clock",
+        "modern home decor",
+        "PLA wall clock",
+        "two tone clock"
+      ],
+      "totalInventory": 36,
+      "featuredImageUrl": "https://cdn.shopify.com/s/files/1/0670/0518/6214/files/Modern_Art_Deco_Wall_Clock_Two_Tone_Minimalist_Home_Decor_5_4437546213.jpg?v=1777232145",
+      "images": [
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0670/0518/6214/files/Modern_Art_Deco_Wall_Clock_Two_Tone_Minimalist_Home_Decor_5_4437546213.jpg?v=1777232145",
+          "altText": "Modern Art Deco Wall Clock, Two-Tone Minimalist Home Decor",
+          "mediaId": "gid://shopify/MediaImage/68015395012774"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0670/0518/6214/files/Modern_Art_Deco_Wall_Clock_Two_Tone_Minimalist_Home_Decor_1_4437546213.jpg?v=1777232144",
+          "altText": "Modern Art Deco Wall Clock, Two-Tone Minimalist Home Decor",
+          "mediaId": "gid://shopify/MediaImage/68015394881702"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0670/0518/6214/files/Modern_Art_Deco_Wall_Clock_Two_Tone_Minimalist_Home_Decor_2_4437546213.jpg?v=1777232145",
+          "altText": "Modern Art Deco Wall Clock, Two-Tone Minimalist Home Decor",
+          "mediaId": "gid://shopify/MediaImage/68015394914470"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0670/0518/6214/files/Modern_Art_Deco_Wall_Clock_Two_Tone_Minimalist_Home_Decor_3_4437546213.jpg?v=1777232144",
+          "altText": "Modern Art Deco Wall Clock, Two-Tone Minimalist Home Decor",
+          "mediaId": "gid://shopify/MediaImage/68015394947238"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0670/0518/6214/files/Modern_Art_Deco_Wall_Clock_Two_Tone_Minimalist_Home_Decor_4_4437546213.jpg?v=1777232144",
+          "altText": "Modern Art Deco Wall Clock, Two-Tone Minimalist Home Decor",
+          "mediaId": "gid://shopify/MediaImage/68015394980006"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0670/0518/6214/files/Modern_Art_Deco_Wall_Clock_Two_Tone_Minimalist_Home_Decor_6_4437546213.jpg?v=1777232145",
+          "altText": "Modern Art Deco Wall Clock, Two-Tone Minimalist Home Decor",
+          "mediaId": "gid://shopify/MediaImage/68015395045542"
+        }
+      ],
+      "totalVariants": 8,
+      "variants": [
+        {
+          "id": "gid://shopify/ProductVariant/56416314294438",
+          "title": "Brown|Off White",
+          "sku": null,
+          "price": "38.95",
+          "inventoryQuantity": 5
+        },
+        {
+          "id": "gid://shopify/ProductVariant/56416314359974",
+          "title": "Lilac Shadow",
+          "sku": null,
+          "price": "38.95",
+          "inventoryQuantity": 5
+        },
+        {
+          "id": "gid://shopify/ProductVariant/56416314392742",
+          "title": "Forest Clay",
+          "sku": null,
+          "price": "38.95",
+          "inventoryQuantity": 1
+        },
+        {
+          "id": "gid://shopify/ProductVariant/56416314425510",
+          "title": "White Neutral",
+          "sku": null,
+          "price": "38.95",
+          "inventoryQuantity": 5
+        },
+        {
+          "id": "gid://shopify/ProductVariant/56416314458278",
+          "title": "Slate & Terra",
+          "sku": null,
+          "price": "38.95",
+          "inventoryQuantity": 5
+        },
+        {
+          "id": "gid://shopify/ProductVariant/56416314491046",
+          "title": "Blush Graphite",
+          "sku": null,
+          "price": "38.95",
+          "inventoryQuantity": 5
+        },
+        {
+          "id": "gid://shopify/ProductVariant/56416314556582",
+          "title": "Steel & Bone",
+          "sku": null,
+          "price": "38.95",
+          "inventoryQuantity": 5
+        },
+        {
+          "id": "gid://shopify/ProductVariant/56416314622118",
+          "title": "Yin & Yang",
+          "sku": null,
+          "price": "38.95",
+          "inventoryQuantity": 5
+        }
+      ],
+      "currencyCode": "USD"
+    },
+    {
+      "id": "gid://shopify/Product/15295976341670",
+      "title": "Birch Moody Accent Pendant Light | Calm Lighting for Dining & Living Spaces | Eco-Friendly Decor",
+      "vendor": "AllThings3DShop",
+      "status": "ACTIVE",
+      "productType": "",
+      "descriptionHtml": "Bring sculptural elegance into your home with the Birch Pendant Light. Inspired by organic textures, its cylindrical form is wrapped in vertical cutouts that let light escape in delicate streams, casting moody shadows and relaxed accent glow across your space.<br><br>The Birch excels in creating intimate pools of illumination—perfect for dining tables, reading corners, or entryways where atmosphere matters most. The interplay of light and shadow transforms walls and surfaces into part of the design, making every evening feel curated and intentional.<br><br>• \tDesign: Cylindrical shade with vertical teardrop cutouts<br>• \tCompatibility: E27 bulb socket (LED only)<br>• \tOptional Hanging Cord: Save yourself a trip and buy the hanging cord with your pendant!<br>• \tRecommended Bulbs: 4–8W warm white LED (2700K–3000K) for cozy ambiance<br>• \tDimensions: 7.87 inches w x 7.83 inches h<br>• \tMaterial: Premium PLA or specialty filament<br>• \tColor/Finish: Various options and finishes (Matte, Gloss, Metallic, Woodgrain)<br>• \tMade-to-order: Each pendant is individually printed and finished for you",
+      "tags": [
+        "accent lighting",
+        "ambient light decor",
+        "ambient lighting",
+        "artisan decor",
+        "bar lighting",
+        "dining table lights",
+        "eco lighting",
+        "hanging light",
+        "lighting decor",
+        "living space decor",
+        "modern pendant light",
+        "mood lighting",
+        "pendant light"
+      ],
+      "totalInventory": 100,
+      "featuredImageUrl": "https://cdn.shopify.com/s/files/1/0670/0518/6214/files/Birch_Moody_Accent_Pendant_Light_Calm_Lighting_for_Dining_Living_Spaces_Eco_Friendly_Decor_1_4422122133.jpg?v=1777232135",
+      "images": [
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0670/0518/6214/files/Birch_Moody_Accent_Pendant_Light_Calm_Lighting_for_Dining_Living_Spaces_Eco_Friendly_Decor_1_4422122133.jpg?v=1777232135",
+          "altText": "Birch Moody Accent Pendant Light | Calm Lighting for Dining & Living Spaces | Eco-Friendly Decor",
+          "mediaId": "gid://shopify/MediaImage/68015394193574"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0670/0518/6214/files/Birch_Moody_Accent_Pendant_Light_Calm_Lighting_for_Dining_Living_Spaces_Eco_Friendly_Decor_2_4422122133.jpg?v=1777232135",
+          "altText": "Birch Moody Accent Pendant Light | Calm Lighting for Dining & Living Spaces | Eco-Friendly Decor",
+          "mediaId": "gid://shopify/MediaImage/68015394226342"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0670/0518/6214/files/Birch_Moody_Accent_Pendant_Light_Calm_Lighting_for_Dining_Living_Spaces_Eco_Friendly_Decor_3_4422122133.jpg?v=1777232136",
+          "altText": "Birch Moody Accent Pendant Light | Calm Lighting for Dining & Living Spaces | Eco-Friendly Decor",
+          "mediaId": "gid://shopify/MediaImage/68015394259110"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0670/0518/6214/files/Birch_Moody_Accent_Pendant_Light_Calm_Lighting_for_Dining_Living_Spaces_Eco_Friendly_Decor_4_4422122133.jpg?v=1777232135",
+          "altText": "Birch Moody Accent Pendant Light | Calm Lighting for Dining & Living Spaces | Eco-Friendly Decor",
+          "mediaId": "gid://shopify/MediaImage/68015394291878"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0670/0518/6214/files/Birch_Moody_Accent_Pendant_Light_Calm_Lighting_for_Dining_Living_Spaces_Eco_Friendly_Decor_5_4422122133.jpg?v=1777232136",
+          "altText": "Birch Moody Accent Pendant Light | Calm Lighting for Dining & Living Spaces | Eco-Friendly Decor",
+          "mediaId": "gid://shopify/MediaImage/68015394324646"
+        }
+      ],
+      "totalVariants": 20,
+      "variants": [
+        {
+          "id": "gid://shopify/ProductVariant/56416312197286",
+          "title": "Black / No",
+          "sku": null,
+          "price": "69.95",
+          "inventoryQuantity": 5
+        },
+        {
+          "id": "gid://shopify/ProductVariant/56416312230054",
+          "title": "Black / Yes",
+          "sku": null,
+          "price": "79.95",
+          "inventoryQuantity": 5
+        },
+        {
+          "id": "gid://shopify/ProductVariant/56416312262822",
+          "title": "Gray / No",
+          "sku": null,
+          "price": "69.95",
+          "inventoryQuantity": 5
+        },
+        {
+          "id": "gid://shopify/ProductVariant/56416312295590",
+          "title": "Gray / Yes",
+          "sku": null,
+          "price": "79.95",
+          "inventoryQuantity": 5
+        },
+        {
+          "id": "gid://shopify/ProductVariant/56416312328358",
+          "title": "White / No",
+          "sku": null,
+          "price": "69.95",
+          "inventoryQuantity": 5
+        },
+        {
+          "id": "gid://shopify/ProductVariant/56416312361126",
+          "title": "White / Yes",
+          "sku": null,
+          "price": "79.95",
+          "inventoryQuantity": 5
+        },
+        {
+          "id": "gid://shopify/ProductVariant/56416312393894",
+          "title": "Off White / No",
+          "sku": null,
+          "price": "69.95",
+          "inventoryQuantity": 5
+        },
+        {
+          "id": "gid://shopify/ProductVariant/56416312426662",
+          "title": "Off White / Yes",
+          "sku": null,
+          "price": "79.95",
+          "inventoryQuantity": 5
+        },
+        {
+          "id": "gid://shopify/ProductVariant/56416312459430",
+          "title": "Wood / No",
+          "sku": null,
+          "price": "69.95",
+          "inventoryQuantity": 5
+        },
+        {
+          "id": "gid://shopify/ProductVariant/56416312492198",
+          "title": "Wood / Yes",
+          "sku": null,
+          "price": "79.95",
+          "inventoryQuantity": 5
+        },
+        {
+          "id": "gid://shopify/ProductVariant/56416312524966",
+          "title": "Copper / No",
+          "sku": null,
+          "price": "69.95",
+          "inventoryQuantity": 5
+        },
+        {
+          "id": "gid://shopify/ProductVariant/56416312557734",
+          "title": "Copper / Yes",
+          "sku": null,
+          "price": "79.95",
+          "inventoryQuantity": 5
+        },
+        {
+          "id": "gid://shopify/ProductVariant/56416312590502",
+          "title": "Bronze / No",
+          "sku": null,
+          "price": "69.95",
+          "inventoryQuantity": 5
+        },
+        {
+          "id": "gid://shopify/ProductVariant/56416312623270",
+          "title": "Bronze / Yes",
+          "sku": null,
+          "price": "79.95",
+          "inventoryQuantity": 5
+        },
+        {
+          "id": "gid://shopify/ProductVariant/56416312656038",
+          "title": "Gold / No",
+          "sku": null,
+          "price": "69.95",
+          "inventoryQuantity": 5
+        },
+        {
+          "id": "gid://shopify/ProductVariant/56416312688806",
+          "title": "Gold / Yes",
+          "sku": null,
+          "price": "79.95",
+          "inventoryQuantity": 5
+        },
+        {
+          "id": "gid://shopify/ProductVariant/56416312721574",
+          "title": "Silver / No",
+          "sku": null,
+          "price": "69.95",
+          "inventoryQuantity": 5
+        },
+        {
+          "id": "gid://shopify/ProductVariant/56416312754342",
+          "title": "Silver / Yes",
+          "sku": null,
+          "price": "79.95",
+          "inventoryQuantity": 5
+        },
+        {
+          "id": "gid://shopify/ProductVariant/56416312787110",
+          "title": "Rose gold / No",
+          "sku": null,
+          "price": "69.95",
+          "inventoryQuantity": 5
+        },
+        {
+          "id": "gid://shopify/ProductVariant/56416312819878",
+          "title": "Rose gold / Yes",
+          "sku": null,
+          "price": "79.95",
+          "inventoryQuantity": 5
+        }
+      ],
+      "currencyCode": "USD"
+    },
+    {
+      "id": "gid://shopify/Product/8425970794662",
+      "title": "The Torio - Unique Geometric 3D Printed Planter with Drainage",
+      "vendor": "AllThings3DShop",
+      "status": "ACTIVE",
+      "productType": "3D Printed Planter",
+      "descriptionHtml": "<p>Introducing the Torio, a captivating 3D-printed plant holder with a unique geometric design. This elegant piece features a lattice structure that not only enhances its aesthetic appeal but also provides excellent ventilation for your plants. Perfect for small indoor plants, the Torio adds a touch of modern sophistication to any space. Crafted with eco-friendly materials, this planter is both stylish and sustainable, making it an ideal addition to your home decor. Whether placed on a shelf, desk, or windowsill, the Torio is sure to become a centerpiece of your indoor garden.</p>\n<p>Key Features:</p>\n<p>3D-Printed Excellence: Expertly crafted with a unique ribbed texture for a contemporary look.</p>\n<p>Versatile Sizing: Choose from 2\" (displayed), 3\", or 4\" openings to suit your plant needs.<br>\nColor Options: Available in a range of colors to complement any decor.</p>\n<p>Functional Design: Features drainage holes for optimal plant health.</p>\n<p>Included Stand: Comes with a matching stand for added stability and style.</p>\n<p>Redefine your plant display with The Torio. Whether you're a plant novice or a seasoned enthusiast, this planter is the perfect blend of function and design.</p>",
+      "tags": [
+        "3d printed planter",
+        "apartment decor",
+        "desk planter",
+        "geometric",
+        "home decor",
+        "indoor planter",
+        "minimalist planter",
+        "modern planter",
+        "office decor",
+        "planter lovers gift",
+        "succulent planter"
+      ],
+      "totalInventory": 102,
+      "featuredImageUrl": "https://cdn.shopify.com/s/files/1/0670/0518/6214/files/il_fullxfull.6572220500_iw9r.jpg?v=1741236041",
+      "images": [
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0670/0518/6214/files/il_fullxfull.6572220500_iw9r.jpg?v=1741236041",
+          "altText": "The Torio - Unique Geometric 3D Printed Planter with Drainage",
+          "mediaId": "gid://shopify/MediaImage/33464422727846"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0670/0518/6214/files/il_fullxfull.6557241050_8n11.jpg?v=1741236036",
+          "altText": "The Torio - Unique Geometric 3D Printed Planter with Drainage",
+          "mediaId": "gid://shopify/MediaImage/33464422760614"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0670/0518/6214/files/il_fullxfull.6557241042_a1t4.jpg?v=1741236036",
+          "altText": "The Torio - Unique Geometric 3D Printed Planter with Drainage",
+          "mediaId": "gid://shopify/MediaImage/33464422957222"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0670/0518/6214/files/il_fullxfull.6605363847_ak1w.jpg?v=1741236036",
+          "altText": "The Torio - Unique Geometric 3D Printed Planter with Drainage",
+          "mediaId": "gid://shopify/MediaImage/33464422989990"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0670/0518/6214/files/il_fullxfull.6557241046_jscj.jpg?v=1741236039",
+          "altText": "The Torio - Unique Geometric 3D Printed Planter with Drainage",
+          "mediaId": "gid://shopify/MediaImage/33464423022758"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0670/0518/6214/files/il_fullxfull.6605363859_50rz.jpg?v=1741236040",
+          "altText": "The Torio - Unique Geometric 3D Printed Planter with Drainage",
+          "mediaId": "gid://shopify/MediaImage/33464423055526"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0670/0518/6214/files/il_fullxfull.6605363861_lsqu.jpg?v=1741236036",
+          "altText": "The Torio - Unique Geometric 3D Printed Planter with Drainage",
+          "mediaId": "gid://shopify/MediaImage/33464423088294"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0670/0518/6214/files/il_fullxfull.6557241116_shkt.jpg?v=1741236036",
+          "altText": "The Torio - Unique Geometric 3D Printed Planter with Drainage",
+          "mediaId": "gid://shopify/MediaImage/33464423121062"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0670/0518/6214/files/il_fullxfull.6599155595_6hyx.jpg?v=1741236036",
+          "altText": "The Torio - Unique Geometric 3D Printed Planter with Drainage",
+          "mediaId": "gid://shopify/MediaImage/33464423153830"
+        }
+      ],
+      "totalVariants": 21,
+      "variants": [
+        {
+          "id": "gid://shopify/ProductVariant/46200286019750",
+          "title": "White / 2\" Opening",
+          "sku": "",
+          "price": "12.00",
+          "inventoryQuantity": 5
+        },
+        {
+          "id": "gid://shopify/ProductVariant/46200286052518",
+          "title": "White / 3\" Opening",
+          "sku": "",
+          "price": "16.00",
+          "inventoryQuantity": 5
+        },
+        {
+          "id": "gid://shopify/ProductVariant/46200286085286",
+          "title": "White / 4\" Opening",
+          "sku": "",
+          "price": "27.00",
+          "inventoryQuantity": 5
+        },
+        {
+          "id": "gid://shopify/ProductVariant/46200286118054",
+          "title": "Off White / 2\" Opening",
+          "sku": "",
+          "price": "12.00",
+          "inventoryQuantity": 5
+        },
+        {
+          "id": "gid://shopify/ProductVariant/46200286150822",
+          "title": "Off White / 3\" Opening",
+          "sku": "",
+          "price": "16.00",
+          "inventoryQuantity": 5
+        },
+        {
+          "id": "gid://shopify/ProductVariant/46200286183590",
+          "title": "Off White / 4\" Opening",
+          "sku": "",
+          "price": "27.00",
+          "inventoryQuantity": 5
+        },
+        {
+          "id": "gid://shopify/ProductVariant/46200286216358",
+          "title": "Black / 2\" Opening",
+          "sku": "",
+          "price": "12.00",
+          "inventoryQuantity": 5
+        },
+        {
+          "id": "gid://shopify/ProductVariant/46200286249126",
+          "title": "Black / 3\" Opening",
+          "sku": "",
+          "price": "16.00",
+          "inventoryQuantity": 5
+        },
+        {
+          "id": "gid://shopify/ProductVariant/46200286281894",
+          "title": "Black / 4\" Opening",
+          "sku": "",
+          "price": "27.00",
+          "inventoryQuantity": 5
+        },
+        {
+          "id": "gid://shopify/ProductVariant/46200286314662",
+          "title": "Brown / 2\" Opening",
+          "sku": "",
+          "price": "12.00",
+          "inventoryQuantity": 5
+        },
+        {
+          "id": "gid://shopify/ProductVariant/46200286347430",
+          "title": "Brown / 3\" Opening",
+          "sku": "",
+          "price": "16.00",
+          "inventoryQuantity": 5
+        },
+        {
+          "id": "gid://shopify/ProductVariant/46200286380198",
+          "title": "Brown / 4\" Opening",
+          "sku": "",
+          "price": "27.00",
+          "inventoryQuantity": 5
+        },
+        {
+          "id": "gid://shopify/ProductVariant/46200286412966",
+          "title": "Gray / 2\" Opening",
+          "sku": "",
+          "price": "12.00",
+          "inventoryQuantity": 5
+        },
+        {
+          "id": "gid://shopify/ProductVariant/46200286445734",
+          "title": "Gray / 3\" Opening",
+          "sku": "",
+          "price": "16.00",
+          "inventoryQuantity": 5
+        },
+        {
+          "id": "gid://shopify/ProductVariant/46200286478502",
+          "title": "Gray / 4\" Opening",
+          "sku": "",
+          "price": "27.00",
+          "inventoryQuantity": 5
+        },
+        {
+          "id": "gid://shopify/ProductVariant/46200286511270",
+          "title": "Olive Green / 2\" Opening",
+          "sku": "",
+          "price": "12.00",
+          "inventoryQuantity": 5
+        },
+        {
+          "id": "gid://shopify/ProductVariant/46200286544038",
+          "title": "Olive Green / 3\" Opening",
+          "sku": "",
+          "price": "16.00",
+          "inventoryQuantity": 5
+        },
+        {
+          "id": "gid://shopify/ProductVariant/46200286576806",
+          "title": "Olive Green / 4\" Opening",
+          "sku": "",
+          "price": "27.00",
+          "inventoryQuantity": 5
+        },
+        {
+          "id": "gid://shopify/ProductVariant/46200286609574",
+          "title": "Muted Green / 2\" Opening",
+          "sku": "",
+          "price": "12.00",
+          "inventoryQuantity": 4
+        },
+        {
+          "id": "gid://shopify/ProductVariant/46200286642342",
+          "title": "Muted Green / 3\" Opening",
+          "sku": "",
+          "price": "16.00",
+          "inventoryQuantity": 4
+        },
+        {
+          "id": "gid://shopify/ProductVariant/46200286675110",
+          "title": "Muted Green / 4\" Opening",
+          "sku": "",
+          "price": "27.00",
+          "inventoryQuantity": 4
+        }
+      ],
+      "currencyCode": "USD"
+    },
+    {
+      "id": "gid://shopify/Product/8425971941542",
+      "title": "The Luxar - Sleek 3D Printed Planter with Geometric Elegance",
+      "vendor": "AllThings3DShop",
+      "status": "ACTIVE",
+      "productType": "",
+      "descriptionHtml": "<p>Introduce a touch of contemporary elegance to your space with The Luxar, a 3D-printed planter that combines sleek design with practical functionality. Featuring an eye-catching, spiraled structure, this planter is designed to enhance the aesthetic of any room. The Luxar is available in a variety of colors and three versatile sizes — 2\" (displayed) , 3\", and 4\" openings — perfect for showcasing your favorite plants.</p>\n<p>Key Features:</p>\n<p>Innovative 3D-Printed Design: Crafted with a distinctive spiraled pattern for a contemporary and dynamic look.</p>\n<p>Multiple Sizes: Available in 2\" (displayed) , 3\", or 4\" openings to accommodate a range of plants.</p>\n<p>Color Selection: Choose from various colors to complement your decor.</p>\n<p>Functional Drainage: Includes drainage holes to promote healthy plant growth.</p>\n<p>Matching Stand: Comes with a coordinating stand for added stability and style.</p>\n<p>Elevate your plant presentation with The Luxar. Whether you're looking to enhance your living space or office, this planter offers a perfect blend of contemporary design and practicality.</p>",
+      "tags": [
+        "3d printed planter",
+        "Abstract Decor",
+        "desk planter",
+        "Home Decor",
+        "minimalist plant pot",
+        "modern plant pot",
+        "plant lovers gift",
+        "Planter",
+        "small plant pot",
+        "succulent planter"
+      ],
+      "totalInventory": 103,
+      "featuredImageUrl": "https://cdn.shopify.com/s/files/1/0670/0518/6214/files/D71DA7C0-6FE1-47EB-9F91-E6542953D21B.png?v=1741237155",
+      "images": [
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0670/0518/6214/files/D71DA7C0-6FE1-47EB-9F91-E6542953D21B.png?v=1741237155",
+          "altText": "",
+          "mediaId": "gid://shopify/MediaImage/33448568389798"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0670/0518/6214/files/il_fullxfull.6598535293_8oog.jpg?v=1741237155",
+          "altText": "The Luxar - Sleek 3D Printed Planter with Geometric Elegance\"",
+          "mediaId": "gid://shopify/MediaImage/33464445042854"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0670/0518/6214/files/il_fullxfull.6550414092_51d7.jpg?v=1741237155",
+          "altText": "The Luxar - Sleek 3D Printed Planter with Geometric Elegance\"",
+          "mediaId": "gid://shopify/MediaImage/33464445075622"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0670/0518/6214/files/il_fullxfull.6550414086_110l.jpg?v=1741237155",
+          "altText": "The Luxar - Sleek 3D Printed Planter with Geometric Elegance\"",
+          "mediaId": "gid://shopify/MediaImage/33464445108390"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0670/0518/6214/files/il_fullxfull.6598535275_a0kp.jpg?v=1741237155",
+          "altText": "The Luxar - Sleek 3D Printed Planter with Geometric Elegance\"",
+          "mediaId": "gid://shopify/MediaImage/33464445141158"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0670/0518/6214/files/il_fullxfull.6550414100_h1bj.jpg?v=1741237155",
+          "altText": "The Luxar - Sleek 3D Printed Planter with Geometric Elegance\"",
+          "mediaId": "gid://shopify/MediaImage/33464445173926"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0670/0518/6214/files/il_fullxfull.6551032838_9b2l.jpg?v=1741237155",
+          "altText": "The Luxar - Sleek 3D Printed Planter with Geometric Elegance\"",
+          "mediaId": "gid://shopify/MediaImage/33464445206694"
+        }
+      ],
+      "totalVariants": 21,
+      "variants": [
+        {
+          "id": "gid://shopify/ProductVariant/46200295555238",
+          "title": "White / 2\" Opening",
+          "sku": "",
+          "price": "12.00",
+          "inventoryQuantity": 4
+        },
+        {
+          "id": "gid://shopify/ProductVariant/46200295588006",
+          "title": "White / 3\" Opening",
+          "sku": "",
+          "price": "16.00",
+          "inventoryQuantity": 5
+        },
+        {
+          "id": "gid://shopify/ProductVariant/46200295620774",
+          "title": "White / 4\" Opening",
+          "sku": "",
+          "price": "24.00",
+          "inventoryQuantity": 4
+        },
+        {
+          "id": "gid://shopify/ProductVariant/46200295653542",
+          "title": "Off White / 2\" Opening",
+          "sku": "",
+          "price": "12.00",
+          "inventoryQuantity": 5
+        },
+        {
+          "id": "gid://shopify/ProductVariant/46200295686310",
+          "title": "Off White / 3\" Opening",
+          "sku": "",
+          "price": "16.00",
+          "inventoryQuantity": 5
+        },
+        {
+          "id": "gid://shopify/ProductVariant/46200295719078",
+          "title": "Off White / 4\" Opening",
+          "sku": "",
+          "price": "24.00",
+          "inventoryQuantity": 5
+        },
+        {
+          "id": "gid://shopify/ProductVariant/46200295751846",
+          "title": "Black / 2\" Opening",
+          "sku": "",
+          "price": "12.00",
+          "inventoryQuantity": 5
+        },
+        {
+          "id": "gid://shopify/ProductVariant/46200295784614",
+          "title": "Black / 3\" Opening",
+          "sku": "",
+          "price": "16.00",
+          "inventoryQuantity": 5
+        },
+        {
+          "id": "gid://shopify/ProductVariant/46200295817382",
+          "title": "Black / 4\" Opening",
+          "sku": "",
+          "price": "24.00",
+          "inventoryQuantity": 5
+        },
+        {
+          "id": "gid://shopify/ProductVariant/46200295850150",
+          "title": "Gray / 2\" Opening",
+          "sku": "",
+          "price": "12.00",
+          "inventoryQuantity": 5
+        },
+        {
+          "id": "gid://shopify/ProductVariant/46200295882918",
+          "title": "Gray / 3\" Opening",
+          "sku": "",
+          "price": "16.00",
+          "inventoryQuantity": 5
+        },
+        {
+          "id": "gid://shopify/ProductVariant/46200295915686",
+          "title": "Gray / 4\" Opening",
+          "sku": "",
+          "price": "24.00",
+          "inventoryQuantity": 5
+        },
+        {
+          "id": "gid://shopify/ProductVariant/46200295948454",
+          "title": "Brown / 2\" Opening",
+          "sku": "",
+          "price": "12.00",
+          "inventoryQuantity": 5
+        },
+        {
+          "id": "gid://shopify/ProductVariant/46200295981222",
+          "title": "Brown / 3\" Opening",
+          "sku": "",
+          "price": "16.00",
+          "inventoryQuantity": 5
+        },
+        {
+          "id": "gid://shopify/ProductVariant/46200296013990",
+          "title": "Brown / 4\" Opening",
+          "sku": "",
+          "price": "24.00",
+          "inventoryQuantity": 5
+        },
+        {
+          "id": "gid://shopify/ProductVariant/46200296046758",
+          "title": "Olive Green / 2\" Opening",
+          "sku": "",
+          "price": "12.00",
+          "inventoryQuantity": 5
+        },
+        {
+          "id": "gid://shopify/ProductVariant/46200296079526",
+          "title": "Olive Green / 3\" Opening",
+          "sku": "",
+          "price": "16.00",
+          "inventoryQuantity": 5
+        },
+        {
+          "id": "gid://shopify/ProductVariant/46200296112294",
+          "title": "Olive Green / 4\" Opening",
+          "sku": "",
+          "price": "24.00",
+          "inventoryQuantity": 5
+        },
+        {
+          "id": "gid://shopify/ProductVariant/46200296145062",
+          "title": "Muted Green / 2\" Opening",
+          "sku": "",
+          "price": "12.00",
+          "inventoryQuantity": 5
+        },
+        {
+          "id": "gid://shopify/ProductVariant/46200296177830",
+          "title": "Muted Green / 3\" Opening",
+          "sku": "",
+          "price": "16.00",
+          "inventoryQuantity": 5
+        },
+        {
+          "id": "gid://shopify/ProductVariant/46200296210598",
+          "title": "Muted Green / 4\" Opening",
+          "sku": "",
+          "price": "24.00",
+          "inventoryQuantity": 5
+        }
+      ],
+      "currencyCode": "USD"
+    }
+  ]
+}
