@@ -59,3 +59,35 @@
 .footer--teklo .footer-block__heading { letter-spacing: normal; text-transform: none; font-size: 1.4rem; }
 .footer--teklo .footer__copyright { letter-spacing: normal; }
 .footer--teklo .teklo-footer-logo{display:block;width:180px;max-width:100%;height:auto}
+
+/* Keep the single signup compact, with Follow on Shop as a secondary action. */
+.footer--teklo .footer-block--newsletter {
+  justify-content: space-between;
+  gap: 2.4rem;
+}
+
+.footer--teklo .footer-block__newsletter {
+  flex: 0 1 36rem;
+  text-align: left;
+}
+
+.footer--teklo .footer-block__newsletter .footer-block__heading {
+  margin-bottom: 1.2rem;
+}
+
+.footer--teklo .footer__newsletter {
+  margin: 0;
+  align-items: flex-start;
+}
+
+@media screen and (max-width: 749px) {
+  .footer--teklo .footer-block--newsletter {
+    align-items: flex-start;
+  }
+
+  .footer--teklo .footer-block__newsletter {
+    flex: none;
+    width: 100%;
+    max-width: 36rem;
+  }
+}

@@ -280,48 +280,6 @@
       },
       "disabled": true
     },
-    "studio_notes": {
-      "type": "newsletter",
-      "blocks": {
-        "heading": {
-          "type": "heading",
-          "settings": {
-            "heading": "New objects. Works in progress. Things worth making.",
-            "heading_size": "h2"
-          }
-        },
-        "paragraph": {
-          "type": "paragraph",
-          "settings": {
-            "text": "<p>Occasional notes from Teklo Studio — new releases, experiments, and behind-the-scenes work.</p>"
-          }
-        },
-        "form": {
-          "type": "email_form",
-          "settings": {}
-        }
-      },
-      "block_order": [
-        "heading",
-        "paragraph",
-        "form"
-      ],
-      "settings": {
-        "presentation": "teklo",
-        "eyebrow": "STUDIO NOTES",
-        "submit_label": "JOIN",
-        "color_scheme": "scheme-1",
-        "full_width": true,
-        "padding_top": 64,
-        "padding_bottom": 64
-      }
-    },
-    "custom_invitation": {
-      "type": "teklo-custom-invitation",
-      "settings": {
-        "button_link": "/pages/contact?view=custom-work#inquiry"
-      }
-    },
     "introduction": {
       "type": "teklo-introduction",
       "settings": {
@@ -331,25 +289,16 @@
         "detail_only": true,
         "detail_alt": "Blue sculptural wall clock with a flowing ridged face, photographed beside houseplants."
       }
-    },
-    "philosophy": {
-      "type": "teklo-philosophy",
-      "settings": {
-        "seal": "shopify://shop_images/teklo-maker-seal.svg"
-      }
     }
   },
   "order": [
     "teklo_hero",
     "introduction",
     "trace",
-    "philosophy",
     "selected_objects",
     "lighting",
     "more_from_studio",
     "made_at_teklo",
-    "in_their_space",
-    "studio_notes",
-    "custom_invitation"
+    "in_their_space"
   ]
 }

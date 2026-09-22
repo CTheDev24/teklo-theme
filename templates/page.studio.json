@@ -72,9 +72,16 @@
         "connector",
         "professional"
       ]
+    },
+    "philosophy": {
+      "type": "teklo-philosophy",
+      "settings": {
+        "seal": "shopify://shop_images/teklo-maker-seal.svg"
+      }
     }
   },
   "order": [
-    "main"
+    "main",
+    "philosophy"
   ]
 }
