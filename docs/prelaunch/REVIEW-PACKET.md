@@ -88,3 +88,7 @@ Automatic approval review rejected the first partial product-description update 
 Shopify Payments explicitly reports it is not processing transactions until a plan is selected. PayPal setup is incomplete. Neither was activated. Admin access recovered after the initial 500; it is not a blanket access blocker. No customer or test email was sent. General profile settings advertise US Economy free for orders $35+, $3 Economy, USPS services and international carrier services, but 21 international countries are outside enabled markets. Checkout verification remains required before claiming eligibility.
 
 Shopify GitHub integration mirrored draft uploads onto dev during this task. The implementation branch retains its own commits and reconciles those sync commits; the PR explains which changes are already mirrored. No direct git push to dev occurred.
+
+## Custom Work attachment follow-up
+
+PDF/photo/STL/3MF attachments and private Drive receipt are implemented and tested on the draft. See [configuration, evidence, remaining email gate and rollback](CUSTOM-WORK-UPLOADS.md). This does not close the separate Trace workflow or launch blockers above.

@@ -15,6 +15,9 @@
 .teklo-custom-work__outcome { border-top: 1px solid rgba(var(--color-foreground), .2); padding-top: 1.6rem; }
 .teklo-custom-work__inquiry { display: grid; grid-template-columns: minmax(0, .8fr) minmax(0, 1.2fr); gap: clamp(3.2rem, 7vw, 10rem); border-top: 1px solid rgba(var(--color-foreground), .25); padding-top: clamp(4rem, 6vw, 7.2rem); scroll-margin-top: 12rem; }
 .teklo-custom-work__note { font-size: 1.3rem; margin-top: 2.4rem; }
+.teklo-custom-work__upload-form { min-width: 0; }
+.teklo-custom-work__upload-form > p { font-size: 1.4rem; }
+.teklo-custom-work__upload-form iframe { display: block; width: 100%; max-width: 100%; border: 0; }
 .teklo-custom-work__fields { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 2.4rem; margin-bottom: 3.2rem; }
 .teklo-custom-work__field { min-width: 0; }
 .teklo-custom-work__field--full { grid-column: 1/-1; }

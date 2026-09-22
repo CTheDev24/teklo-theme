@@ -288,6 +288,9 @@
       }
     },
     "custom_work": {
+      "upload_title": "Custom Work inquiry and file uploads",
+      "upload_guidance": "Attach up to 5 files, 10 MB each: PDF, JPG, JPEG, PNG, WEBP, HEIC, STL or 3MF. For larger files, use the Reference Link field. This form is hosted by Jotform.",
+      "open_upload_form": "Open the inquiry form in a new tab",
       "project_description": "Project description",
       "organization": "Organization",
       "timing": "Desired timing",
