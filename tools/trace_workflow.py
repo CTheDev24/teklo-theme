@@ -102,4 +102,3 @@ def transition(piece, event):
     p['revision'] += 1
     p['events'].append({k:event[k] for k in ('type','at','evidence')})
     return p
-
