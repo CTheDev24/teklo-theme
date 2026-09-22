@@ -1,5 +1,16 @@
 # Storefront verification — 21 September 2026
 
+## Post-deployment controlled-width follow-up
+
+Root recovered through the in-app browser after the Chrome failures recorded below. This supersedes only the width-testing limitation for these sampled interactions, not real-device/touch sign-off.
+
+- Exact preview opened with `teklo-theme/dev Draft` bar. At 360×800, DOM `innerWidth` was 360 and document scroll width 345 (no observed horizontal overflow on homepage). Menu opened; Escape closed it and focus returned to Menu with `aria-expanded=false`.
+- At 360px, visible Style/Route Color labels selected Nocturne and Match My Medal Color; rendered price was $174.95. Clicking Add to cart with blank Piece reference focused the invalid field and displayed `Please fill out this field.` Starting cart was independently empty.
+- At 390×844, a fresh Gallery/Signal Orange product view accepted synthetic reference `QA-NEXT-390`. Add to cart opened the drawer with that exact property and $149.95. Increasing to 2 produced $299.90 subtotal, automatic 25OFF −$74.97 and $224.93 total. Reload retained two units and the reference. Removed only this synthetic line; final drawer explicitly showed `Your cart is empty` and Continue shopping. No checkout or form submission occurred.
+- The first 360px cart attempt after opening the empty drawer unexpectedly navigated to the catalog, leaving cart empty. A fresh product view at 390px completed the successful add above. This may reflect an overlay/action timing issue; do not count the initial attempt as passed or infer a resolved cart bug.
+- Screenshot at 390px showed readable item/options/reference and quantity controls in the drawer. Check out exists in its DOM, but preview-bar overlap/below-fold positioning and tool timeouts prevented a reliable visibility/scrolling pass. Checkout visibility and drawer scrolling remain required release tests.
+- Default viewport restored. These were mouse/keyboard actions at controlled CSS widths, not touch, mobile OS keyboard, Safari/Android, 200% zoom or a full screen-reader pass. Image modal/Escape desktop evidence remains separate. No mobile performance or analytics receipt claim.
+
 Read-only browser pass on the existing draft, before this branch's deployment. No cart mutation, customer submission, email, payment, configuration change or publication occurred in this subtask. Existing review packet and test evidence were read; no AGENTS.md was found in the worktree file inventory.
 
 ## Exact target and observed results
@@ -43,3 +54,9 @@ No consent dialog appeared in the snapshots. Existing browser consent state and 
 ## Limits
 
 Browser control intermittently timed out, including navigation and one image inspection. Successful subsequent state checks underpin only the results explicitly recorded above. Browser viewport capability exists, but no override was applied to avoid interfering with parallel agents. No 360/390px, touch, iPhone/Android, 200% zoom, real keyboard appearance, performance/Core Web Vitals, checkout, email, form-success or post-payment test is claimed here. Nocturne/cart/quantity/persistence, sold-out variants and filtered collection zero-results were not re-exercised in this read-only pass.
+
+## Controlled mobile attempt (same session follow-up)
+
+After parallel desktop work finished, the browser viewport capability documentation was read. It supports width/height override only; no touch/device emulation API was exposed. A 360 x 800 override call returned successfully, but the new Chrome test tab failed with debugger-not-attached before the page could be inspected. Rebinding that tab also failed. The in-app-browser fallback reported unavailable. A fresh Chrome tab could be created; resetting the viewport then returned successfully before the following storefront navigation timed out. Its DOM read also timed out.
+
+Consequently, neither an actual measured 360px viewport nor 390px interactions were verified. Mobile menu/focus, variants, zoom, cart drawer scrolling/checkout visibility, add/remove and empty-cart recovery remain untested in this follow-up. No cart mutation occurred. No responsive or touch pass is claimed. The temporary viewport override was reset through the supported API after obtaining a fresh tab. Retry these checks when the browser control connection is healthy; no theme defect can be inferred from these tool failures.
