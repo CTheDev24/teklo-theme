@@ -38,6 +38,22 @@
         {% if section.settings.form_intro != blank %}<div class="rte">{{ section.settings.form_intro }}</div>{% endif %}
         <p class="teklo-custom-work__note">{{ 'templates.custom_work.required_note' | t }}</p>
       </div>
+      {% if section.settings.enable_file_uploads %}
+        <div class="teklo-custom-work__upload-form">
+          <p>{{ 'templates.custom_work.upload_guidance' | t }}</p>
+          <p><a class="link" href="https://form.jotform.com/262637916705061" target="_blank" rel="noopener">{{ 'templates.custom_work.open_upload_form' | t }}</a></p>
+          <iframe
+            id="JotFormIFrame-262637916705061"
+            title="{{ 'templates.custom_work.upload_title' | t | escape }}"
+            src="https://form.jotform.com/262637916705061"
+            width="100%"
+            height="1500"
+            loading="lazy"
+            referrerpolicy="strict-origin-when-cross-origin"
+          ></iframe>
+          <script src="https://cdn.jotfor.ms/s/umd/latest/for-form-embed-handler.js" defer onload="window.jotformEmbedHandler(&quot;iframe[id='JotFormIFrame-262637916705061']&quot;, 'https://form.jotform.com/')"></script>
+        </div>
+      {% else %}
       {% form 'contact', id: form_id, class: 'teklo-custom-work__form', return_to: 'back' %}
         <input type="hidden" name="contact[Inquiry type]" value="Custom Work">
         {% if form.posted_successfully? %}
@@ -81,6 +97,7 @@
         </div>
         <button class="teklo-custom-button" type="submit">{{ 'templates.custom_work.send' | t }}<span class="svg-wrapper" aria-hidden="true">{{ 'icon-arrow.svg' | inline_asset_content }}</span></button>
       {% endform %}
+      {% endif %}
     </section>
   </div>
 </div>
@@ -99,6 +116,7 @@
     { "type": "paragraph", "content": "Projects appear only when an image, title, description, and outcome have been added. Use real work with permission to display it." },
     { "type": "text", "id": "form_heading", "label": "Inquiry heading", "default": "Tell us what you have in mind" },
     { "type": "richtext", "id": "form_intro", "label": "Inquiry introduction", "default": "<p>Share the problem, the context, and what you hope to make. An early idea is welcome.</p>" },
+    { "type": "checkbox", "id": "enable_file_uploads", "label": "Use Custom Work form with file uploads", "default": false, "info": "Uses the connected Teklo Studio Jotform. Turn off to restore the Shopify contact form without attachments." },
     { "type": "color_scheme", "id": "color_scheme", "label": "Color scheme", "default": "scheme-1" }
   ],
   "blocks": [{
