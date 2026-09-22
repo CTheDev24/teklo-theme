@@ -43,7 +43,7 @@
           <p>{{ 'templates.custom_work.upload_guidance' | t }}</p>
           <p><a class="link" href="https://form.jotform.com/262637916705061" target="_blank" rel="noopener">{{ 'templates.custom_work.open_upload_form' | t }}</a></p>
           <iframe
-            id="JotFormIFrame-262637916705061"
+            id="JotFormIFrame-262637916705061-{{ section.id }}"
             title="{{ 'templates.custom_work.upload_title' | t | escape }}"
             src="https://form.jotform.com/262637916705061"
             width="100%"
@@ -51,7 +51,7 @@
             loading="lazy"
             referrerpolicy="strict-origin-when-cross-origin"
           ></iframe>
-          <script src="https://cdn.jotfor.ms/s/umd/latest/for-form-embed-handler.js" defer onload="window.jotformEmbedHandler(&quot;iframe[id='JotFormIFrame-262637916705061']&quot;, 'https://form.jotform.com/')"></script>
+          <script src="https://cdn.jotfor.ms/s/umd/latest/for-form-embed-handler.js" defer onload="window.jotformEmbedHandler(&quot;iframe[id='JotFormIFrame-262637916705061-{{ section.id }}']&quot;, 'https://form.jotform.com/')"></script>
         </div>
       {% else %}
       {% form 'contact', id: form_id, class: 'teklo-custom-work__form', return_to: 'back' %}
