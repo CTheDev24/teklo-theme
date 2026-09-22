@@ -30,3 +30,7 @@
 ## Validation and remaining gates
 
 GraphQL operations validated before execution; product exact readback and full refund readback verified. Shipping/terms full text readback confirmed. Discount EXPIRED confirmed. Python22 tests and diff whitespace check pass. No theme files changed in this batch, so no theme deployment or new Theme Check result is claimed; prior0-error/10-warning baseline remains historical. No paid plan, payment, real-card charge, theme publication or customer contact occurred. Real proof delivery/approval, scheduled reminders, actual refund, provider deletion, shipping checkout and final release checks remain untested. Overall **NOT READY**.
+
+## Shipping and discount clarification applied — 22 September
+
+Merchant confirmed all 50 states and one discounted piece per order. See SHIPPING-CONFIGURATION.md for the applied Trace-only profile, full API readback and rollback; standard/priority carrier services are configured but checkout prices are not tested. See DISCOUNT-CONFIGURATION.md for the rejected native one-unit-cap mutation, unchanged inactive discount, exact proposed app rule and necessary paid-app review. The launch date remains unset; no promotion was activated. This update supersedes the pending shipping/discount clarification bullets above.

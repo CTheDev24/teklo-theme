@@ -1,0 +1,109 @@
+{
+  "before": {
+    "data": {
+      "discountNodes": {
+        "nodes": [
+          {
+            "id": "gid://shopify/DiscountAutomaticNode/1666621571238",
+            "discount": {
+              "title": "25OFF",
+              "status": "EXPIRED",
+              "summary": "25% off entire order • Minimum quantity of 2",
+              "startsAt": "2025-02-22T04:37:05Z",
+              "endsAt": "2026-09-22T05:24:16Z",
+              "customerGets": {
+                "value": {
+                  "__typename": "DiscountPercentage"
+                },
+                "items": {
+                  "__typename": "AllDiscountItems"
+                }
+              }
+            }
+          }
+        ],
+        "pageInfo": {
+          "hasNextPage": false,
+          "endCursor": "eyJsYXN0X2lkIjoxNjY2NjIxNTcxMjM4LCJsYXN0X3ZhbHVlIjoiMTY2NjYyMTU3MTIzOCJ9"
+        }
+      }
+    }
+  },
+  "attempt": {
+    "id": "gid://shopify/DiscountAutomaticNode/1666621571238",
+    "input": {
+      "customerGets": {
+        "items": {
+          "products": {
+            "productsToAdd": [
+              "gid://shopify/Product/15807121490086"
+            ]
+          }
+        },
+        "value": {
+          "discountOnQuantity": {
+            "quantity": "1",
+            "effect": {
+              "percentage": 0.25
+            }
+          }
+        }
+      },
+      "minimumRequirement": {
+        "quantity": {
+          "greaterThanOrEqualToQuantity": "1"
+        }
+      }
+    }
+  },
+  "result": {
+    "data": {
+      "discountAutomaticBasicUpdate": {
+        "automaticDiscountNode": null,
+        "userErrors": [
+          {
+            "field": [
+              "automaticBasicDiscount",
+              "customerGets",
+              "value",
+              "discountOnQuantity"
+            ],
+            "message": "discountOnQuantity field is only permitted with bxgy discounts.",
+            "code": "INVALID"
+          }
+        ]
+      }
+    },
+    "error_code": "INVALID_ARGUMENT"
+  },
+  "after": {
+    "data": {
+      "discountNodes": {
+        "nodes": [
+          {
+            "id": "gid://shopify/DiscountAutomaticNode/1666621571238",
+            "discount": {
+              "title": "25OFF",
+              "status": "EXPIRED",
+              "summary": "25% off entire order • Minimum quantity of 2",
+              "startsAt": "2025-02-22T04:37:05Z",
+              "endsAt": "2026-09-22T05:24:16Z",
+              "customerGets": {
+                "value": {
+                  "__typename": "DiscountPercentage"
+                },
+                "items": {
+                  "__typename": "AllDiscountItems"
+                }
+              }
+            }
+          }
+        ],
+        "pageInfo": {
+          "hasNextPage": false,
+          "endCursor": "eyJsYXN0X2lkIjoxNjY2NjIxNTcxMjM4LCJsYXN0X3ZhbHVlIjoiMTY2NjYyMTU3MTIzOCJ9"
+        }
+      }
+    }
+  }
+}
