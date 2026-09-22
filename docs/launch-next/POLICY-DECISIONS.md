@@ -58,3 +58,7 @@ Proposed deletion target: remove submitted files and route-bearing working/proof
 3. Separate 48-hour clocks, day-7 final reminder and day-10 full refund; no production without written approval.
 4. US coverage (contiguous 48 vs all 50 states, DC, territories/APO/FPO), exact promo start/end, and whether 25OFF retains its existing two-item minimum.
 5. Retention scope/canceled-order trigger and separate marketing permission as proposed, subject to provider verification.
+
+## Approval and implementation follow-up
+
+Merchant approved the proposed cancellation/refund, response-deadline and privacy wording, specified first proof within 48 hours after complete usable intake, and authorized implementation. The promotion's 30-day window starts on actual launch. Geographic answer was ambiguous and discount unit scope needs clarification; neither is inferred. Implementation status and exact external changes are in POLICY-IMPLEMENTATION.md, which supersedes the earlier staged-only status here.

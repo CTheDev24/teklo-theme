@@ -4,6 +4,7 @@ import hashlib
 import math
 import xml.etree.ElementTree as ET
 from datetime import datetime
+from tools.trace_deadlines import POLICY_EVENTS, record_policy, timestamp
 
 
 def validate_gpx(data):
@@ -68,6 +69,15 @@ def transition(piece, event):
         raise ValueError('ISO timestamp with timezone required') from exc
     if not isinstance(event['evidence'], str) or not event['evidence'].strip():
         raise ValueError('Source evidence required')
+    if p['events'] and stamp < timestamp(p['events'][-1]['at']):
+        raise ValueError('Event timestamp precedes last recorded event')
+    if kind in POLICY_EVENTS:
+        record_policy(p, event)
+        p['revision'] += 1
+        p['events'].append({k:event[k] for k in ('type','at','evidence')})
+        return p
+    if p.get('policy', {}).get('closed'):
+        raise ValueError('Closed piece cannot resume production workflow')
     if p['state'] == 'APPROVED' and kind not in ('intake', 'route', 'proof', 'correction', 'invalid_input', 'private_link', 'unavailable_course', 'color_unclear'):
         raise ValueError('Approved revision cannot be silently changed')
     if kind == 'intake':
@@ -109,7 +119,11 @@ def transition(piece, event):
             raise ValueError('Check long names, layout and medal color before proof')
         if not event.get('version') or not event.get('file'):
             raise ValueError('Identified proof artifact required')
-        p.update(proof={'revision':p['revision'] + 1, 'version':event['version'], 'sha256':hashlib.sha256(event['file']).hexdigest(),
+        artifact_hash = hashlib.sha256(event['file']).hexdigest()
+        if any(old['version'] == event['version'] or old['sha256'] == artifact_hash
+               for old in p.get('policy', {}).get('delivered_proofs', [])):
+            raise ValueError('Previously delivered proof cannot restart response deadlines; record a reminder instead')
+        p.update(proof={'revision':p['revision'] + 1, 'version':event['version'], 'sha256':artifact_hash,
                         'route_sha256':p['route']['sha256']}, delivery=None, approval=None,
                  state='AWAITING_PROOF_DELIVERY')
     elif kind == 'delivered':
@@ -117,13 +131,24 @@ def transition(piece, event):
             raise ValueError('Delivery must identify current proof')
         if not event.get('message_id') or event.get('recipient_verified') is not True:
             raise ValueError('Verified order recipient and delivery evidence required')
+        policy = p.setdefault('policy', {})
+        pending = policy.get('request')
+        if pending and pending['kind'] != 'proof':
+            raise ValueError('Record the reply to pending input before delivering a proof')
+        delivered = policy.setdefault('delivered_proofs', [])
+        if any(old['version'] == p['proof']['version'] or old['sha256'] == p['proof']['sha256'] for old in delivered):
+            raise ValueError('Previously delivered proof cannot restart response deadlines')
+        delivered.append({'version': p['proof']['version'], 'sha256': p['proof']['sha256']})
         p.update(delivery={'message_id':event['message_id'], 'evidence':event['evidence']}, state='AWAITING_APPROVAL')
+        policy.setdefault('first_proof_sent_at', event['at'])
+        policy['request'] = {'id': event['message_id'], 'kind': 'proof', 'at': event['at'], 'reminders': []}
     elif kind == 'approve':
         if p['state'] != 'AWAITING_APPROVAL' or event.get('proof') != p['proof'] or event.get('verified_key') != p['key']:
             raise ValueError('Approval must identify this piece and current delivered proof')
         if event.get('sender_verified') is not True or event.get('text', '').strip() != 'APPROVED FOR PRODUCTION':
             raise ValueError('Explicit written approval from verified order contact required')
         p.update(approval={'evidence':event['evidence'], 'at':event['at'], 'proof':p['proof']}, state='APPROVED')
+        p.setdefault('policy', {}).pop('request', None)
     elif kind in ('invalid_input', 'private_link', 'unavailable_course', 'color_unclear', 'correction'):
         p.update(state='NEEDS_INPUT', proof=None, delivery=None, approval=None)
         p['route'] = None

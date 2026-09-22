@@ -1,0 +1,119 @@
+{
+  "date": "2026-09-22",
+  "product": {
+    "id": "gid://shopify/Product/15807121490086",
+    "exactReadbackMatch": true
+  },
+  "policies": [
+    {
+      "type": "CONTACT_INFORMATION",
+      "unchanged": true
+    },
+    {
+      "type": "PRIVACY_POLICY",
+      "unchanged": true
+    },
+    {
+      "type": "REFUND_POLICY",
+      "unchanged": false,
+      "approvedTextMatch": true
+    },
+    {
+      "type": "SHIPPING_POLICY",
+      "unchanged": false,
+      "approvedTextMatch": true
+    },
+    {
+      "type": "TERMS_OF_SERVICE",
+      "unchanged": false,
+      "approvedTextMatch": true
+    }
+  ],
+  "discount": [
+    {
+      "id": "gid://shopify/DiscountAutomaticNode/1666621571238",
+      "discount": {
+        "title": "25OFF",
+        "summary": "25% off entire order • Minimum quantity of 2",
+        "status": "EXPIRED",
+        "startsAt": "2025-02-22T04:37:05Z",
+        "endsAt": "2026-09-22T05:24:16Z"
+      }
+    }
+  ],
+  "shippingProfiles": [
+    {
+      "id": "gid://shopify/DeliveryProfile/93564829862",
+      "name": "General profile",
+      "traceAssigned": true,
+      "zones": [
+        {
+          "zone": {
+            "id": "gid://shopify/DeliveryZone/456311373990",
+            "name": "Domestic"
+          },
+          "methods": [
+            {
+              "id": "gid://shopify/DeliveryMethodDefinition/685557383334",
+              "name": "Economy",
+              "active": true
+            },
+            {
+              "id": "gid://shopify/DeliveryMethodDefinition/685557416102",
+              "name": "usps",
+              "active": true
+            },
+            {
+              "id": "gid://shopify/DeliveryMethodDefinition/704985759910",
+              "name": "Economy",
+              "active": true
+            }
+          ]
+        },
+        {
+          "zone": {
+            "id": "gid://shopify/DeliveryZone/456311406758",
+            "name": "International"
+          },
+          "methods": [
+            {
+              "id": "gid://shopify/DeliveryMethodDefinition/685553778854",
+              "name": "usps",
+              "active": true
+            },
+            {
+              "id": "gid://shopify/DeliveryMethodDefinition/685553811622",
+              "name": "dhl_express",
+              "active": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "gid://shopify/DeliveryProfile/93565550758",
+      "name": "Flat Rate",
+      "traceAssigned": false,
+      "zones": [
+        {
+          "zone": {
+            "id": "gid://shopify/DeliveryZone/456313045158",
+            "name": "united state"
+          },
+          "methods": [
+            {
+              "id": "gid://shopify/DeliveryMethodDefinition/685557448870",
+              "name": "usps",
+              "active": true
+            },
+            {
+              "id": "gid://shopify/DeliveryMethodDefinition/704496763046",
+              "name": "Standard",
+              "active": true
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -7,6 +7,7 @@ from pathlib import Path
 import sys
 import tempfile
 from tools.trace_workflow import new_piece, transition
+from tools.trace_deadlines import deadlines
 
 
 def private_root(value):
@@ -118,7 +119,8 @@ def main(argv=None):
     apply.add_argument('piece')
     apply.add_argument('--event', required=True, help='Private JSON event file')
     apply.add_argument('--expected-revision', type=int, required=True)
-    commands.add_parser('queue')
+    queue = commands.add_parser('queue')
+    queue.add_argument('--at', help='ISO timestamp with timezone; defaults to now')
     args = parser.parse_args(argv)
     try:
         ledger = Ledger(args.root)
@@ -130,10 +132,11 @@ def main(argv=None):
             event = json.loads(Path(args.event).read_text(encoding='utf-8-sig'))
             result = ledger.apply(args.piece, event, args.expected_revision)
         else:
-            result = [{'piece_id': p.stem, 'key': item['key'], 'state': item['state'], 'revision': item['revision']}
+            result = [{'piece_id': p.stem, 'key': item['key'], 'state': item['state'], 'revision': item['revision'],
+                       'tasks': deadlines(item, args.at)}
                       for p in sorted(ledger.root.glob('*.json'))
                       for item in [json.loads(p.read_text(encoding='utf-8'))['piece']]
-                      if item['state'] != 'APPROVED']
+                      if item['state'] != 'APPROVED' or deadlines(item, args.at)]
         print(json.dumps(result, indent=2))
         return 0
     except (ValueError, OSError, KeyError, TypeError) as exc:
