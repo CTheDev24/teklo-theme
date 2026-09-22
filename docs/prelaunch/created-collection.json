@@ -1,0 +1,24 @@
+{
+  "id": "gid://shopify/Collection/693016101030",
+  "title": "Trace",
+  "handle": "trace",
+  "descriptionHtml": "<p>Personalized dimensional race artwork by Teklo Studio.</p>",
+  "imageUrl": null,
+  "imageAltText": null,
+  "sortOrder": "MANUAL",
+  "collectionType": "manual",
+  "productsCount": 1,
+  "products": [
+    {
+      "title": "Personalized 3D Race Map | Custom GPX Running Wall Art | Marathon Finisher Gift",
+      "variantTitle": "Race Day / Gallery / Signal Orange",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0670/0518/6214/files/C330151C-C47C-4450-AE9D-4E5DA46F1DCF.jpg?v=1789789925",
+      "price": "149.95",
+      "currencyCode": "USD",
+      "status": "ACTIVE"
+    }
+  ],
+  "rules": null,
+  "updatedAt": "2026-09-21T21:52:19Z",
+  "currencyCode": "USD"
+}

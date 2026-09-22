@@ -1,0 +1,24 @@
+{% comment %}
+STAGED ONLY. Insert inside the existing Shopify order-confirmation body after
+mailbox/route-policy approval and test-mode order verification. Do not replace
+the full notification. Shopify notification Liquid is separate from theme Liquid.
+{% endcomment %}
+{% assign trace_found = false %}
+{% for line in line_items %}
+  {% if line.product.id == 15807121490086 %}
+    {% assign trace_found = true %}
+  {% endif %}
+{% endfor %}
+{% if trace_found %}
+  <h2>Complete your Trace details</h2>
+  <p>Use order {{ order_name | escape }} and the email used for this order. Complete one submission per physical piece, with its piece reference and unit number.</p>
+  <ul>
+    {% for line in line_items %}
+      {% if line.product.id == 15807121490086 %}
+        <li>{{ line.title | escape }} — {{ line.variant.title | escape }} — {{ line.properties['Piece reference'] | escape }} — {{ line.quantity }} piece(s). Number units from 1 through {{ line.quantity }}.</li>
+      {% endif %}
+    {% endfor %}
+  </ul>
+  <p><a href="https://form.jotform.com/262521531346047">Complete your Trace intake</a></p>
+  <p>Provide a GPX file, accessible activity link, official-course information or course map for review. Missing or invalid details require clarification. Submitting intake is not production approval; production stays on hold until the route and details are verified and the identified proof receives written approval.</p>
+{% endif %}

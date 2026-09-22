@@ -6,7 +6,9 @@ const results = [];
 const pass = (name) => results.push({ name, result: 'passed' });
 
 async function html(path) {
-  const response = await fetch(base + path);
+  const url = new URL(path, base);
+  if (process.env.TEKLO_PREVIEW_THEME_ID) url.searchParams.set('preview_theme_id', process.env.TEKLO_PREVIEW_THEME_ID);
+  const response = await fetch(url);
   assert.equal(response.status, 200, path);
   const content = await response.text();
   assert.doesNotMatch(content, /Liquid (?:error|syntax error)|translation missing:/i, path);

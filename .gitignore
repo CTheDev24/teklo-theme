@@ -11,3 +11,13 @@ review/brand-assets.json
 review/clean-photos.json
 review/*theme-check.json
 review/studio-refresh-verification.json
+
+review/prelaunch-remote-before/
+review/prelaunch-*.html
+review/*prelaunch*.cjs
+__pycache__/
+review/prelaunch-images/
+review/piece-fields-edit.cjs
+
+review/custom-work-remote/
+review/upload-fixtures/

@@ -1,0 +1,109 @@
+{
+  "id": "gid://shopify/Product/15457467728038",
+  "title": "Soft Face Wall Clock – Timely Elegance",
+  "vendor": "AllThings3DShop",
+  "status": "ACTIVE",
+  "productType": "3D Printed Wall Decor",
+  "descriptionHtml": "Abstract Maze Wall Clock — Sculptural Two-Tone Design<br><br>Bring bold pattern and modern character to your space with this abstract wall clock. Designed to function as both a timepiece and a piece of wall art, its maze-like pattern and two-tone color contrast add visual rhythm and depth to any room.<br><br>🎨 Design Details<br><br>Modern abstract maze pattern with playful yet sophisticated lines<br>Two-tone layered face creates visual depth and motion<br>Clean minimalist design that pairs with contemporary interiors<br>The larger 10″ diameter allows the pattern and color contrast to fully shine, making this clock a true statement piece rather than a small accent.<br><br>🏡 Where It Works Best<br><br>Living room, bedroom, office, or study wall<br>Gallery wall groupings<br>Unique gifts for housewarmings or design lovers<br><br>🔧 Materials &amp; Movement<br><br>3D printed PLA body<br>Silent quartz clock movement (quiet, no ticking)<br>Lightweight but sturdy construction<br><br>📏 Size<br><br>Diameter: 10″ (designed to stand out without overwhelming your space)<br><br>🎨 Available Colorways<br><br>Teal Bounce – Teal &amp; off-white with butter yellow hands<br>Midnight Teal – Teal &amp; deep navy with yellow hands<br>(More colorways coming soon!)<br><br>📦 Production &amp; Shipping<br><br>Made to order and carefully packaged<br>Ships quickly with tracking",
+  "tags": [],
+  "totalInventory": 25,
+  "featuredImageUrl": "https://cdn.shopify.com/s/files/1/0670/0518/6214/files/base.png?v=1786774407",
+  "images": [
+    {
+      "url": "https://cdn.shopify.com/s/files/1/0670/0518/6214/files/base.png?v=1786774407",
+      "altText": "",
+      "mediaId": "gid://shopify/MediaImage/69598564384934"
+    },
+    {
+      "url": "https://cdn.shopify.com/s/files/1/0670/0518/6214/files/DSCF0783.jpg?v=1786774407",
+      "altText": "",
+      "mediaId": "gid://shopify/MediaImage/69598564778150"
+    },
+    {
+      "url": "https://cdn.shopify.com/s/files/1/0670/0518/6214/files/DSCF0786.jpg?v=1786774407",
+      "altText": "",
+      "mediaId": "gid://shopify/MediaImage/69598564483238"
+    },
+    {
+      "url": "https://cdn.shopify.com/s/files/1/0670/0518/6214/files/DSCF0784.jpg?v=1786774407",
+      "altText": "",
+      "mediaId": "gid://shopify/MediaImage/69598564417702"
+    },
+    {
+      "url": "https://cdn.shopify.com/s/files/1/0670/0518/6214/files/DSCF0785.jpg?v=1786774407",
+      "altText": "",
+      "mediaId": "gid://shopify/MediaImage/69598564450470"
+    },
+    {
+      "url": "https://cdn.shopify.com/s/files/1/0670/0518/6214/files/DSCF0787.jpg?v=1786774407",
+      "altText": "",
+      "mediaId": "gid://shopify/MediaImage/69598564516006"
+    },
+    {
+      "url": "https://cdn.shopify.com/s/files/1/0670/0518/6214/files/wall_clock_soft_face_03.jpg?v=1786774406",
+      "altText": "",
+      "mediaId": "gid://shopify/MediaImage/69598564614310"
+    },
+    {
+      "url": "https://cdn.shopify.com/s/files/1/0670/0518/6214/files/3.png?v=1786774406",
+      "altText": "",
+      "mediaId": "gid://shopify/MediaImage/69598564352166"
+    },
+    {
+      "url": "https://cdn.shopify.com/s/files/1/0670/0518/6214/files/wall_clock_soft_face_01.jpg?v=1786774406",
+      "altText": "",
+      "mediaId": "gid://shopify/MediaImage/69598564581542"
+    },
+    {
+      "url": "https://cdn.shopify.com/s/files/1/0670/0518/6214/files/wall_clock_soft_face_11.jpg?v=1786774406",
+      "altText": "",
+      "mediaId": "gid://shopify/MediaImage/69598564712614"
+    }
+  ],
+  "totalVariants": 6,
+  "variants": [
+    {
+      "id": "gid://shopify/ProductVariant/56962299330726",
+      "title": "Mint Pop",
+      "sku": null,
+      "price": "38.95",
+      "inventoryQuantity": 5
+    },
+    {
+      "id": "gid://shopify/ProductVariant/56962299363494",
+      "title": "Teal Bounce",
+      "sku": null,
+      "price": "38.95",
+      "inventoryQuantity": 5
+    },
+    {
+      "id": "gid://shopify/ProductVariant/56962299429030",
+      "title": "Blush Bloom",
+      "sku": null,
+      "price": "38.95",
+      "inventoryQuantity": 5
+    },
+    {
+      "id": "gid://shopify/ProductVariant/56962299461798",
+      "title": "Blue Doodle",
+      "sku": null,
+      "price": "38.95",
+      "inventoryQuantity": 5
+    },
+    {
+      "id": "gid://shopify/ProductVariant/56962299527334",
+      "title": "Midnight Teal",
+      "sku": null,
+      "price": "38.95",
+      "inventoryQuantity": 5
+    },
+    {
+      "id": "gid://shopify/ProductVariant/56962323480742",
+      "title": "Hot Gray",
+      "sku": null,
+      "price": "38.95",
+      "inventoryQuantity": 0
+    }
+  ],
+  "currencyCode": "USD"
+}

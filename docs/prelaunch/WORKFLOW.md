@@ -1,0 +1,20 @@
+# Trace operation gate and integration contract
+
+`tools/trace_workflow.py` is an offline validation library, not a deployed service or email automation. `python -m unittest discover -s tests -v` exercises synthetic data only. Nothing here sends messages, processes payments or starts manufacturing.
+
+1. Fetch Shopify order through an authenticated integration. Retain immutable shop/order/line-item IDs; the customer order reference is only a lookup hint. Each purchased unit gets a separate key `(shop, order_id, line_item_id, unit_index)`. Do not match by runner name alone. Match submitted email to verified order contact; if piece references repeat or are missing, require manual reconciliation before setting verified_key.
+2. Fetch Jotform submission/file through authenticated access. Preserve original answers, source submission ID and file hash privately. Never put real route files/order records in this repository or public URLs. Form route method is required; absent path-specific data enters NEEDS_INPUT. Public form input does not authenticate an order or approve production.
+3. Validate GPX bytes (XML, no DTD/entities, coordinate ranges, finite numbers and at least two distinct points). This proves structural usability, not route accuracy. Verify race/year/distance/crop independently. A private link, unavailable course or image-only source needs operator work; do not call it a validated route. All alternatives converge on accepted GPX with recorded source verification.
+4. Explicitly omit an unavailable time; preserve full long names and review layout rather than truncate silently. Review medal photo/color and record clarification before confirming color. New intake or accepted route invalidates proofs/approval.
+5. Attach versioned proof bytes; record hash, route hash and revision, plus human layout/color review. Send only to verified order contact using the approved channel. Record sent-message and delivery evidence before `delivered`. Delivery is not approval. No sender/inbox has been configured in this repository.
+6. Verify written reply against order contact, exact piece and current proof fingerprint. Only explicit APPROVED FOR PRODUCTION advances. Corrections invalidate previous approval. Nonresponse records follow-up need and holds state; it never approves, cancels, refunds or discards data automatically. Apply an approved reminder cadence manually until tested automation exists.
+7. Persist output privately with atomic compare-and-swap against revision, retaining immutable events and evidence. This persistence/integration adapter is not implemented: do not use the library as a production order system. Preserve the existing Trace operations order-root and Canva/map human gates; this customer-proof gate does not supersede them.
+
+Prepared message templates (not sent):
+
+- Missing input: `Order {order}, piece {reference}/{unit}: we need {specific missing detail}. Please update your intake. Production is on hold; do not send account passwords.`
+- Invalid/private route: `We could not validate/access {source}. Please upload a usable GPX, share an accessible activity, or supply race name/location/year/distance or a course map. We will not substitute an unverified route.`
+- Proof: `Order {order}, piece {reference}/{unit}, proof {version}: review attached proof {hash}. Check route, crop, orientation, names, dates, time, finish and accent. Reply identifying this order/piece/version with APPROVED FOR PRODUCTION, or one consolidated correction request.`
+- Nonresponse: `We are awaiting {input or approval} for {order/piece/version}. Production remains on hold. Please reply when ready or contact us to discuss your order.` No invented deadline or cancellation outcome.
+
+Before deployment: implement authenticated Shopify/Jotform reconciliation and persistence, choose/verify email transport and reply provenance, test duplicate deliveries/submissions and retries, then run an actual test-mode order with two pieces. Do not expose proof links containing customer data publicly. Configure retention only after practice/legal review.
