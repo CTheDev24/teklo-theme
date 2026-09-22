@@ -8,6 +8,8 @@ Branch `codex/feature/launch-readiness-next`, based on `origin/dev` at `918361f`
 
 ## Implementation and findings matrix
 
+Mailbox follow-up: merchant has now confirmed all three Teklo mailboxes are monitored. Trace notification routing is orders@; Custom Work is hello@. Policy support-address substitutions are prepared but blocked by connector scope and refund-policy approval review. Delivery is not yet tested. See [current mailbox configuration](MAILBOX-CONFIGURATION.md); this supersedes earlier unknown-mailbox statements below and in the historical packet.
+
 All audit IDs are retained. Status distinguishes current work from inherited fixes and unresolved decisions.
 
 | ID | Owner | Current result and remaining disposition |
