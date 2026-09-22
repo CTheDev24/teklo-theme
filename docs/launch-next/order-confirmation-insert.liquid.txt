@@ -1,0 +1,24 @@
+{% comment %}
+STAGED ONLY. Insert inside the existing Shopify order-confirmation body after
+mailbox/route-policy approval and test-mode order verification. Do not replace
+the full notification. Shopify notification Liquid is separate from theme Liquid.
+{% endcomment %}
+{% assign trace_found = false %}
+{% for line in line_items %}
+  {% if line.product.id == 15807121490086 %}
+    {% assign trace_found = true %}
+  {% endif %}
+{% endfor %}
+{% if trace_found %}
+  <h2>Complete your Trace details</h2>
+  <p>Use order {{ order_name | escape }} and the email used for this order. Complete one submission per physical piece, with its piece reference and unit number.</p>
+  <ul>
+    {% for line in line_items %}
+      {% if line.product.id == 15807121490086 %}
+        <li>{{ line.title | escape }} — {{ line.variant.title | escape }} — {{ line.properties['Piece reference'] | escape }} — {{ line.quantity }} piece(s). Number units from 1 through {{ line.quantity }}.</li>
+      {% endif %}
+    {% endfor %}
+  </ul>
+  <p><a href="https://form.jotform.com/262521531346047">Complete your Trace intake</a></p>
+  <p>Complete intake within 48 hours after receiving these instructions. Provide a GPX file, accessible activity link, official-course information or course map for review. Your first proof will be prepared within 48 hours after complete, usable intake. Respond to each proof within 48 hours. Missing or invalid details require clarification. Submitting intake is not production approval; production stays on hold until the route and details are verified and the identified proof receives written approval.</p><p>We send a reminder after 48 hours and a final reminder on day 7. After 10 calendar days without a response to the relevant request, we cancel the unapproved order and issue a full refund. No response is not approval. Production takes 8–10 business days after complete intake and written approval; carrier transit is additional.</p><p>You may cancel for a full refund before written approval. After approval but before production, cancellation is at our discretion; no cancellation once production starts. Changes require our acceptance. For help, email orders@teklostudio.com with your order and piece reference.</p>
+{% endif %}
