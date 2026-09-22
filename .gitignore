@@ -17,3 +17,6 @@ __pycache__/
 review/theme-check-next.json
 review/launch-next-before/
 review/launch-next-readback/
+
+# Local homepage deployment backups and checks
+review/homepage-*
