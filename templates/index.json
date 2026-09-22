@@ -89,7 +89,8 @@
         "image": "shopify://shop_images/425BD1ED-46BA-4728-89D4-0726D8277BD3.jpg",
         "copy": "<p>Choose Gallery for a light, architectural finish or Nocturne for a dark, graphic look. Each Trace combines a raised 3D map, your route, and a custom race poster in a matte-black wooden shadow box.</p>",
         "product": "personalized-3d-race-map-custom-gpx-running-wall-art-marathon-finisher-gift",
-        "button_label": "Customize Trace"
+        "button_label": "Customize Trace",
+        "home_copy": "<p>Discover sculptural clocks, lighting, and planters for everyday spaces. <a href=\"/collections/shop\">Shop the collection</a></p>"
       },
       "blocks": {
         "frame": {
@@ -289,6 +290,13 @@
         "detail_only": true,
         "detail_alt": "Blue sculptural wall clock with a flowing ridged face, photographed beside houseplants."
       }
+    },
+    "custom_invitation": {
+      "type": "teklo-custom-invitation",
+      "settings": {
+        "button_link": "/pages/contact?view=custom-work#inquiry",
+        "show_inline_form": true
+      }
     }
   },
   "order": [
@@ -299,6 +307,7 @@
     "lighting",
     "more_from_studio",
     "made_at_teklo",
-    "in_their_space"
+    "in_their_space",
+    "custom_invitation"
   ]
 }
