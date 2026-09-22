@@ -10,11 +10,14 @@
       {% if section.settings.product != blank %}{% assign trace_price = section.settings.product.price_min | money_with_currency %}<p>{{ 'teklo.launch.starting_price' | t: price: trace_price }}</p><a class="teklo-launch__cta" href="{{ section.settings.product.url }}">{{ section.settings.button_label | escape }} {{ 'icon-arrow.svg' | inline_asset_content }}</a>{% elsif section.settings.inquiry_link != blank %}<a class="teklo-launch__cta" href="{{ section.settings.inquiry_link }}">{{ section.settings.inquiry_label | escape }} {{ 'icon-arrow.svg' | inline_asset_content }}</a>{% endif %}
     </div>
   </div>
+  {% assign graphics = section.blocks | where: "type", "graphic" %}
+  {% if graphics.size > 0 %}
   <div class="teklo-launch__graphics">
     {% for block in section.blocks %}{% if block.type == 'graphic' and block.settings.image != blank %}
       <figure {{ block.shopify_attributes }}>{{ block.settings.image | image_url: width: 1080 | image_tag: widths: '400,700,1080', sizes: '(min-width: 990px) 30vw, 90vw', loading: 'lazy', alt: block.settings.alt }}<figcaption>{{ block.settings.caption | escape }}</figcaption></figure>
     {% endif %}{% endfor %}
   </div>
+  {% endif %}
   <div class="teklo-launch__next">
     <article><p class="teklo-launch__label">{{ section.settings.home_eyebrow | escape }}</p><h3>{{ section.settings.home_heading | escape }}</h3><div class="rte">{{ section.settings.home_copy }}</div></article>
     <article><p class="teklo-launch__label">THE STUDIO</p><h3>{{ section.settings.studio_heading | escape }}</h3><div class="rte">{{ section.settings.studio_copy }}</div>{% if section.settings.studio_link != blank %}<a href="{{ section.settings.studio_link }}">Meet the maker {{ 'icon-arrow.svg' | inline_asset_content }}</a>{% endif %}</article>

@@ -119,31 +119,13 @@
             "label": "FINISH",
             "value": "Gallery or Nocturne · ready to hang"
           }
-        },
-        "finishes": {
-          "type": "graphic",
-          "settings": {
-            "image": "shopify://shop_images/DD2233B2-DF07-4425-AF9A-0C72438F67DB.jpg",
-            "alt": "Low-angle view of the raised city buildings and orange route on a Trace race map.",
-            "caption": "Your route, in three dimensions."
-          }
-        },
-        "materials": {
-          "type": "graphic",
-          "settings": {
-            "image": "shopify://shop_images/23C2B695-58DC-4F55-BD38-0268C3604C48.jpg",
-            "alt": "Trace race artwork in a black frame, photographed beside a Race to the Pennant finisher medal.",
-            "caption": "A race worth remembering."
-          }
         }
       },
       "block_order": [
         "frame",
         "map",
         "poster",
-        "finish",
-        "finishes",
-        "materials"
+        "finish"
       ]
     },
     "lighting": {
@@ -344,8 +326,10 @@
       "type": "teklo-introduction",
       "settings": {
         "trace_logo": "shopify://shop_images/trace-wordmark.svg",
-        "detail_image": "shopify://shop_images/BB61BA2B-AD42-413D-8D56-1421DD981601.jpg",
-        "trace_link": "/products/personalized-3d-race-map-custom-gpx-running-wall-art-marathon-finisher-gift"
+        "detail_image": "shopify://shop_images/Modern_Art_Deco_Wall_Clock_Two_Tone_Minimalist_Home_Decor_5_4437546213.jpg",
+        "trace_link": "/products/personalized-3d-race-map-custom-gpx-running-wall-art-marathon-finisher-gift",
+        "detail_only": true,
+        "detail_alt": "Blue sculptural wall clock with a flowing ridged face, photographed beside houseplants."
       }
     },
     "philosophy": {

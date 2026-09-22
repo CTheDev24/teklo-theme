@@ -32,3 +32,7 @@
   .teklo-introduction__caption { font-size: 1.1rem; }
 }
 .teklo-introduction__detail-image{aspect-ratio:3/4;object-fit:cover}.teklo-introduction__link{font-family:var(--teklo-font-label);font-size:11px;letter-spacing:.12em;text-transform:uppercase}
+
+.teklo-introduction__grid--detail-only { grid-template-columns: minmax(0, 1fr); }
+.teklo-introduction__grid--detail-only .teklo-introduction__detail { width: 100%; max-width: 64rem; margin-inline: auto; padding: 0; }
+.teklo-introduction__grid--detail-only .teklo-introduction__detail-image { aspect-ratio: auto; object-fit: contain; }
