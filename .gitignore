@@ -11,3 +11,7 @@ review/brand-assets.json
 review/clean-photos.json
 review/*theme-check.json
 review/studio-refresh-verification.json
+
+__pycache__/
+*.py[cod]
+review/theme-check-next.json

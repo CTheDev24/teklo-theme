@@ -50,3 +50,9 @@
 .teklo-custom-work h1, .teklo-custom-work h2, .teklo-custom-invitation h2 { font-weight: 400; }
 .teklo-custom-work .teklo-eyebrow, .teklo-custom-invitation .teklo-eyebrow { font-family: var(--teklo-font-label); font-size: 1.1rem; letter-spacing: .15em; text-transform: uppercase; }
 .teklo-custom-button { font-family: var(--teklo-font-label); font-size: 1.2rem; letter-spacing: .1em; text-transform: uppercase; }
+
+.teklo-custom-work__upload-form { min-width: 0; }
+.teklo-custom-work__upload-form > p { font-size: 1.4rem; }
+.teklo-custom-work__upload-form iframe { display: block; width: 100%; max-width: 100%; border: 0; }
+.teklo-custom-work__upload-form a:focus-visible,
+.teklo-custom-work__upload-form iframe:focus-visible { outline: 2px solid currentColor; outline-offset: 4px; }
