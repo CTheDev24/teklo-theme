@@ -12,8 +12,6 @@
     "teklo_hero": {
       "type": "teklo-hero-film",
       "settings": {
-        "eyebrow": "OBJECTS FOR A MORE MEANINGFUL LIFE",
-        "layout": "split",
         "video": "shopify://files/videos/IMG-3387.MOV",
         "focal_point": "center center",
         "heading": "Designed through process.",
@@ -26,7 +24,9 @@
         "vertical_position": "center",
         "height": "viewport",
         "overlay": 30,
-        "color_scheme": "scheme-1"
+        "color_scheme": "scheme-1",
+        "layout": "split",
+        "eyebrow": "OBJECTS FOR A MORE MEANINGFUL LIFE"
       }
     },
     "selected_objects": {
@@ -71,7 +71,6 @@
         "object_2",
         "object_3"
       ],
-      "disabled": true,
       "settings": {
         "eyebrow": "SELECTED OBJECTS",
         "heading": "Made for the spaces you live in.",
@@ -79,10 +78,19 @@
         "color_scheme": "scheme-1",
         "padding_top": 96,
         "padding_bottom": 96
-      }
+      },
+      "disabled": true
     },
     "trace": {
       "type": "teklo-trace-launch",
+      "settings": {
+        "inquiry_link": "/pages/contact",
+        "studio_link": "/pages/about-us?view=studio",
+        "image": "shopify://shop_images/425BD1ED-46BA-4728-89D4-0726D8277BD3.jpg",
+        "copy": "<p>Choose Gallery for a light, architectural finish or Nocturne for a dark, graphic look. Each Trace combines a raised 3D map, your route, and a custom race poster in a matte-black wooden shadow box.</p>",
+        "product": "personalized-3d-race-map-custom-gpx-running-wall-art-marathon-finisher-gift",
+        "button_label": "Customize Trace"
+      },
       "blocks": {
         "frame": {
           "type": "spec",
@@ -118,19 +126,10 @@
         "map",
         "poster",
         "finish"
-      ],
-      "settings": {
-        "image": "shopify://shop_images/425BD1ED-46BA-4728-89D4-0726D8277BD3.jpg",
-        "copy": "<p>Choose Gallery for a light, architectural finish or Nocturne for a dark, graphic look. Each Trace combines a raised 3D map, your route, and a custom race poster in a matte-black wooden shadow box.</p>",
-        "product": "personalized-3d-race-map-custom-gpx-running-wall-art-marathon-finisher-gift",
-        "button_label": "Customize Trace",
-        "inquiry_link": "/pages/contact",
-        "studio_link": "/pages/about-us?view=studio"
-      }
+      ]
     },
     "lighting": {
       "type": "teklo-editorial-feature",
-      "disabled": true,
       "settings": {
         "eyebrow": "LIGHTING / BY TEKLO",
         "heading": "Form changes when the light comes on.",
@@ -143,11 +142,11 @@
         "height": "medium",
         "overlay": 45,
         "color_scheme": "scheme-4"
-      }
+      },
+      "disabled": true
     },
     "more_from_studio": {
       "type": "featured-collection",
-      "disabled": true,
       "settings": {
         "presentation": "teklo",
         "collection": "all",
@@ -178,7 +177,8 @@
         "swipe_on_mobile": false,
         "padding_top": 80,
         "padding_bottom": 80
-      }
+      },
+      "disabled": true
     },
     "made_at_teklo": {
       "type": "teklo-process",
@@ -222,7 +222,6 @@
         "finish",
         "send"
       ],
-      "disabled": true,
       "settings": {
         "eyebrow": "MADE AT TEKLO",
         "heading": "From process, to object.",
@@ -232,7 +231,8 @@
         "color_scheme": "scheme-1",
         "padding_top": 96,
         "padding_bottom": 96
-      }
+      },
+      "disabled": true
     },
     "in_their_space": {
       "type": "teklo-testimonials",
@@ -267,7 +267,6 @@
         "testimonial_2",
         "testimonial_3"
       ],
-      "disabled": true,
       "settings": {
         "eyebrow": "",
         "heading": "IN THEIR SPACE",
@@ -278,7 +277,8 @@
         "color_scheme": "scheme-1",
         "padding_top": 96,
         "padding_bottom": 96
-      }
+      },
+      "disabled": true
     },
     "studio_notes": {
       "type": "newsletter",
@@ -326,8 +326,10 @@
       "type": "teklo-introduction",
       "settings": {
         "trace_logo": "shopify://shop_images/trace-wordmark.svg",
+        "detail_image": "shopify://shop_images/Modern_Art_Deco_Wall_Clock_Two_Tone_Minimalist_Home_Decor_5_4437546213.jpg",
         "trace_link": "/products/personalized-3d-race-map-custom-gpx-running-wall-art-marathon-finisher-gift",
-        "detail_image": "shopify://shop_images/Modern_Art_Deco_Wall_Clock_Two_Tone_Minimalist_Home_Decor_5_4437546213.jpg"
+        "detail_only": true,
+        "detail_alt": "Blue sculptural wall clock with a flowing ridged face, photographed beside houseplants."
       }
     },
     "philosophy": {
