@@ -84,3 +84,7 @@ The Shopify product description now includes the intake link, order/piece matchi
 ## Policy and assortment shipping readback
 
 Fresh plan read remains Paused. All four non-Trace Shop products use General shipping: free Economy begins at $35, and the international zone lists 27 countries. Exact policy corrections and unchanged-profile evidence are in [policy/shipping follow-up](POLICY-SHIPPING-FOLLOWUP.md). Policy writes are blocked by missing write_legal_policies scope and the signed-out Admin browser; prepared changes are not reported as applied.
+
+## Concrete synthetic proof-email test packet
+
+Prepared [three unsent test emails, PDFs and exact verification steps](../../output/pdf/trace-proof-test/README.md) for TEST-A v1, TEST-B v1 with omitted finish time, and TEST-A v2. PDFs visually inspected; MIME recipient/unsent flag/attachment SHA-256/Unicode approval identity independently checked. No email sent and no Shopify order or approval created. Merchant mail-client delivery/reply exercise remains necessary; this packet does not close P0-03.

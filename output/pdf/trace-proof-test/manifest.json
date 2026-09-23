@@ -1,0 +1,29 @@
+[
+  {
+    "file": "piece-a-v1",
+    "piece": "TEST-A",
+    "unit": 1,
+    "version": "v1",
+    "recipient": "support@teklostudio.com",
+    "sha256": "90cceab3ed7e512435cfcf4d56d1a6114ce4ed4d0b80f92b1c6eed3d3e9594e9",
+    "approval": "APPROVED FOR PRODUCTION — order TEKLO-TEST-PROOF-NOT-AN-ORDER, piece TEST-A, unit 1, proof v1"
+  },
+  {
+    "file": "piece-b-v1",
+    "piece": "TEST-B",
+    "unit": 1,
+    "version": "v1",
+    "recipient": "support@teklostudio.com",
+    "sha256": "c159bd059826630f32d2a4aba8a48dd9c192f45add4d91091c94faa856919322",
+    "approval": "APPROVED FOR PRODUCTION — order TEKLO-TEST-PROOF-NOT-AN-ORDER, piece TEST-B, unit 1, proof v1"
+  },
+  {
+    "file": "piece-a-v2",
+    "piece": "TEST-A",
+    "unit": 1,
+    "version": "v2",
+    "recipient": "support@teklostudio.com",
+    "sha256": "00668c7ea6fc9c376cf984b8adfcbeb041ee4abb32136046f903a0f29b1d7d97",
+    "approval": "APPROVED FOR PRODUCTION — order TEKLO-TEST-PROOF-NOT-AN-ORDER, piece TEST-A, unit 1, proof v2"
+  }
+]
