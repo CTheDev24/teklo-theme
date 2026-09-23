@@ -1,6 +1,6 @@
 # Current launch review — 22 September 2026
 
-**NOT READY.** This packet supersedes earlier status summaries and decision requests. The store still reports **Paused** in a fresh Shopify read. Purchasing and the full Trace intake/proof workflow remain unverified; removing warnings or renaming this status to PENDING would not resolve those gates.
+**NOT READY.** This packet supersedes earlier status summaries and decision requests. The merchant activated **Basic** and checkout entry now works; see [active-plan verification](ACTIVE-PLAN-CHECKOUT.md). Completed payment and the full Trace intake/proof workflow remain unverified; removing warnings or renaming this status to PENDING would not resolve those gates.
 
 [Draft PR 3](https://github.com/CTheDev24/teklo-theme/pull/3) targets `dev` from `codex/feature/launch-readiness-next`. Only unpublished **teklo-theme/dev, 196729798822**, has received scoped theme deployments. [Development preview](https://at3dshop.myshopify.com/?preview_theme_id=196729798822). Live Dawn was not published over.
 
@@ -14,7 +14,7 @@ Do not ask again for these choices: $25 medal-match surcharge; 8–10 business d
 
 | ID | Ownership | Current disposition and evidence |
 |---|---|---|
-| P0-01 | Shopify billing/payment | **Human gate; not fixed.** Fresh plan read: Paused. Merchant must select selling plan/payment test configuration before shipping/tax/payment/order/refund can be exercised. |
+| P0-01 | Shopify billing/payment | **Plan blocker resolved; checkout entry tested.** Fresh plan: Basic. Trace Nocturne/medal-match reaches checkout at $174.95 with piece reference intact. Test gateway/address confirmation and shipping/tax/payment/order/refund tests remain open. [Evidence](ACTIVE-PLAN-CHECKOUT.md). |
 | P0-02 | Theme/Shopify collection | **Fixed/tested.** Direct Trace product route, visible starting price and five-product Shop. Boho replaces Torio; Trace, clock, Birch and Luxar remain. [Assortment evidence](BOHO-BRANDING-FOLLOWUP.md). |
 | P0-03 | Theme/content/Jotform/email/operations | **Partly implemented; integration gate open.** Per-piece references, intake links, four route paths, optional finish time and version-specific written approval instructions exist. Intake signature removed; actual orders@ notification receipt confirmed by merchant. Etsy graphic detached. Order-confirmation insert not installed; notification template/storage inspection blocked by browser access; two-piece intake-to-proof approval and nonresponse handling not fully exercised. [Handoff](TRACE-INTAKE-HANDOFF.md), [content](TRACE-CONTENT-HANDOFF.md), [Jotform](JOTFORM-CHANGES.md). |
 | P1-01 | Shopify pricing/content | **Fixed/tested price discrepancy.** Eight variants retain $149.95/$174.95 and $25 copy. Discounts disabled. No new pricing intent needed. |
@@ -31,7 +31,7 @@ Do not ask again for these choices: $25 medal-match surcharge; 8–10 business d
 
 ## Smallest remaining rollout backlog
 
-1. **Merchant access and purchasing:** restore Shopify Admin and Jotform builder access, select plan and payment test details. Shopify policy connector explicitly lacks `write_legal_policies`; an authenticated Admin session is the alternative. Prior Jotform builder navigation resolved to the public form, not edit controls. Then inspect notifications/storage, apply prepared policy corrections, install the order-confirmation handoff while preserving the existing template, and test intended shipping destinations, mixed carts, tax, payment, email and refund.
+1. **Merchant access and purchasing:** restore Shopify Admin and Jotform builder access and confirm payment test details/address. Selling plan is now active and checkout entry passed. Shopify policy connector explicitly lacks `write_legal_policies`; an authenticated Admin session is the alternative. Prior Jotform builder navigation resolved to the public form, not edit controls. Then inspect notifications/storage, apply prepared policy corrections, install the order-confirmation handoff while preserving the existing template, and test intended shipping destinations, mixed carts, tax, payment, email and refund.
 2. **Measured product facts:** supply verified exterior frame, insert and map dimensions. Update real text and any replacement graphic together. No redesign required.
 3. **Trace operations and delivery:** use the prepared [synthetic two-piece proof packet](../../output/pdf/trace-proof-test/README.md) in Apple Mail/Outlook. It contains unsent emails to the merchant's own support@ mailbox, distinct pieces and a revised proof. Verify actual delivery/reply, corrections, wrong-piece/stale-version rejection; then exercise a complete order-linked intake through proof approval. Check invalid/missing GPX, private links, unavailable courses, long names, omitted time, medal ambiguity and nonresponse. Native unit field still permits decimals; operator validation and local ledger reject noninteger units.
 4. **Storage and privacy:** verify provider access, retention/deletion including derived route files and backups. Apply the actual practice consistently to intake and privacy text. Do not claim the approved target is automated or proven.
