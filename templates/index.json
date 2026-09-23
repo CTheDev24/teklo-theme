@@ -288,7 +288,12 @@
         "trace_logo": "shopify://shop_images/trace-wordmark.svg",
         "trace_link": "/products/personalized-3d-race-map-custom-gpx-running-wall-art-marathon-finisher-gift",
         "detail_image": "shopify://shop_images/Modern_Art_Deco_Wall_Clock_Two_Tone_Minimalist_Home_Decor_5_4437546213.jpg",
-        "detail_alt": "Blue sculptural wall clock with a flowing ridged face, photographed beside houseplants."
+        "detail_alt": "Blue sculptural wall clock with a flowing ridged face, photographed beside houseplants.",
+        "shop_eyebrow": "HOME OBJECTS",
+        "shop_heading": "For the spaces we live in.",
+        "shop_text": "<p>Objects for the desk, wall, shelf, and everyday space — designed and made at Teklo.</p>",
+        "shop_link_label": "Explore the collection",
+        "shop_link": "/collections/shop"
       }
     },
     "studio_invitation": {

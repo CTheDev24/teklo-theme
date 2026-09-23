@@ -5,36 +5,51 @@
 %}
 <div class="teklo-introduction">
   <div class="page-width teklo-introduction__grid{% if section.settings.detail_only %} teklo-introduction__grid--detail-only{% endif %}{% if section.settings.detail_image == blank and section.settings.detail_caption == blank %} teklo-introduction__grid--pair{% endif %}">
-    {% unless section.settings.detail_only %}
-    <div class="teklo-introduction__column teklo-introduction__trace">
-      <h2 class="teklo-introduction__trace-title">
-        {% if section.settings.trace_logo != blank %}
-          {{ section.settings.trace_logo | image_url: width: 700 | image_tag: widths: '200,350,500,700', sizes: '(min-width: 990px) 22vw, 60vw', alt: section.settings.trace_heading, loading: 'lazy', class: 'teklo-introduction__logo' }}
-        {% else %}
-          {{ section.settings.trace_heading | escape }}
-        {% endif %}
-      </h2>
-      {% if section.settings.trace_text != blank %}<div class="rte">{{ section.settings.trace_text }}</div>{% endif %}
-      {% if section.settings.trace_link_label != blank %}
-        <a class="teklo-introduction__link" href="{{ trace_link }}">{{ section.settings.trace_link_label | escape }}<span class="svg-wrapper" aria-hidden="true">{{ 'icon-arrow.svg' | inline_asset_content }}</span></a>
-      {% endif %}
-    </div>
-    <div class="teklo-introduction__column teklo-introduction__studio">
-      {% if section.settings.studio_eyebrow != blank %}<p class="teklo-introduction__eyebrow">{{ section.settings.studio_eyebrow | escape }}</p>{% endif %}
-      {% if section.settings.studio_heading != blank %}<h2>{{ section.settings.studio_heading | escape }}</h2>{% endif %}
-      {% if section.settings.studio_text != blank %}<div class="rte">{{ section.settings.studio_text }}</div>{% endif %}
-      {% if section.settings.studio_link_label != blank %}
-        <a class="teklo-introduction__link" href="{{ studio_link }}">{{ section.settings.studio_link_label | escape }}<span class="svg-wrapper" aria-hidden="true">{{ 'icon-arrow.svg' | inline_asset_content }}</span></a>
-      {% endif %}
-    </div>
-    {% endunless %}
-    {% if section.settings.detail_image != blank or section.settings.detail_caption != blank %}
-      <div class="teklo-introduction__column teklo-introduction__detail{% if section.settings.detail_image == blank %} teklo-introduction__detail--text{% endif %}">
+    {% if section.settings.detail_only %}
+      <div class="teklo-introduction__column teklo-introduction__detail">
         {% if section.settings.detail_image != blank %}
-          {{ section.settings.detail_image | image_url: width: 1000 | image_tag: widths: '300,500,750,1000', sizes: '(min-width: 990px) 480px, 75vw', loading: 'lazy', class: 'teklo-introduction__detail-image', alt: section.settings.detail_alt }}
+          {{ section.settings.detail_image | image_url: width: 1600 | image_tag: widths: '600,900,1200,1600', sizes: '(min-width: 990px) 65vw, 100vw', loading: 'lazy', class: 'teklo-introduction__detail-image', alt: section.settings.detail_alt }}
         {% endif %}
         {% if section.settings.detail_caption != blank %}<p class="teklo-introduction__caption">{{ section.settings.detail_caption | escape | newline_to_br }}</p>{% endif %}
       </div>
+      <div class="teklo-introduction__column teklo-introduction__shop">
+        {% if section.settings.shop_eyebrow != blank %}<p class="teklo-introduction__eyebrow">{{ section.settings.shop_eyebrow | escape }}</p>{% endif %}
+        {% if section.settings.shop_heading != blank %}<h2>{{ section.settings.shop_heading | escape }}</h2>{% endif %}
+        {% if section.settings.shop_text != blank %}<div class="rte">{{ section.settings.shop_text }}</div>{% endif %}
+        {% if section.settings.shop_link_label != blank and section.settings.shop_link != blank %}
+          <a class="teklo-introduction__link" href="{{ section.settings.shop_link }}">{{ section.settings.shop_link_label | escape }}<span class="svg-wrapper" aria-hidden="true">{{ 'icon-arrow.svg' | inline_asset_content }}</span></a>
+        {% endif %}
+      </div>
+    {% else %}
+      <div class="teklo-introduction__column teklo-introduction__trace">
+        <h2 class="teklo-introduction__trace-title">
+          {% if section.settings.trace_logo != blank %}
+            {{ section.settings.trace_logo | image_url: width: 700 | image_tag: widths: '200,350,500,700', sizes: '(min-width: 990px) 22vw, 60vw', alt: section.settings.trace_heading, loading: 'lazy', class: 'teklo-introduction__logo' }}
+          {% else %}
+            {{ section.settings.trace_heading | escape }}
+          {% endif %}
+        </h2>
+        {% if section.settings.trace_text != blank %}<div class="rte">{{ section.settings.trace_text }}</div>{% endif %}
+        {% if section.settings.trace_link_label != blank %}
+          <a class="teklo-introduction__link" href="{{ trace_link }}">{{ section.settings.trace_link_label | escape }}<span class="svg-wrapper" aria-hidden="true">{{ 'icon-arrow.svg' | inline_asset_content }}</span></a>
+        {% endif %}
+      </div>
+      <div class="teklo-introduction__column teklo-introduction__studio">
+        {% if section.settings.studio_eyebrow != blank %}<p class="teklo-introduction__eyebrow">{{ section.settings.studio_eyebrow | escape }}</p>{% endif %}
+        {% if section.settings.studio_heading != blank %}<h2>{{ section.settings.studio_heading | escape }}</h2>{% endif %}
+        {% if section.settings.studio_text != blank %}<div class="rte">{{ section.settings.studio_text }}</div>{% endif %}
+        {% if section.settings.studio_link_label != blank %}
+          <a class="teklo-introduction__link" href="{{ studio_link }}">{{ section.settings.studio_link_label | escape }}<span class="svg-wrapper" aria-hidden="true">{{ 'icon-arrow.svg' | inline_asset_content }}</span></a>
+        {% endif %}
+      </div>
+      {% if section.settings.detail_image != blank or section.settings.detail_caption != blank %}
+        <div class="teklo-introduction__column teklo-introduction__detail{% if section.settings.detail_image == blank %} teklo-introduction__detail--text{% endif %}">
+          {% if section.settings.detail_image != blank %}
+            {{ section.settings.detail_image | image_url: width: 1000 | image_tag: widths: '300,500,750,1000', sizes: '(min-width: 990px) 480px, 75vw', loading: 'lazy', class: 'teklo-introduction__detail-image', alt: section.settings.detail_alt }}
+          {% endif %}
+          {% if section.settings.detail_caption != blank %}<p class="teklo-introduction__caption">{{ section.settings.detail_caption | escape | newline_to_br }}</p>{% endif %}
+        </div>
+      {% endif %}
     {% endif %}
   </div>
 </div>
