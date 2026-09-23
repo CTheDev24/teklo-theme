@@ -42,3 +42,7 @@
   .teklo-studio__around-shot--setup{min-height:42rem}
   .teklo-studio__around-stack .teklo-studio__around-shot{min-height:22rem}
 }
+
+.teklo-studio__around-shot--setup img{
+  object-position:left center;
+}
