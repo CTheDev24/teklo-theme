@@ -61,6 +61,7 @@
       <div class="teklo-studio__section-heading">
         {% if section.settings.around_eyebrow != blank %}<p class="teklo-studio__eyebrow">{{ section.settings.around_eyebrow | escape }}</p>{% endif %}
         <h2 id="StudioAround-{{ section.id }}">{{ section.settings.around_heading | escape }}</h2>
+        {% if section.settings.maker_intro != blank %}<div class="rte teklo-studio__lead teklo-studio__around-intro">{{ section.settings.maker_intro }}</div>{% endif %}
       </div>
       <div class="teklo-studio__around-content">
         <div class="teklo-studio__around-gallery">
@@ -79,7 +80,6 @@
             </figure>
           </div>
         </div>
-        {% if section.settings.maker_intro != blank %}<div class="rte teklo-studio__lead">{{ section.settings.maker_intro }}</div>{% endif %}
         {% if section.settings.current_project != blank %}
           <div class="teklo-studio__note"><h3>{{ section.settings.current_heading | escape }}</h3><div class="rte">{{ section.settings.current_project }}</div></div>
         {% endif %}
