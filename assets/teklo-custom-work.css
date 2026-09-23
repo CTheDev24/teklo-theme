@@ -61,3 +61,23 @@
 .teklo-custom-invitation__form[open] { grid-column: 1 / -1; }
 .teklo-custom-invitation__form .teklo-custom-button { width: fit-content; }
 .teklo-custom-invitation__form .teklo-custom-work__upload-form { margin-top: 2.4rem; max-width: 90rem; }
+
+.teklo-custom-work__hero-media{
+  margin:0 0 2rem;
+  overflow:hidden;
+  background:#e9e5dc;
+}
+.teklo-custom-work__hero-media img{
+  display:block;
+  width:100%;
+  height:auto;
+  max-height:72rem;
+  object-fit:cover;
+  object-position:center 46%;
+}
+.teklo-custom-work__capability-line{
+  max-width:78rem;
+  margin:0 0 clamp(4.8rem,7vw,8rem);
+  font-size:clamp(1.6rem,1.8vw,2rem);
+  line-height:1.5;
+}
