@@ -47,3 +47,7 @@ Also verify discount stacking, cart edit/remove/re-add, accelerated checkout, ta
 No discount mutation succeeded in this batch, so there is no configuration change to undo. Retain the expired legacy promotion. If a future app rule is introduced, deactivate that rule and independently confirm no 25OFF in one/two-piece carts; do not reactivate the old entire-order discount. Uninstalling an app does not by itself prove every discount is disabled; verify Admin and checkout separately.
 
 Sources: [Shopify amount-off rules](https://help.shopify.com/en/manual/discounts/discount-types/percentage-fixed-amount), [Function availability](https://shopify.dev/docs/apps/build/functions), and the app listing above.
+
+## Checkout-discovered shipping discount
+
+The later live test found a separate active automatic FREESHIPPING rule (1648508928166). It is now deactivated per the merchant instruction to leave discounts disabled. Fresh read shows zero active discounts. Exact before/after, checkout rates and rollback: [test order evidence](TEST-ORDER-1009.md). Earlier no-promotion statements did not account for this legacy rule and are superseded by this verification.
