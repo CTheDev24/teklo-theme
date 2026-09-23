@@ -266,7 +266,7 @@
                       <quantity-input class="quantity" data-url="{{ product.url }}" data-section="{{ section.id }}">
                         <button class="quantity__button" name="minus" type="button">
                           <span class="visually-hidden">
-                            {{- 'products.product.quantity.decrease' | t: product: product.title | escape -}}
+                            {{- 'products.product.quantity.decrease' | t: product: product.title | escape_once -}}
                           </span>
                           <span class="svg-wrapper">
                             {{- 'icon-minus.svg' | inline_asset_content -}}
@@ -290,7 +290,7 @@
                         >
                         <button class="quantity__button" name="plus" type="button">
                           <span class="visually-hidden">
-                            {{- 'products.product.quantity.increase' | t: product: product.title | escape -}}
+                            {{- 'products.product.quantity.increase' | t: product: product.title | escape_once -}}
                           </span>
                           <span class="svg-wrapper">
                             {{- 'icon-plus.svg' | inline_asset_content -}}

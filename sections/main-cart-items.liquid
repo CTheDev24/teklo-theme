@@ -86,7 +86,7 @@
                     class="cart-item {% if item.parent_relationship.parent != null %}cart-item__nested-line{% endif %}"
                     id="CartItem-{{ item.index | plus: 1 }}"
                     {% if item.parent_relationship.parent != null %}
-                      aria-label="{{- 'products.product.nested_label' | t: title: item.product.title, parent_title: item.parent_relationship.parent.title | escape -}}"
+                      aria-label="{{- 'products.product.nested_label' | t: title: item.product.title, parent_title: item.parent_relationship.parent.title | escape_once -}}"
                     {% endif %}
                   >
                     <td class="cart-item__media">
@@ -256,7 +256,7 @@
                                 {% endif %}
                               >
                                 <span class="visually-hidden">
-                                  {{- 'products.product.quantity.decrease' | t: product: item.product.title | escape -}}
+                                  {{- 'products.product.quantity.decrease' | t: product: item.product.title | escape_once -}}
                                 </span>
                                 <span class="svg-wrapper">
                                   {{- 'icon-minus.svg' | inline_asset_content -}}
@@ -278,7 +278,7 @@
                                 {% endif %}
                                 step="{{ item.variant.quantity_rule.increment }}"
                                 {% # theme-check-enable %}
-                                aria-label="{{ 'products.product.quantity.input_label' | t: product: item.product.title | escape }}"
+                                aria-label="{{ 'products.product.quantity.input_label' | t: product: item.product.title | escape_once }}"
                                 id="Quantity-{{ item.index | plus: 1 }}"
                                 data-index="{{ item.index | plus: 1 }}"
                                 {% if can_update_quantity == false %}
@@ -294,7 +294,7 @@
                                 {% endif %}
                               >
                                 <span class="visually-hidden">
-                                  {{- 'products.product.quantity.increase' | t: product: item.product.title | escape -}}
+                                  {{- 'products.product.quantity.increase' | t: product: item.product.title | escape_once -}}
                                 </span>
                                 <span class="svg-wrapper">
                                   {{- 'icon-plus.svg' | inline_asset_content -}}
@@ -313,7 +313,7 @@
                             <a
                               href="{{ item.url_to_remove }}"
                               class="button button--tertiary"
-                              aria-label="{{ 'sections.cart.remove_title' | t: title: item.title | escape }}"
+                              aria-label="{{ 'sections.cart.remove_title' | t: title: item.title | escape_once }}"
                             >
                               <span class="svg-wrapper">
                                 {{- 'icon-remove.svg' | inline_asset_content -}}
