@@ -18,10 +18,6 @@
     {% endif %}{% endfor %}
   </div>
   {% endif %}
-  <div class="teklo-launch__next">
-    <article><p class="teklo-launch__label">{{ section.settings.home_eyebrow | escape }}</p><h3>{{ section.settings.home_heading | escape }}</h3><div class="rte">{{ section.settings.home_copy }}</div></article>
-    <article><p class="teklo-launch__label">THE STUDIO</p><h3>{{ section.settings.studio_heading | escape }}</h3><div class="rte">{{ section.settings.studio_copy }}</div>{% if section.settings.studio_link != blank %}<a href="{{ section.settings.studio_link }}">Meet the maker {{ 'icon-arrow.svg' | inline_asset_content }}</a>{% endif %}</article>
-  </div>
 </section>
 {% schema %}
 {
