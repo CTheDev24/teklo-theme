@@ -37,7 +37,8 @@
           "settings": {
             "enabled": true,
             "title": "Experiments",
-            "copy": "<p>A place for experimenting and making things, including an assembled drone.</p>"
+            "copy": "<p>Drones, robots, prototypes, and whatever seems worth building next.</p>",
+            "image": "shopify://shop_images/teklo-experiments-sandwich-style-quadcopter.jpg"
           }
         },
         "hull": {
