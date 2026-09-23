@@ -63,32 +63,22 @@
         <h2 id="StudioAround-{{ section.id }}">{{ section.settings.around_heading | escape }}</h2>
       </div>
       <div class="teklo-studio__around-content">
-        {% if section.settings.around_setup_image != blank or section.settings.around_bench_image != blank or section.settings.around_desk_image != blank %}
-          <div class="teklo-studio__around-gallery">
-            {% if section.settings.around_setup_image != blank %}
-              <figure class="teklo-studio__around-shot teklo-studio__around-shot--setup">
-                {{ section.settings.around_setup_image | image_url: width: 1200 | image_tag: widths: '375,550,750,990,1200', sizes: '(min-width: 990px) 34vw, 100vw', loading: 'lazy', alt: 'Teklo Studio small-batch fabrication setup' }}
-                <figcaption>The setup</figcaption>
-              </figure>
-            {% endif %}
-            <div class="teklo-studio__around-stack">
-              {% if section.settings.around_bench_image != blank %}
-                <figure class="teklo-studio__around-shot">
-                  {{ section.settings.around_bench_image | image_url: width: 1000 | image_tag: widths: '375,550,750,1000', sizes: '(min-width: 990px) 26vw, 100vw', loading: 'lazy', alt: 'Trace pieces in progress on the Teklo Studio workbench' }}
-                  <figcaption>On the bench</figcaption>
-                </figure>
-              {% endif %}
-              {% if section.settings.around_desk_image != blank %}
-                <figure class="teklo-studio__around-shot">
-                  {{ section.settings.around_desk_image | image_url: width: 1000 | image_tag: widths: '375,550,750,1000', sizes: '(min-width: 990px) 26vw, 100vw', loading: 'lazy', alt: 'Teklo Studio digital design workspace' }}
-                  <figcaption>At the desk</figcaption>
-                </figure>
-              {% endif %}
-            </div>
+        <div class="teklo-studio__around-gallery">
+          <figure class="teklo-studio__around-shot teklo-studio__around-shot--setup">
+            <img src="https://cdn.shopify.com/s/files/1/0670/0518/6214/files/teklo-around-studio-setup.jpg?v=1790198866" alt="Teklo Studio small-batch fabrication setup with multiple 3D printers" loading="lazy" width="1200" height="1600">
+            <figcaption>The setup</figcaption>
+          </figure>
+          <div class="teklo-studio__around-stack">
+            <figure class="teklo-studio__around-shot">
+              <img src="https://cdn.shopify.com/s/files/1/0670/0518/6214/files/teklo-around-studio-bench.jpg?v=1790198871" alt="Trace dimensional map pieces in progress on the Teklo Studio workbench" loading="lazy" width="1000" height="1333">
+              <figcaption>On the bench</figcaption>
+            </figure>
+            <figure class="teklo-studio__around-shot">
+              <img src="https://cdn.shopify.com/s/files/1/0670/0518/6214/files/teklo-around-studio-desk.jpg?v=1790198877" alt="Teklo Studio digital design workspace" loading="lazy" width="1000" height="1333">
+              <figcaption>At the desk</figcaption>
+            </figure>
           </div>
-        {% elsif section.settings.maker_image != blank %}
-          {{ section.settings.maker_image | image_url: width: 1400 | image_tag: widths: '375,550,750,1100,1400', sizes: '(min-width: 990px) 60vw, 100vw', loading: 'lazy', class: 'teklo-studio__image' }}
-        {% endif %}
+        </div>
         {% if section.settings.maker_intro != blank %}<div class="rte teklo-studio__lead">{{ section.settings.maker_intro }}</div>{% endif %}
         {% if section.settings.current_project != blank %}
           <div class="teklo-studio__note"><h3>{{ section.settings.current_heading | escape }}</h3><div class="rte">{{ section.settings.current_project }}</div></div>
