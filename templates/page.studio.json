@@ -44,7 +44,8 @@
           "type": "project",
           "settings": {
             "enabled": true,
-            "title": "Ship-hull master mold"
+            "title": "Ship-hull master mold",
+            "image": "shopify://shop_images/teklo-ship-hull-master-mold-studio.png"
           }
         },
         "connector": {
