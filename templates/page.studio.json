@@ -36,7 +36,7 @@
           "type": "offering",
           "settings": {
             "enabled": true,
-            "title": "Experiments",
+            "title": "Side Quests",
             "copy": "<p>Drones, robots, prototypes, and whatever seems worth building next.</p>",
             "image": "shopify://shop_images/teklo-experiments-sandwich-style-quadcopter.jpg"
           }
