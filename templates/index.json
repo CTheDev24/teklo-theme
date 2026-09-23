@@ -14,7 +14,8 @@
       "settings": {
         "eyebrow": "OBJECTS FOR A MORE MEANINGFUL LIFE",
         "layout": "split",
-        "video": "shopify://files/videos/IMG-3387.MOV",
+        "poster": "shopify://shop_images/teklo-home-hero-placeholder-branded.png",
+        "mobile_poster": "shopify://shop_images/teklo-home-hero-placeholder-branded.png",
         "focal_point": "center center",
         "heading": "Designed through process.",
         "text": "<p>Contemporary objects shaped through design, digital craft, and considered making.</p>",
@@ -285,15 +286,15 @@
       "type": "teklo-introduction",
       "settings": {
         "detail_only": true,
-        "trace_logo": "shopify://shop_images/trace-wordmark.svg",
-        "trace_link": "/products/personalized-3d-race-map-custom-gpx-running-wall-art-marathon-finisher-gift",
-        "detail_image": "shopify://shop_images/Modern_Art_Deco_Wall_Clock_Two_Tone_Minimalist_Home_Decor_5_4437546213.jpg",
-        "detail_alt": "Blue sculptural wall clock with a flowing ridged face, photographed beside houseplants.",
         "shop_eyebrow": "HOME OBJECTS",
         "shop_heading": "For the spaces we live in.",
         "shop_text": "<p>Objects for the desk, wall, shelf, and everyday space — designed and made at Teklo.</p>",
         "shop_link_label": "Explore the collection",
-        "shop_link": "/collections/shop"
+        "shop_link": "/collections/shop",
+        "trace_logo": "shopify://shop_images/trace-wordmark.svg",
+        "trace_link": "/products/personalized-3d-race-map-custom-gpx-running-wall-art-marathon-finisher-gift",
+        "detail_image": "shopify://shop_images/Modern_Art_Deco_Wall_Clock_Two_Tone_Minimalist_Home_Decor_5_4437546213.jpg",
+        "detail_alt": "Blue sculptural wall clock with a flowing ridged face, photographed beside houseplants."
       }
     },
     "studio_invitation": {
