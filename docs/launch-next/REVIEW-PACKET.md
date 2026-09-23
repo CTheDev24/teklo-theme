@@ -72,3 +72,7 @@ Homepage Custom Work now offers the existing upload form inline through an expan
 ## Boho assortment and featured branding follow-up
 
 Shop now contains Trace, Modern Art Deco clock, Birch light, Boho Wall Planter and Luxar. All five display Teklo Studio vendor branding. Boho replaces Torio in Shop only; its obsolete Etsy description sentence was removed. See [applied changes, verification and exact rollback](BOHO-BRANDING-FOLLOWUP.md). The prior audit remains a historical snapshot; NOT READY and the remaining gates still apply.
+
+## Trace intake handoff follow-up
+
+The draft product purchase area now links the enabled per-piece Trace intake and explains order matching, route alternatives and written proof approval. See [implementation, verification and rollback](TRACE-INTAKE-HANDOFF.md). P0-03 remains open for the order email and full live operations test; pre-launch status remains visible.
