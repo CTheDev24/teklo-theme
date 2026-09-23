@@ -1,7 +1,7 @@
 .teklo-custom-work,
 .teklo-custom-invitation { color: rgb(var(--color-foreground)); }
 .teklo-custom-work { padding: clamp(4.8rem, 8vw, 11rem) 0; }
-.teklo-custom-work__hero { display:grid; grid-template-columns:minmax(0,1.12fr) minmax(30rem,.72fr); gap:clamp(4rem,7vw,10rem); align-items:start; padding-bottom:clamp(4.8rem,8vw,10rem); }
+.teklo-custom-work__hero { display:grid; grid-template-columns:minmax(0,1.12fr) minmax(30rem,.72fr); gap:clamp(4rem,7vw,10rem); align-items:center; padding-bottom:clamp(3.6rem,6vw,7.2rem); }
 .teklo-custom-work__intro { max-width: 72rem; padding:0; }
 .teklo-custom-work h1,.teklo-custom-invitation h2 { margin:1.6rem 0 2.4rem; font-size:clamp(3.6rem,5.5vw,7.6rem); line-height:1.04; letter-spacing:-.045em; }
 .teklo-custom-work__intro .rte { max-width:65rem; font-size:clamp(1.8rem,2vw,2.2rem); line-height:1.6; }
@@ -12,7 +12,7 @@
 .teklo-custom-work__feature h2 { margin:0 0 .8rem; font-size:clamp(2rem,2vw,2.7rem); letter-spacing:-.025em; }
 .teklo-custom-work__feature .rte { font-size:1.5rem; line-height:1.55; max-width:42rem; }
 .teklo-custom-work__feature .rte p { margin:.6rem 0 0; }
-.teklo-custom-work__inquiry { display:grid; grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr); gap:clamp(3.2rem,7vw,10rem); border-top:1px solid rgba(var(--color-foreground),.25); padding-top:clamp(4rem,6vw,7.2rem); scroll-margin-top:12rem; }
+.teklo-custom-work__inquiry { display:grid; grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr); gap:clamp(3.2rem,7vw,10rem); border-top:1px solid rgba(var(--color-foreground),.12); padding-top:clamp(4rem,6vw,7.2rem); scroll-margin-top:12rem; }
 .teklo-custom-work__note { font-size:1.3rem; margin-top:2.4rem; }
 .teklo-custom-work__fields { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:2.4rem; margin-bottom:3.2rem; }
 .teklo-custom-work__field { min-width:0; }.teklo-custom-work__field--full { grid-column:1/-1; }
@@ -26,3 +26,11 @@
 .teklo-custom-work__upload-form{min-width:0}.teklo-custom-work__upload-form>p{font-size:1.4rem}.teklo-custom-work__upload-form iframe{display:block;width:100%;max-width:100%;border:0}
 @media(max-width:989px){.teklo-custom-work__hero{grid-template-columns:minmax(0,1fr) minmax(26rem,.65fr);gap:3.2rem}.teklo-custom-work__feature img{max-height:42rem}}
 @media(max-width:749px){.teklo-custom-work__hero,.teklo-custom-work__inquiry,.teklo-custom-work__fields{grid-template-columns:minmax(0,1fr)}.teklo-custom-work__feature{justify-self:start;max-width:100%}.teklo-custom-work__feature img{aspect-ratio:4/3;max-height:42rem}.teklo-custom-work__field input,.teklo-custom-work__field textarea{font-size:1.6rem}}
+
+.teklo-custom-work__services{margin-top:clamp(4rem,6vw,7rem);max-width:46rem}
+.teklo-custom-work__services .teklo-eyebrow{margin:0 0 1.8rem}
+.teklo-custom-work__services ul{list-style:none;margin:0;padding:0;border-top:1px solid rgba(var(--color-foreground),.12)}
+.teklo-custom-work__services li{padding:1.5rem 0;border-bottom:1px solid rgba(var(--color-foreground),.12)}
+.teklo-custom-work__services span{display:block;font-size:1.6rem;font-weight:500;margin-bottom:.35rem}
+.teklo-custom-work__services small{display:block;font-size:1.35rem;line-height:1.5;opacity:.72}
+@media(max-width:749px){.teklo-custom-work__services{margin-top:3.2rem;max-width:none}}

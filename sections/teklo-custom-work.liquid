@@ -22,6 +22,16 @@
         <h2 id="Inquiry-{{ section.id }}">{{ section.settings.form_heading | escape }}</h2>
         {% if section.settings.form_intro != blank %}<div class="rte">{{ section.settings.form_intro }}</div>{% endif %}
         <p class="teklo-custom-work__note">{{ 'templates.custom_work.required_note' | t }}</p>
+        <div class="teklo-custom-work__services">
+          <p class="teklo-eyebrow">Ways we can help</p>
+          <ul>
+            <li><span>CAD refinement</span><small>Clean up, adapt, or prepare existing models for fabrication.</small></li>
+            <li><span>Design & consulting</span><small>Develop an idea, solve a design problem, or plan a practical path to production.</small></li>
+            <li><span>Rapid prototyping</span><small>Turn concepts into physical iterations for fit, function, and review.</small></li>
+            <li><span>Reverse engineering</span><small>Recreate or improve parts from measurements and existing components.</small></li>
+            <li><span>Small-batch production</span><small>Repeatable digital fabrication for limited runs and specialized parts.</small></li>
+          </ul>
+        </div>
       </div>
       {% if section.settings.enable_file_uploads %}
         <div class="teklo-custom-work__upload-form">
