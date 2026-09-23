@@ -1,0 +1,35 @@
+<script type="text/javascript" src="https://edge.personalizer.io/storefront/2.0.0/js/shopify/storefront.min.js?key=3tzlc-ujf1mvw5fuw6vj8wc5pm9ypz-byo7u&shop=1zbzxv-pc.myshopify.com"></script>
+<script>
+window.LimeSpot = window.LimeSpot === undefined ? {} : LimeSpot;{% assign t = template | prepend: '/' | append: '.' %}
+{% if t contains '/product.' %}LimeSpot.PageInfo = { Type: "Product", Template: "{{ template }}", ReferenceIdentifier: "{{ product.id }}" };
+{% elsif t contains '/collection.' %}LimeSpot.PageInfo = { Type: "Collection", Template: "{{ template }}", ReferenceIdentifier: "{{ collection.id }}", Personalized: {%if collection.metafields.LimeSpot['Personalized'] == "true"%}true{%else%}false{%endif%} };
+{% elsif t contains '/list-collections.' %}LimeSpot.PageInfo = { Type: "CollectionsList", Template: "{{ template }}", ReferenceIdentifier: null };
+{% elsif t contains '/index.' %}LimeSpot.PageInfo = { Type: "Home", Template: "{{ template }}", ReferenceIdentifier: null };
+{% elsif t contains '/cart.' %}LimeSpot.PageInfo = { Type: "Cart", Template: "{{ template }}", ReferenceIdentifier: null };
+{% elsif t contains '/search.' %}LimeSpot.PageInfo = { Type: "Search", Template: "{{ template }}", ReferenceIdentifier: null };
+{% elsif t contains '/404.' %}LimeSpot.PageInfo = { Type: "Four04", Template: "{{ template }}", ReferenceIdentifier: null };
+{% elsif checkout.id != blank and checkout.order_id == blank %}LimeSpot.PageInfo = { Type: "Checkout", Template: "{{ template }}", ReferenceIdentifier: null };
+{% endif %}{% if customer %}LimeSpot.UserInfo = { Identifier: "{{ customer.id }}", Email: "{{ customer.email }}", CellPhone: "{{ customer.phone }}", FirstName: "{{ customer.first_name }}", LastName: "{{ customer.last_name }}", Tags: {{ customer.tags | json }} };
+{% endif %}
+{% assign ls_currency_amounts = "100,199,4999,123456,1234567,500000" | split: "," %}
+{% assign ls_presentment_currency = localization.country.currency.iso_code | default: cart.currency.iso_code | default: shop.currency %}
+LimeSpot.StoreInfo = { Theme: "{{ theme.name | escape }}", CurrencyFormatEvidence: { "Currency": {{ ls_presentment_currency | json }}, "Samples": [{% for ls_amount in ls_currency_amounts %}{% assign ls_cents = ls_amount | plus: 0 %}{ "Amount": {{ ls_cents | json }}, "Kind": "money", "Value": {{ ls_cents | money | strip_html | json }} }, { "Amount": {{ ls_cents | json }}, "Kind": "money_with_currency", "Value": {{ ls_cents | money_with_currency | strip_html | json }} }{% unless forloop.last %},{% endunless %}{% endfor %}] } };
+{% assign cart_product_ids = "" %}
+{% if checkout.id != blank and checkout.order_id == blank %}
+	{% for item in checkout.line_items %}
+		{% assign cart_product_ids = cart_product_ids | append: ',' | append: item.product.id %}
+	{% endfor %}
+{% else %}
+	{% for item in cart.items %}
+		{% assign cart_product_ids = cart_product_ids | append: ',' | append: item.product.id %}
+	{% endfor %}
+{% endif %}
+LimeSpot.CartItems = [{{ cart_product_ids | remove_first: "," }}];
+</script>
+{% if t contains '/collection.' and collection.metafields.LimeSpot['CuratedCollectionVariation'] == "true" %}
+<link rel="canonical" data-owner="LimeSpot" href="https://{{ request.host }}{{ collection.metafields.LimeSpot['StartingCollectionPath'] }}">
+{% endif %}
+
+
+
+{% comment %}Checksum: 876709ce9244aa645ce3e62dde6c8bd7{% endcomment %}
