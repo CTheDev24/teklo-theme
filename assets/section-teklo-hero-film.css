@@ -40,3 +40,26 @@
 @media(max-width:989px){
   .teklo-hero-film--split .teklo-hero-film__media{--teklo-letterbox-mask:22%}
 }
+
+/* Teklo phone hero fallback
+   iOS can honor MOV rotation metadata differently from desktop browsers.
+   Until a dedicated mobile video is assigned, show the correctly oriented
+   poster on phone widths instead of the desktop MOV. */
+@media(max-width:749px){
+  .teklo-hero-film--split .teklo-hero-film__video--desktop{
+    display:none!important;
+  }
+  .teklo-hero-film--split .teklo-hero-film__poster{
+    display:block;
+    z-index:1;
+  }
+  .teklo-hero-film--split .teklo-hero-film__poster img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    object-position:var(--teklo-media-position);
+  }
+  .teklo-hero-film--split .teklo-hero-film__toggle{
+    display:none!important;
+  }
+}
