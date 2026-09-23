@@ -46,3 +46,15 @@
 .teklo-studio__around-shot--setup img{
   object-position:left center;
 }
+
+.teklo-studio__around-intro{
+  margin-top:1.6rem;
+  max-width:42rem;
+  font-size:1.6rem;
+  line-height:1.55;
+}
+@media(min-width:750px){
+  .teklo-studio__around-intro{
+    font-size:1.7rem;
+  }
+}
