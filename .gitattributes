@@ -1,0 +1,4 @@
+
+# Keep synthetic proof attachments and MIME messages byte-exact across platforms.
+output/pdf/trace-proof-test/*.pdf -text
+output/pdf/trace-proof-test/*.eml -text
