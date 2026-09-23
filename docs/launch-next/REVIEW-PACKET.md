@@ -68,3 +68,7 @@ Revert this batch's code commit through normal review and redeploy only its chan
 ## Five-product Shop and fresh audit — 22 September 2026
 
 Homepage Custom Work now offers the existing upload form inline through an expandable invitation. Shop uses a new manual collection (693062697126) containing Trace, Modern Art Deco clock, Birch light, Torio and Luxar. Draft deployment verified. See [fresh readiness audit and rollback](audit-2026-09-22/README.md). Verdict remains NOT READY; the new audit distinguishes current evidence from historical checks and retains every original finding ID. Discounts remain disabled; this supersedes old activation suggestions in this packet.
+
+## Boho assortment and featured branding follow-up
+
+Shop now contains Trace, Modern Art Deco clock, Birch light, Boho Wall Planter and Luxar. All five display Teklo Studio vendor branding. Boho replaces Torio in Shop only; its obsolete Etsy description sentence was removed. See [applied changes, verification and exact rollback](BOHO-BRANDING-FOLLOWUP.md). The prior audit remains a historical snapshot; NOT READY and the remaining gates still apply.

@@ -1,0 +1,703 @@
+{
+  "collection": {
+    "id": "gid://shopify/Collection/693062697126",
+    "title": "Shop",
+    "handle": "shop",
+    "descriptionHtml": "<p>Trace personalized route artwork, sculptural clocks, lighting, and planters from Teklo Studio.</p>",
+    "imageUrl": null,
+    "imageAltText": null,
+    "sortOrder": "MANUAL",
+    "collectionType": "manual",
+    "productsCount": 5,
+    "products": [
+      {
+        "title": "Personalized 3D Race Map | Custom GPX Running Wall Art | Marathon Finisher Gift",
+        "variantTitle": "Race Day / Gallery / Signal Orange",
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0670/0518/6214/files/Trace-Listing_Graphics_-_YOUR_TRACE.png?v=1790008414",
+        "price": "149.95",
+        "currencyCode": "USD",
+        "status": "ACTIVE"
+      },
+      {
+        "title": "Modern Art Deco Wall Clock, Two-Tone Minimalist Home Decor",
+        "variantTitle": "Brown|Off White",
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0670/0518/6214/files/Modern_Art_Deco_Wall_Clock_Two_Tone_Minimalist_Home_Decor_5_4437546213.jpg?v=1777232145",
+        "price": "38.95",
+        "currencyCode": "USD",
+        "status": "ACTIVE"
+      },
+      {
+        "title": "Birch Moody Accent Pendant Light | Calm Lighting for Dining & Living Spaces | Eco-Friendly Decor",
+        "variantTitle": "Black / No",
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0670/0518/6214/files/Birch_Moody_Accent_Pendant_Light_Calm_Lighting_for_Dining_Living_Spaces_Eco_Friendly_Decor_1_4422122133.jpg?v=1777232135",
+        "price": "69.95",
+        "currencyCode": "USD",
+        "status": "ACTIVE"
+      },
+      {
+        "title": "Boho Wall Planter: A Touch of Nature, Elevated",
+        "variantTitle": "Pine Green/Off White",
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0670/0518/6214/files/IMG_1312.png?v=1777231490",
+        "price": "29.95",
+        "currencyCode": "USD",
+        "status": "ACTIVE"
+      },
+      {
+        "title": "The Luxar - Sleek 3D Printed Planter with Geometric Elegance",
+        "variantTitle": "White / 2\" Opening",
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0670/0518/6214/files/D71DA7C0-6FE1-47EB-9F91-E6542953D21B.png?v=1741237155",
+        "price": "12.00",
+        "currencyCode": "USD",
+        "status": "ACTIVE"
+      }
+    ],
+    "rules": null,
+    "updatedAt": "2026-09-23T02:11:24Z",
+    "currencyCode": "USD"
+  },
+  "products": [
+    {
+      "id": "gid://shopify/Product/8364700205222",
+      "title": "Boho Wall Planter: A Touch of Nature, Elevated",
+      "vendor": "Teklo Studio",
+      "status": "ACTIVE",
+      "productType": "3D Printed Wall Decor",
+      "descriptionHtml": "<p>Transform your walls into a vertical garden with these exquisite Boho Wall Planters—designed to bring a chic, nature-inspired touch to your space without the weight or fragility of traditional materials.</p>\n<p>Crafted from lightweight, durable plastic (not ceramic or clay), these planters combine sculptural design with everyday practicality. The result is a piece that’s easy to hang, easy to style, and made to elevate your walls with minimal effort.</p>\n<p>Each planter features a unique wavy frame that adds a whimsical, artistic flair. The earthy tones of terracotta, vibrant green, and bone white complement a wide range of interiors—from minimalist and modern to relaxed bohemian spaces.</p>\n<p>Perfect for artificial plants, dried florals, or lightweight greenery accents, these planters bring life and texture to your walls while maintaining a clean, low-maintenance aesthetic.</p>\n<p>⚠️ Know Before You Buy<br>•    Material: 3D printed plastic (PLA) — lightweight and durable<br>•    Plant Use: Designed for artificial or dried plants<br>•    No drainage holes<br>•    Size: 9.5” x 8” x 2.25” — see photos for scale reference</p>\n<p>🧱 Material &amp; Finish<br>•    Made from durable, eco-friendly plastic<br>•    Lightweight for easy wall mounting<br>•    Subtle layer texture from the 3D printing process adds character</p>\n<p>🔧 Easy Mounting<br>Designed for flexible installation:<br>•    Hang with a hook<br>•    Mount with a nail or screw<br>•    Use command strips for a no-drill option (not included)</p>\n<p>Bring the beauty of nature indoors with these charming Boho Wall Planters, and enjoy a touch of greenery in every corner of your home.</p>",
+      "tags": [
+        "Apartment Decor",
+        "Boho",
+        "Hanging Planter",
+        "Minimalist",
+        "Minimalist Wall Decor",
+        "Plant Decor",
+        "Planter Lover Gift",
+        "Unique Wall Planter"
+      ],
+      "totalInventory": 0,
+      "featuredImageUrl": "https://cdn.shopify.com/s/files/1/0670/0518/6214/files/IMG_1312.png?v=1777231490",
+      "images": [
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0670/0518/6214/files/IMG_1312.png?v=1777231490",
+          "altText": "Decorative wall planters with plants on a white wall.",
+          "mediaId": "gid://shopify/MediaImage/66792001274022"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0670/0518/6214/files/Gemini_Generated_Image_28rngq28rngq28rn.png?v=1767940678",
+          "altText": "",
+          "mediaId": "gid://shopify/MediaImage/66792071397542"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0670/0518/6214/files/IMG_1318.png?v=1767940678",
+          "altText": "",
+          "mediaId": "gid://shopify/MediaImage/66792001241254"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0670/0518/6214/files/Gemini_Generated_Image_et994net994net99_2.png?v=1767940678",
+          "altText": "",
+          "mediaId": "gid://shopify/MediaImage/66792071594150"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0670/0518/6214/files/IMG_1314.png?v=1767940678",
+          "altText": "",
+          "mediaId": "gid://shopify/MediaImage/66792001208486"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0670/0518/6214/files/Muted_Pink_Peanut.jpg?v=1767940678",
+          "altText": "",
+          "mediaId": "gid://shopify/MediaImage/66792030601382"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0670/0518/6214/files/Light_Brown_Peanut.png?v=1767940678",
+          "altText": "",
+          "mediaId": "gid://shopify/MediaImage/66792030666918"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0670/0518/6214/files/Pine_Green_Bone_White.png?v=1767940730",
+          "altText": "",
+          "mediaId": "gid://shopify/MediaImage/66792030634150"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0670/0518/6214/files/Gemini_Generated_Image_kjfhavkjfhavkjfh.png?v=1767940678",
+          "altText": "",
+          "mediaId": "gid://shopify/MediaImage/66792056324262"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0670/0518/6214/files/IMG_1319.png?v=1767940678",
+          "altText": "",
+          "mediaId": "gid://shopify/MediaImage/66792001306790"
+        }
+      ],
+      "totalVariants": 7,
+      "variants": [
+        {
+          "id": "gid://shopify/ProductVariant/46013813031078",
+          "title": "Pine Green/Off White",
+          "sku": "",
+          "price": "29.95",
+          "inventoryQuantity": 0
+        },
+        {
+          "id": "gid://shopify/ProductVariant/46013813063846",
+          "title": "Muted Pink/Peanut",
+          "sku": "",
+          "price": "29.95",
+          "inventoryQuantity": 0
+        },
+        {
+          "id": "gid://shopify/ProductVariant/46013813096614",
+          "title": "Light Brown/Peanut",
+          "sku": "",
+          "price": "29.95",
+          "inventoryQuantity": 0
+        },
+        {
+          "id": "gid://shopify/ProductVariant/46013813129382",
+          "title": "Off White/Cornflower",
+          "sku": "",
+          "price": "29.95",
+          "inventoryQuantity": 0
+        },
+        {
+          "id": "gid://shopify/ProductVariant/46013813162150",
+          "title": "Cornflower Blue/Clay",
+          "sku": "",
+          "price": "29.95",
+          "inventoryQuantity": 0
+        },
+        {
+          "id": "gid://shopify/ProductVariant/46013813194918",
+          "title": "Clay/Off White",
+          "sku": "",
+          "price": "29.95",
+          "inventoryQuantity": -1
+        },
+        {
+          "id": "gid://shopify/ProductVariant/46013813227686",
+          "title": "Pine Green/Clay",
+          "sku": "",
+          "price": "29.95",
+          "inventoryQuantity": -1
+        }
+      ],
+      "currencyCode": "USD"
+    },
+    {
+      "id": "gid://shopify/Product/15295976439974",
+      "title": "Modern Art Deco Wall Clock, Two-Tone Minimalist Home Decor",
+      "vendor": "Teklo Studio",
+      "status": "ACTIVE",
+      "productType": "",
+      "descriptionHtml": "Minimalist Two-Tone Sculptural Wall Clock<br><br>Make a bold yet refined statement with this modern two-tone wall clock. Designed as both a functional timepiece and a sculptural decor element, its layered form and flowing geometry add depth, texture, and visual rhythm to any space.<br><br>Perfect for those who appreciate clean lines, modern design, and thoughtfully crafted objects.<br><br>✨ Design Highlights<br><br>Sculptural, layered surface creates a sense of motion and depth<br>Two-tone colorway adds contrast without overpowering your space<br>Modern minimalist aesthetic with subtle Art Deco influence<br>Designed to function as both wall art and a clock<br><br>🏡 Ideal For<br><br>Living rooms and bedrooms<br>Home offices and studios<br>Modern, minimalist, or design-forward interiors<br>A unique housewarming or design-lover gift<br><br>🔧 Materials &amp; Construction<br><br>3D printed using high-quality PLA<br>Lightweight yet sturdy construction<br>Smooth, refined finish with visible layered detail<br>(Each clock is made to order. Minor layer lines are part of the design and add to its character.)<br><br>⏱️ Clock Details<br><br>Diameter: 8.96″ (ideal for shelves, gallery walls, or smaller feature spaces)<br>Silent quartz movement (no ticking noise)<br>Easy wall mounting<br>Battery operated (AA battery not included)<br><br>🎨 Color Options<br><br>Available in select curated two-tone colorways.<br>Additional color combinations coming soon!<br><br>📦 Production &amp; Shipping<br><br>Made to order<br>Carefully packaged for safe delivery",
+      "tags": [
+        "apartment wall decor",
+        "art deco wall art",
+        "chich wall clock",
+        "eco friendly decor",
+        "minimalist clock",
+        "modern home decor",
+        "PLA wall clock",
+        "two tone clock"
+      ],
+      "totalInventory": 36,
+      "featuredImageUrl": "https://cdn.shopify.com/s/files/1/0670/0518/6214/files/Modern_Art_Deco_Wall_Clock_Two_Tone_Minimalist_Home_Decor_5_4437546213.jpg?v=1777232145",
+      "images": [
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0670/0518/6214/files/Modern_Art_Deco_Wall_Clock_Two_Tone_Minimalist_Home_Decor_5_4437546213.jpg?v=1777232145",
+          "altText": "Modern Art Deco Wall Clock, Two-Tone Minimalist Home Decor",
+          "mediaId": "gid://shopify/MediaImage/68015395012774"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0670/0518/6214/files/Modern_Art_Deco_Wall_Clock_Two_Tone_Minimalist_Home_Decor_1_4437546213.jpg?v=1777232144",
+          "altText": "Modern Art Deco Wall Clock, Two-Tone Minimalist Home Decor",
+          "mediaId": "gid://shopify/MediaImage/68015394881702"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0670/0518/6214/files/Modern_Art_Deco_Wall_Clock_Two_Tone_Minimalist_Home_Decor_2_4437546213.jpg?v=1777232145",
+          "altText": "Modern Art Deco Wall Clock, Two-Tone Minimalist Home Decor",
+          "mediaId": "gid://shopify/MediaImage/68015394914470"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0670/0518/6214/files/Modern_Art_Deco_Wall_Clock_Two_Tone_Minimalist_Home_Decor_3_4437546213.jpg?v=1777232144",
+          "altText": "Modern Art Deco Wall Clock, Two-Tone Minimalist Home Decor",
+          "mediaId": "gid://shopify/MediaImage/68015394947238"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0670/0518/6214/files/Modern_Art_Deco_Wall_Clock_Two_Tone_Minimalist_Home_Decor_4_4437546213.jpg?v=1777232144",
+          "altText": "Modern Art Deco Wall Clock, Two-Tone Minimalist Home Decor",
+          "mediaId": "gid://shopify/MediaImage/68015394980006"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0670/0518/6214/files/Modern_Art_Deco_Wall_Clock_Two_Tone_Minimalist_Home_Decor_6_4437546213.jpg?v=1777232145",
+          "altText": "Modern Art Deco Wall Clock, Two-Tone Minimalist Home Decor",
+          "mediaId": "gid://shopify/MediaImage/68015395045542"
+        }
+      ],
+      "totalVariants": 8,
+      "variants": [
+        {
+          "id": "gid://shopify/ProductVariant/56416314294438",
+          "title": "Brown|Off White",
+          "sku": null,
+          "price": "38.95",
+          "inventoryQuantity": 5
+        },
+        {
+          "id": "gid://shopify/ProductVariant/56416314359974",
+          "title": "Lilac Shadow",
+          "sku": null,
+          "price": "38.95",
+          "inventoryQuantity": 5
+        },
+        {
+          "id": "gid://shopify/ProductVariant/56416314392742",
+          "title": "Forest Clay",
+          "sku": null,
+          "price": "38.95",
+          "inventoryQuantity": 1
+        },
+        {
+          "id": "gid://shopify/ProductVariant/56416314425510",
+          "title": "White Neutral",
+          "sku": null,
+          "price": "38.95",
+          "inventoryQuantity": 5
+        },
+        {
+          "id": "gid://shopify/ProductVariant/56416314458278",
+          "title": "Slate & Terra",
+          "sku": null,
+          "price": "38.95",
+          "inventoryQuantity": 5
+        },
+        {
+          "id": "gid://shopify/ProductVariant/56416314491046",
+          "title": "Blush Graphite",
+          "sku": null,
+          "price": "38.95",
+          "inventoryQuantity": 5
+        },
+        {
+          "id": "gid://shopify/ProductVariant/56416314556582",
+          "title": "Steel & Bone",
+          "sku": null,
+          "price": "38.95",
+          "inventoryQuantity": 5
+        },
+        {
+          "id": "gid://shopify/ProductVariant/56416314622118",
+          "title": "Yin & Yang",
+          "sku": null,
+          "price": "38.95",
+          "inventoryQuantity": 5
+        }
+      ],
+      "currencyCode": "USD"
+    },
+    {
+      "id": "gid://shopify/Product/15295976341670",
+      "title": "Birch Moody Accent Pendant Light | Calm Lighting for Dining & Living Spaces | Eco-Friendly Decor",
+      "vendor": "Teklo Studio",
+      "status": "ACTIVE",
+      "productType": "",
+      "descriptionHtml": "Bring sculptural elegance into your home with the Birch Pendant Light. Inspired by organic textures, its cylindrical form is wrapped in vertical cutouts that let light escape in delicate streams, casting moody shadows and relaxed accent glow across your space.<br><br>The Birch excels in creating intimate pools of illumination—perfect for dining tables, reading corners, or entryways where atmosphere matters most. The interplay of light and shadow transforms walls and surfaces into part of the design, making every evening feel curated and intentional.<br><br>• \tDesign: Cylindrical shade with vertical teardrop cutouts<br>• \tCompatibility: E27 bulb socket (LED only)<br>• \tOptional Hanging Cord: Save yourself a trip and buy the hanging cord with your pendant!<br>• \tRecommended Bulbs: 4–8W warm white LED (2700K–3000K) for cozy ambiance<br>• \tDimensions: 7.87 inches w x 7.83 inches h<br>• \tMaterial: Premium PLA or specialty filament<br>• \tColor/Finish: Various options and finishes (Matte, Gloss, Metallic, Woodgrain)<br>• \tMade-to-order: Each pendant is individually printed and finished for you",
+      "tags": [
+        "accent lighting",
+        "ambient light decor",
+        "ambient lighting",
+        "artisan decor",
+        "bar lighting",
+        "dining table lights",
+        "eco lighting",
+        "hanging light",
+        "lighting decor",
+        "living space decor",
+        "modern pendant light",
+        "mood lighting",
+        "pendant light"
+      ],
+      "totalInventory": 100,
+      "featuredImageUrl": "https://cdn.shopify.com/s/files/1/0670/0518/6214/files/Birch_Moody_Accent_Pendant_Light_Calm_Lighting_for_Dining_Living_Spaces_Eco_Friendly_Decor_1_4422122133.jpg?v=1777232135",
+      "images": [
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0670/0518/6214/files/Birch_Moody_Accent_Pendant_Light_Calm_Lighting_for_Dining_Living_Spaces_Eco_Friendly_Decor_1_4422122133.jpg?v=1777232135",
+          "altText": "Birch Moody Accent Pendant Light | Calm Lighting for Dining & Living Spaces | Eco-Friendly Decor",
+          "mediaId": "gid://shopify/MediaImage/68015394193574"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0670/0518/6214/files/Birch_Moody_Accent_Pendant_Light_Calm_Lighting_for_Dining_Living_Spaces_Eco_Friendly_Decor_2_4422122133.jpg?v=1777232135",
+          "altText": "Birch Moody Accent Pendant Light | Calm Lighting for Dining & Living Spaces | Eco-Friendly Decor",
+          "mediaId": "gid://shopify/MediaImage/68015394226342"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0670/0518/6214/files/Birch_Moody_Accent_Pendant_Light_Calm_Lighting_for_Dining_Living_Spaces_Eco_Friendly_Decor_3_4422122133.jpg?v=1777232136",
+          "altText": "Birch Moody Accent Pendant Light | Calm Lighting for Dining & Living Spaces | Eco-Friendly Decor",
+          "mediaId": "gid://shopify/MediaImage/68015394259110"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0670/0518/6214/files/Birch_Moody_Accent_Pendant_Light_Calm_Lighting_for_Dining_Living_Spaces_Eco_Friendly_Decor_4_4422122133.jpg?v=1777232135",
+          "altText": "Birch Moody Accent Pendant Light | Calm Lighting for Dining & Living Spaces | Eco-Friendly Decor",
+          "mediaId": "gid://shopify/MediaImage/68015394291878"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0670/0518/6214/files/Birch_Moody_Accent_Pendant_Light_Calm_Lighting_for_Dining_Living_Spaces_Eco_Friendly_Decor_5_4422122133.jpg?v=1777232136",
+          "altText": "Birch Moody Accent Pendant Light | Calm Lighting for Dining & Living Spaces | Eco-Friendly Decor",
+          "mediaId": "gid://shopify/MediaImage/68015394324646"
+        }
+      ],
+      "totalVariants": 20,
+      "variants": [
+        {
+          "id": "gid://shopify/ProductVariant/56416312197286",
+          "title": "Black / No",
+          "sku": null,
+          "price": "69.95",
+          "inventoryQuantity": 5
+        },
+        {
+          "id": "gid://shopify/ProductVariant/56416312230054",
+          "title": "Black / Yes",
+          "sku": null,
+          "price": "79.95",
+          "inventoryQuantity": 5
+        },
+        {
+          "id": "gid://shopify/ProductVariant/56416312262822",
+          "title": "Gray / No",
+          "sku": null,
+          "price": "69.95",
+          "inventoryQuantity": 5
+        },
+        {
+          "id": "gid://shopify/ProductVariant/56416312295590",
+          "title": "Gray / Yes",
+          "sku": null,
+          "price": "79.95",
+          "inventoryQuantity": 5
+        },
+        {
+          "id": "gid://shopify/ProductVariant/56416312328358",
+          "title": "White / No",
+          "sku": null,
+          "price": "69.95",
+          "inventoryQuantity": 5
+        },
+        {
+          "id": "gid://shopify/ProductVariant/56416312361126",
+          "title": "White / Yes",
+          "sku": null,
+          "price": "79.95",
+          "inventoryQuantity": 5
+        },
+        {
+          "id": "gid://shopify/ProductVariant/56416312393894",
+          "title": "Off White / No",
+          "sku": null,
+          "price": "69.95",
+          "inventoryQuantity": 5
+        },
+        {
+          "id": "gid://shopify/ProductVariant/56416312426662",
+          "title": "Off White / Yes",
+          "sku": null,
+          "price": "79.95",
+          "inventoryQuantity": 5
+        },
+        {
+          "id": "gid://shopify/ProductVariant/56416312459430",
+          "title": "Wood / No",
+          "sku": null,
+          "price": "69.95",
+          "inventoryQuantity": 5
+        },
+        {
+          "id": "gid://shopify/ProductVariant/56416312492198",
+          "title": "Wood / Yes",
+          "sku": null,
+          "price": "79.95",
+          "inventoryQuantity": 5
+        },
+        {
+          "id": "gid://shopify/ProductVariant/56416312524966",
+          "title": "Copper / No",
+          "sku": null,
+          "price": "69.95",
+          "inventoryQuantity": 5
+        },
+        {
+          "id": "gid://shopify/ProductVariant/56416312557734",
+          "title": "Copper / Yes",
+          "sku": null,
+          "price": "79.95",
+          "inventoryQuantity": 5
+        },
+        {
+          "id": "gid://shopify/ProductVariant/56416312590502",
+          "title": "Bronze / No",
+          "sku": null,
+          "price": "69.95",
+          "inventoryQuantity": 5
+        },
+        {
+          "id": "gid://shopify/ProductVariant/56416312623270",
+          "title": "Bronze / Yes",
+          "sku": null,
+          "price": "79.95",
+          "inventoryQuantity": 5
+        },
+        {
+          "id": "gid://shopify/ProductVariant/56416312656038",
+          "title": "Gold / No",
+          "sku": null,
+          "price": "69.95",
+          "inventoryQuantity": 5
+        },
+        {
+          "id": "gid://shopify/ProductVariant/56416312688806",
+          "title": "Gold / Yes",
+          "sku": null,
+          "price": "79.95",
+          "inventoryQuantity": 5
+        },
+        {
+          "id": "gid://shopify/ProductVariant/56416312721574",
+          "title": "Silver / No",
+          "sku": null,
+          "price": "69.95",
+          "inventoryQuantity": 5
+        },
+        {
+          "id": "gid://shopify/ProductVariant/56416312754342",
+          "title": "Silver / Yes",
+          "sku": null,
+          "price": "79.95",
+          "inventoryQuantity": 5
+        },
+        {
+          "id": "gid://shopify/ProductVariant/56416312787110",
+          "title": "Rose gold / No",
+          "sku": null,
+          "price": "69.95",
+          "inventoryQuantity": 5
+        },
+        {
+          "id": "gid://shopify/ProductVariant/56416312819878",
+          "title": "Rose gold / Yes",
+          "sku": null,
+          "price": "79.95",
+          "inventoryQuantity": 5
+        }
+      ],
+      "currencyCode": "USD"
+    },
+    {
+      "id": "gid://shopify/Product/8425971941542",
+      "title": "The Luxar - Sleek 3D Printed Planter with Geometric Elegance",
+      "vendor": "Teklo Studio",
+      "status": "ACTIVE",
+      "productType": "",
+      "descriptionHtml": "<p>Introduce a touch of contemporary elegance to your space with The Luxar, a 3D-printed planter that combines sleek design with practical functionality. Featuring an eye-catching, spiraled structure, this planter is designed to enhance the aesthetic of any room. The Luxar is available in a variety of colors and three versatile sizes — 2\" (displayed) , 3\", and 4\" openings — perfect for showcasing your favorite plants.</p>\n<p>Key Features:</p>\n<p>Innovative 3D-Printed Design: Crafted with a distinctive spiraled pattern for a contemporary and dynamic look.</p>\n<p>Multiple Sizes: Available in 2\" (displayed) , 3\", or 4\" openings to accommodate a range of plants.</p>\n<p>Color Selection: Choose from various colors to complement your decor.</p>\n<p>Functional Drainage: Includes drainage holes to promote healthy plant growth.</p>\n<p>Matching Stand: Comes with a coordinating stand for added stability and style.</p>\n<p>Elevate your plant presentation with The Luxar. Whether you're looking to enhance your living space or office, this planter offers a perfect blend of contemporary design and practicality.</p>",
+      "tags": [
+        "3d printed planter",
+        "Abstract Decor",
+        "desk planter",
+        "Home Decor",
+        "minimalist plant pot",
+        "modern plant pot",
+        "plant lovers gift",
+        "Planter",
+        "small plant pot",
+        "succulent planter"
+      ],
+      "totalInventory": 103,
+      "featuredImageUrl": "https://cdn.shopify.com/s/files/1/0670/0518/6214/files/D71DA7C0-6FE1-47EB-9F91-E6542953D21B.png?v=1741237155",
+      "images": [
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0670/0518/6214/files/D71DA7C0-6FE1-47EB-9F91-E6542953D21B.png?v=1741237155",
+          "altText": "",
+          "mediaId": "gid://shopify/MediaImage/33448568389798"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0670/0518/6214/files/il_fullxfull.6598535293_8oog.jpg?v=1741237155",
+          "altText": "The Luxar - Sleek 3D Printed Planter with Geometric Elegance\"",
+          "mediaId": "gid://shopify/MediaImage/33464445042854"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0670/0518/6214/files/il_fullxfull.6550414092_51d7.jpg?v=1741237155",
+          "altText": "The Luxar - Sleek 3D Printed Planter with Geometric Elegance\"",
+          "mediaId": "gid://shopify/MediaImage/33464445075622"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0670/0518/6214/files/il_fullxfull.6550414086_110l.jpg?v=1741237155",
+          "altText": "The Luxar - Sleek 3D Printed Planter with Geometric Elegance\"",
+          "mediaId": "gid://shopify/MediaImage/33464445108390"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0670/0518/6214/files/il_fullxfull.6598535275_a0kp.jpg?v=1741237155",
+          "altText": "The Luxar - Sleek 3D Printed Planter with Geometric Elegance\"",
+          "mediaId": "gid://shopify/MediaImage/33464445141158"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0670/0518/6214/files/il_fullxfull.6550414100_h1bj.jpg?v=1741237155",
+          "altText": "The Luxar - Sleek 3D Printed Planter with Geometric Elegance\"",
+          "mediaId": "gid://shopify/MediaImage/33464445173926"
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0670/0518/6214/files/il_fullxfull.6551032838_9b2l.jpg?v=1741237155",
+          "altText": "The Luxar - Sleek 3D Printed Planter with Geometric Elegance\"",
+          "mediaId": "gid://shopify/MediaImage/33464445206694"
+        }
+      ],
+      "totalVariants": 21,
+      "variants": [
+        {
+          "id": "gid://shopify/ProductVariant/46200295555238",
+          "title": "White / 2\" Opening",
+          "sku": "",
+          "price": "12.00",
+          "inventoryQuantity": 4
+        },
+        {
+          "id": "gid://shopify/ProductVariant/46200295588006",
+          "title": "White / 3\" Opening",
+          "sku": "",
+          "price": "16.00",
+          "inventoryQuantity": 5
+        },
+        {
+          "id": "gid://shopify/ProductVariant/46200295620774",
+          "title": "White / 4\" Opening",
+          "sku": "",
+          "price": "24.00",
+          "inventoryQuantity": 4
+        },
+        {
+          "id": "gid://shopify/ProductVariant/46200295653542",
+          "title": "Off White / 2\" Opening",
+          "sku": "",
+          "price": "12.00",
+          "inventoryQuantity": 5
+        },
+        {
+          "id": "gid://shopify/ProductVariant/46200295686310",
+          "title": "Off White / 3\" Opening",
+          "sku": "",
+          "price": "16.00",
+          "inventoryQuantity": 5
+        },
+        {
+          "id": "gid://shopify/ProductVariant/46200295719078",
+          "title": "Off White / 4\" Opening",
+          "sku": "",
+          "price": "24.00",
+          "inventoryQuantity": 5
+        },
+        {
+          "id": "gid://shopify/ProductVariant/46200295751846",
+          "title": "Black / 2\" Opening",
+          "sku": "",
+          "price": "12.00",
+          "inventoryQuantity": 5
+        },
+        {
+          "id": "gid://shopify/ProductVariant/46200295784614",
+          "title": "Black / 3\" Opening",
+          "sku": "",
+          "price": "16.00",
+          "inventoryQuantity": 5
+        },
+        {
+          "id": "gid://shopify/ProductVariant/46200295817382",
+          "title": "Black / 4\" Opening",
+          "sku": "",
+          "price": "24.00",
+          "inventoryQuantity": 5
+        },
+        {
+          "id": "gid://shopify/ProductVariant/46200295850150",
+          "title": "Gray / 2\" Opening",
+          "sku": "",
+          "price": "12.00",
+          "inventoryQuantity": 5
+        },
+        {
+          "id": "gid://shopify/ProductVariant/46200295882918",
+          "title": "Gray / 3\" Opening",
+          "sku": "",
+          "price": "16.00",
+          "inventoryQuantity": 5
+        },
+        {
+          "id": "gid://shopify/ProductVariant/46200295915686",
+          "title": "Gray / 4\" Opening",
+          "sku": "",
+          "price": "24.00",
+          "inventoryQuantity": 5
+        },
+        {
+          "id": "gid://shopify/ProductVariant/46200295948454",
+          "title": "Brown / 2\" Opening",
+          "sku": "",
+          "price": "12.00",
+          "inventoryQuantity": 5
+        },
+        {
+          "id": "gid://shopify/ProductVariant/46200295981222",
+          "title": "Brown / 3\" Opening",
+          "sku": "",
+          "price": "16.00",
+          "inventoryQuantity": 5
+        },
+        {
+          "id": "gid://shopify/ProductVariant/46200296013990",
+          "title": "Brown / 4\" Opening",
+          "sku": "",
+          "price": "24.00",
+          "inventoryQuantity": 5
+        },
+        {
+          "id": "gid://shopify/ProductVariant/46200296046758",
+          "title": "Olive Green / 2\" Opening",
+          "sku": "",
+          "price": "12.00",
+          "inventoryQuantity": 5
+        },
+        {
+          "id": "gid://shopify/ProductVariant/46200296079526",
+          "title": "Olive Green / 3\" Opening",
+          "sku": "",
+          "price": "16.00",
+          "inventoryQuantity": 5
+        },
+        {
+          "id": "gid://shopify/ProductVariant/46200296112294",
+          "title": "Olive Green / 4\" Opening",
+          "sku": "",
+          "price": "24.00",
+          "inventoryQuantity": 5
+        },
+        {
+          "id": "gid://shopify/ProductVariant/46200296145062",
+          "title": "Muted Green / 2\" Opening",
+          "sku": "",
+          "price": "12.00",
+          "inventoryQuantity": 5
+        },
+        {
+          "id": "gid://shopify/ProductVariant/46200296177830",
+          "title": "Muted Green / 3\" Opening",
+          "sku": "",
+          "price": "16.00",
+          "inventoryQuantity": 5
+        },
+        {
+          "id": "gid://shopify/ProductVariant/46200296210598",
+          "title": "Muted Green / 4\" Opening",
+          "sku": "",
+          "price": "24.00",
+          "inventoryQuantity": 5
+        }
+      ],
+      "currencyCode": "USD"
+    }
+  ]
+}
