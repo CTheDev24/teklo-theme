@@ -125,7 +125,7 @@
                         class="cart-item{% if item.parent_relationship.parent != null %} cart-item__nested-line{% endif %}"
                         role="row"
                         {% if item.parent_relationship.parent != null %}
-                          aria-label="{{- 'products.product.nested_label' | t: title: item.product.title, parent_title: item.parent_relationship.parent.title | escape -}}"
+                          aria-label="{{- 'products.product.nested_label' | t: title: item.product.title, parent_title: item.parent_relationship.parent.title | escape_once -}}"
                         {% endif %}
                       >
                         <td
@@ -306,7 +306,7 @@
                                       {{-
                                         'products.product.quantity.decrease'
                                         | t: product: item.product.title
-                                        | escape
+                                        | escape_once
                                       -}}
                                     </span>
                                     <span class="svg-wrapper">
@@ -329,7 +329,7 @@
                                     {% endif %}
                                     step="{{ item.variant.quantity_rule.increment }}"
                                     {% # theme-check-enable %}
-                                    aria-label="{{ 'products.product.quantity.input_label' | t: product: item.product.title | escape }}"
+                                    aria-label="{{ 'products.product.quantity.input_label' | t: product: item.product.title | escape_once }}"
                                     id="Drawer-quantity-{{ item.index | plus: 1 }}"
                                     data-index="{{ item.index | plus: 1 }}"
                                     {% if item.instructions and item.instructions.can_update_quantity == false %}
@@ -348,7 +348,7 @@
                                       {{-
                                         'products.product.quantity.increase'
                                         | t: product: item.product.title
-                                        | escape
+                                        | escape_once
                                       -}}
                                     </span>
                                     <span class="svg-wrapper">
@@ -364,7 +364,7 @@
                                 <button
                                   type="button"
                                   class="button button--tertiary cart-remove-button"
-                                  aria-label="{{ 'sections.cart.remove_title' | t: title: item.title | escape }}"
+                                  aria-label="{{ 'sections.cart.remove_title' | t: title: item.title | escape_once }}"
                                   data-variant-id="{{ item.variant.id }}"
                                   {% if item.instructions and item.instructions.can_remove == false %}
                                     class="hidden"

@@ -1,0 +1,9 @@
+# Accessible product/cart labels — 22 September 2026
+
+Fixed double-escaped product/variant punctuation in quantity and remove controls. Shopify translation interpolation already escapes interpolated text; applying escape again exposed literal &amp; and &quot; in accessible names. Changed only the final filter to escape_once in 15 translated labels across sections/main-product.liquid, sections/main-cart-items.liquid, snippets/cart-drawer.liquid and snippets/quantity-input.liquid. HTML escaping is retained; design and cart logic unchanged.
+
+Official Shopify filter documentation search confirms escape_once escapes raw special characters without re-escaping existing entities. Skill validator invocation could not start because bundled @shopify/theme-check-common is missing. Installed Shopify Theme Check passed with zero errors/ten existing warnings in theme files, excluding review backups. git diff --check passed. All four remote before files matched Git HEAD before editing (newline-normalized).
+
+Deployed only these four files with --nodelete to unpublished teklo-theme/dev 196729798822. Rendered checks: Birch product increase button resolves using the normal & character; drawer remove button resolves using normal &; full cart input and removal aria-label values contain normal & and removal works. Luxar drawer removal resolves with the normal double quote in White / 2-inch Opening and removes the item. Synthetic test cart verified empty. This is targeted accessibility-name verification, not full screen-reader certification.
+
+Rollback: exact remote-before files are in ignored review/homepage-labels-before. Restore only the four files to the same draft theme using explicit --only paths and --nodelete after checking intervening edits, or revert this code commit and deploy its four files. No Shopify product, notification, policy, inventory, billing or app setting changed. NOT READY remains because purchasing/intake/release gates are still open.
