@@ -76,3 +76,7 @@ Shop now contains Trace, Modern Art Deco clock, Birch light, Boho Wall Planter a
 ## Trace intake handoff follow-up
 
 The draft product purchase area now links the enabled per-piece Trace intake and explains order matching, route alternatives and written proof approval. See [implementation, verification and rollback](TRACE-INTAKE-HANDOFF.md). P0-03 remains open for the order email and full live operations test; pre-launch status remains visible.
+
+## Trace product content and gallery follow-up
+
+The Shopify product description now includes the intake link, order/piece matching and proof reply instructions. The Etsy-only, unverified-dimensions and mismatched-accent graphics are detached from Trace while their original files remain available. Ten images remain, prices/stock unchanged. See [exact content/media changes, verification and rollback](TRACE-CONTENT-HANDOFF.md). P0-03 and P1-05 remain open for their full verification requirements.
