@@ -11,19 +11,12 @@
   "sections": {
     "main": {
       "type": "teklo-custom-work",
-      "blocks": {
-        "process_feature": {
-          "type": "project",
-          "settings": {
-            "image": "shopify://shop_images/teklo-custom-work-fdm-process.jpg",
-            "title": "From idea to finished part",
-            "description": "<p>Custom work often starts with a specific problem, then moves through design, prototyping, and fabrication. We use digital fabrication to turn those ideas into real, functional objects.</p>",
-            "outcome": "Designed, prototyped, and made at Teklo Studio."
-          }
-        }
-      },
-      "block_order": ["process_feature"],
-      "settings": { "enable_file_uploads": true }
+      "settings": {
+        "hero_image": "shopify://shop_images/teklo-custom-work-fdm-process.jpg",
+        "feature_title": "From idea to finished part",
+        "feature_caption": "<p>Custom work often starts with a specific problem, then moves through design, prototyping, and fabrication. We use digital fabrication to turn those ideas into real, functional objects.</p>",
+        "enable_file_uploads": true
+      }
     }
   },
   "order": ["main"]
