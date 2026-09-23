@@ -25,11 +25,11 @@
   }
   .teklo-hero-film--split .teklo-hero-film__media::before{
     top:0;
-    height:17.25%;
+    height:18%;
   }
   .teklo-hero-film--split .teklo-hero-film__media::after{
     bottom:0;
-    height:17.25%;
+    height:18%;
   }
 }
 
