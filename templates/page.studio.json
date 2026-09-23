@@ -45,7 +45,8 @@
           "settings": {
             "enabled": true,
             "title": "Ship-hull master mold",
-            "image": "shopify://shop_images/teklo-ship-hull-master-mold-studio.png"
+            "image": "shopify://shop_images/teklo-ship-hull-master-mold-studio.png",
+            "copy": "<p>A glassblowing and pottery studio owner needed a symmetrical ship-hull master for mold making after struggling to shape one consistently by hand. I designed and 3D printed the hull so he could use it as the master for his mold.</p>"
           }
         },
         "connector": {
