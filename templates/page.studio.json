@@ -11,7 +11,6 @@
   "sections": {
     "main": {
       "type": "teklo-studio",
-      "settings": {},
       "blocks": {
         "objects": {
           "type": "offering",
@@ -19,8 +18,8 @@
             "enabled": true,
             "title": "Curated objects",
             "copy": "<p>Objects from Teklo, including Trace.</p>",
-            "use_trace_image": false,
-            "image": "shopify://shop_images/teklo-studio-curated-objects-trace.jpg"
+            "image": "shopify://shop_images/teklo-studio-curated-objects-trace.jpg",
+            "use_trace_image": false
           }
         },
         "fabrication": {
@@ -46,8 +45,8 @@
           "settings": {
             "enabled": true,
             "title": "Ship-hull master mold",
-            "image": "shopify://shop_images/teklo-ship-hull-master-mold-studio.png",
-            "copy": "<p>3D-printed ship-hull master for mold making, created for a glassblowing and pottery studio owner.</p>"
+            "copy": "<p>3D-printed ship-hull master for mold making, created for a glassblowing and pottery studio owner.</p>",
+            "image": "shopify://shop_images/teklo-ship-hull-master-mold-studio.png"
           }
         },
         "connector": {
@@ -74,7 +73,8 @@
         "hull",
         "connector",
         "professional"
-      ]
+      ],
+      "settings": {}
     },
     "philosophy": {
       "type": "teklo-philosophy",
