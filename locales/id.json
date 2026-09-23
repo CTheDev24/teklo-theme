@@ -567,7 +567,10 @@
       "piece_reference": "Piece reference",
       "piece_help": "Give this piece a short reference, such as Runner A. Add differently personalized pieces separately with different references. Keep this reference for your order intake. For quantities greater than one, identify each unit separately in your intake.",
       "gift_note": "Gift note (optional)",
-      "workflow_pending": "Trace intake and proof delivery are being prepared for launch. Contact us before ordering with questions about your route.",
+      "intake_handoff": "After ordering, submit one intake form per piece within 48 hours. Use your order number, order email and the piece reference above. Provide a GPX file, public activity link, official-course details or course map.",
+      "intake_link": "Open the Trace intake form (opens in a new tab)",
+      "proof_handoff": "Your proof goes to your order email. Reply with changes or written approval identifying the piece and proof version. Production stays on hold until your details are verified and you approve in writing.",
+      "workflow_pending": "Pre-launch: checkout and the complete proof workflow are still being verified. Contact us with questions before ordering.",
       "contact": "Contact Teklo Studio"
     }
   }
