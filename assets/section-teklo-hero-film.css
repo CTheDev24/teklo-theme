@@ -9,28 +9,27 @@
 .teklo-hero-film { isolation: isolate; }
 
 
-@media(min-width:750px){
-  .teklo-hero-film--split .teklo-hero-film__video--desktop{
-    transform:none;
-  }
-  .teklo-hero-film--split .teklo-hero-film__media::before,
-  .teklo-hero-film--split .teklo-hero-film__media::after{
-    content:"";
-    position:absolute;
-    left:0;
-    right:0;
-    z-index:4;
-    pointer-events:none;
-    background:var(--teklo-paper,#f3f0e7);
-  }
-  .teklo-hero-film--split .teklo-hero-film__media::before{
-    top:0;
-    height:18%;
-  }
-  .teklo-hero-film--split .teklo-hero-film__media::after{
-    bottom:0;
-    height:18%;
-  }
-}
 
 .teklo-hero-film--split .teklo-hero-film__media{border:0;box-shadow:none}
+
+.teklo-hero-film--split .teklo-hero-film__video--desktop{
+  transform:none;
+}
+.teklo-hero-film--split .teklo-hero-film__media::before,
+.teklo-hero-film--split .teklo-hero-film__media::after{
+  content:"";
+  position:absolute;
+  left:0;
+  right:0;
+  z-index:4;
+  pointer-events:none;
+  background:var(--teklo-paper,#f3f0e7);
+}
+.teklo-hero-film--split .teklo-hero-film__media::before{
+  top:0;
+  height:18%;
+}
+.teklo-hero-film--split .teklo-hero-film__media::after{
+  bottom:0;
+  height:18%;
+}
