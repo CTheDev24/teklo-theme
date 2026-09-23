@@ -80,3 +80,7 @@ The draft product purchase area now links the enabled per-piece Trace intake and
 ## Trace product content and gallery follow-up
 
 The Shopify product description now includes the intake link, order/piece matching and proof reply instructions. The Etsy-only, unverified-dimensions and mismatched-accent graphics are detached from Trace while their original files remain available. Ten images remain, prices/stock unchanged. See [exact content/media changes, verification and rollback](TRACE-CONTENT-HANDOFF.md). P0-03 and P1-05 remain open for their full verification requirements.
+
+## Policy and assortment shipping readback
+
+Fresh plan read remains Paused. All four non-Trace Shop products use General shipping: free Economy begins at $35, and the international zone lists 27 countries. Exact policy corrections and unchanged-profile evidence are in [policy/shipping follow-up](POLICY-SHIPPING-FOLLOWUP.md). Policy writes are blocked by missing write_legal_policies scope and the signed-out Admin browser; prepared changes are not reported as applied.
